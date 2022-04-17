@@ -17338,8 +17338,8 @@ header .search-box-wrapper form button {
 }
 .slider-worper ul li button {
   margin: 5px;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 1000px;
   font: none;
   color: #0973cf;
@@ -17898,6 +17898,10 @@ header .search-box-wrapper form button {
   .save-time-wepar .dog-helth .dog-money .image a {
     top: 42%;
     left: 50%;
+  }
+
+  .myAccroding .accroding-into .lest-sub-buttom a {
+    padding: 10px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
