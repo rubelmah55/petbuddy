@@ -1,0 +1,367 @@
+.part-halth-dog{
+    overflow: hidden;
+    .beuty-dogs{
+        margin-top: $Hight-80;
+        margin-bottom: $Hight-80;
+        padding:$Hight-50;
+        width: 1150px;
+        margin: 0 auto;
+        .beuty-hrad{
+            h4{
+                @include typography-4 ;
+            }
+        }
+        .beuty-dog-image{
+
+        }
+        .beuty-dog-text{
+            margin-top: 30px;
+            h4{
+                @include typography-9;
+            }
+            p{
+                @include typofraphy-1;
+                color: $black;
+            }
+        }
+        .text{
+            margin-top: $Hight-30;
+            p{
+                max-width: 420px;
+                margin: 0 auto;
+                font-family: $body-font; 
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.15px;
+                color:$gray;
+            }
+        }
+    }
+}
+//section-2
+.coustom-medicin-wrapper{
+    .medicin-dog{
+        h2{
+            @include typography-5;
+            color:$black;
+        }
+        ul{
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            li{
+                position: relative;    ///customaize
+                padding: 0px 10px;
+                border-right: 1px solid #ADADAD;
+               &:last-child{
+                   border: none !important;
+               }
+
+            }
+        }
+        p{
+            padding-bottom: 20px;
+            max-width: 680px;
+            margin: 0 auto;
+            @include typofraphy-1 ;
+            color: $gray;
+        }
+    }
+}
+//section-2
+//section-3
+.save-time-wepar{
+    .dog-helth{
+        margin-top: $Hight-80;
+        margin-bottom: $Hight-80;
+        .save-head-waoeer{
+            h4{
+                @include  typography-4;
+            }
+        }
+        .dog-money{
+            position: relative;
+            .image{
+                a{  position: absolute;
+                    top: 55%;
+                    left: 60%;
+                    font-family: $rubica;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px !important;
+                    line-height: 24px;
+                    text-align: center;
+                    letter-spacing: 0.15px;
+                    text-transform: uppercase;
+                    color:$white;
+                    padding: 13px 50px;
+                    border-bottom-left-radius: 40px;
+                    border-top-right-radius:40px ;
+                    background-color: $primary;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+            }
+            .save{
+                margin-top: 10px;
+                h4{
+                    @include typography-6;
+                    color: $gray !important;
+                    margin-bottom: $Hight-30;
+                }
+                p{
+                    @include typofraphy-1;
+                    color: $black;
+                }
+                h6{
+                    margin-top: 10px;
+                    @include typofraphy-1;
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
+//section-3
+//section-4
+.sefty-good{
+    background-color:$secondary;
+    .dog-food-row{
+        padding-top: $Hight-80;
+        padding-bottom: $Hight-80;
+        .dog-food-head{
+            .title{
+                h4{
+                    @include typography-4 ;
+                }
+            }
+        }
+        .save-helth{
+            margin-top: 50px;
+            position: relative;
+            .image{
+                position: relative;
+                z-index: 5;
+                padding:15px;
+            }
+            .info-helth{
+                position: relative;
+                z-index: 5;
+                margin-top: 30px;
+                margin-bottom: 50px;
+                p{
+                    max-width: 285px;
+                    margin: 0 auto;
+                    font-family: $body-font; 
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: 0.15px;
+                    color:$black;
+                }
+            }
+            .bg-vector{
+                position: absolute;
+                top: 0%;
+                left: 25%;
+                z-index: 1;
+            }
+        }
+    }
+
+}
+//section-4
+//section-5
+.card-wepeer{
+    background-color: $gray-light;
+    padding-top: $Hight-80;
+    padding-bottom: $Hight-80;
+    .card-head{
+        margin-bottom: 50px;
+        h5{
+            @include  typography-10;
+            color: $primary;
+
+        }
+        h2{
+            @include typography-4;
+        }
+        p{
+            max-width: 825px;
+            margin: 0 auto;
+            @include typofraphy-1;
+            color:$black;
+        }
+    }
+    .card-2{
+        border-radius: 2px;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        background-color: white;
+        width: 420px;
+        max-width: 100%;
+        padding: 40px;
+        margin: 10px;
+        min-height: 900px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    .card{
+        border-radius: 2px;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        background-color: white;
+        width: 420px;
+        max-width: 100%;
+        padding: 40px;
+        margin: 10px;
+        height: 520px;
+    }
+    .card-2 , .card{
+        .card-info{
+           transition: all 0.6s ease-in-out;
+           cursor: pointer;
+            .head{
+                h5{
+                    @include  typography-10;
+                    text-align: left !important;
+                    color: #095052;
+                }
+                h4{
+                    font-family: $body-font; 
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 34px;
+                    line-height:42px;
+                    letter-spacing: 0.25px;
+                    color: $card;
+                    margin-bottom: $Hight-30;
+                }
+                p{
+                    @include typofraphy-1;
+                    color:$black;
+                }
+            }
+            .table{
+                margin-top: $Hight-35;
+                tr{
+                    
+                }
+                tr th{
+                    img{
+                        max-width: none !important;
+                    }
+                    p{
+                    @include typofraphy-1 ;
+                    color: $black;
+                    padding-bottom: 10px;
+                    }
+                }
+            }
+            span{
+                color: $primary;
+            }
+            .lest-sub-buttom {
+                a{
+                    @include button;
+                    padding: 13px 70px;
+                    color: $white;
+                    background-color: $gray;
+
+                }
+            }
+        }
+        &:hover{
+            background-color:$secondary;
+        }
+    }
+
+}
+//section-5
+//section-6
+.myAccroding{
+    background-color: $gray;
+    padding-top: $Hight-60;
+    padding-bottom:  $Hight-60;
+    .accroding-into{
+        max-width: 1150px;
+        margin: 0 auto;
+        .heading-accdroing{
+            padding-bottom: 80px;
+            h2{
+                @include typography-4;
+                color: $white !important;
+            }
+        }
+        .accordion{
+           margin-bottom: 60px;
+            .accordion-item{
+                border: none !important;
+                background-color:transparent;
+                .accordion-header{
+                    .accordion-button {
+                        background-color: transparent;
+                        box-shadow:none;
+                        font-family: $body-font;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 38px;
+                        letter-spacing: 0.15px;
+                        color: $white;
+                        padding: 20px 0px;
+                        &::after {
+                            flex-shrink: 0;
+                            width: 2.25rem;
+                            height: 2.25rem;
+                            margin-left: auto;
+                            content: "";
+                            background-image: url(../img/petbuddy/icon/arrow-forward-ios.svg);
+                            background-repeat: no-repeat;
+                            background-size: 2.25rem;
+                            transition: transform .2s ease-in-out;
+                        }
+                    }
+                }
+            }
+            .border-buttom{
+                border-bottom: 2px solid $primary !important;
+            }
+            .accordion-body {
+                padding-top: 10px !important;
+                padding-bottom: 20px !important;
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+                p{
+                    @include typofraphy-1;
+                    color: $white;
+                }
+
+            }
+        }
+        .lest-sub-buttom {
+            
+            a{
+                @include button;
+                padding: 13px 70px;
+                color: $white;
+                background-color: $primary;
+
+            }
+        }
+    }
+
+}
+//section-6
+
+
+
+
+///responsive
+
+@media (max-width:425px){
+    .save-time-wepar .dog-helth .dog-money .image a {
+        top: 42%;
+        left: 50%;
+    }
+}
