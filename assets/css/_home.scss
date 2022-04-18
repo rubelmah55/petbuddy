@@ -35,10 +35,11 @@
         z-index: 1;
         margin-bottom: 40px;
         .table{
-             tr td{
+             ul li{
+                 display: flex;
                 span{
                     align-items:flex-start;
-                    width: 550px !important;
+                    max-width: 600px ;
                     font-family: $body-font;
                     font-weight: 400;
                     font-size: 20px;

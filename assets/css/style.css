@@ -16592,11 +16592,16 @@ header.header-wrapper.sticky {
   z-index: 1;
   margin-bottom: 40px;
 }
-.hero .head-content .table tr td span {
+.hero .head-content .table ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hero .head-content .table ul li span {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 550px !important;
+  max-width: 600px;
   font-family: "Intro";
   font-weight: 400;
   font-size: 20px;

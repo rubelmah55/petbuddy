@@ -12,20 +12,13 @@ get_header(); ?>
                     <h1>Повече време за теб, по-добър живот за тях</h1>
                 </div>
                 <div class="head-content">
-                    <table class="table">
-                        <tr>
-                            <td><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"></td>
-                            <td> <span> Платформата, която мисли вместо теб, за да са по-здрави те.</span></td>
-                        </tr>
-                        <tr>
-                            <td><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"> </td>
-                            <td><span>Създай профил на домашния ти любимец, остави  грижите на нас.</span></td>
-                        </tr>
-                        <tr>
-                            <td><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"> </td>
-                            <td><span> Всeки месец, лесно и удобно за теб, вкусно за тях</span></td>
-                        </tr>
-                    </table>
+                    <div class="table">
+                        <ul>
+                            <li><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"><span> Платформата, която мисли вместо теб, за да са по-здрави те.</span></li>
+                            <li><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"> <span>Създай профил на домашния ти любимец, остави  грижите на нас.</span></li>
+                            <li><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"> <span> Всeки месец, лесно и удобно за теб, вкусно за тях</span></li>
+                        </ul>
+                    </div>
                 </div>
                 <a herf="#" class="button">Стани член</a>
             </div>
