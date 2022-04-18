@@ -3,8 +3,9 @@
 .hero{
     background-position: center center;
     background-size: cover;
-    height: 657px;
     position: relative;
+    padding-top: 120px;
+    padding-bottom: 90px;
     &::after{
         position: absolute;
         top: 0%;
@@ -511,23 +512,13 @@
                     padding: 50px;
                     .head-card{
                         h4{
-                            padding-left: 30px; 
+                            padding-left: 20px; 
                             position: relative;
                             @include typography-5;
                             padding-top: 10px;
+                            margin-left: 20px;
                             color:$gray;
-                            &::before{
-                                top: 0;
-                                left: 15px;
-                                position: absolute;
-                                content: '';
-                                clear: both;
-                                display: block;
-                                width: 4px;
-                                height:40px;
-                                transform: rotate(180deg);
-                                background-color: $primary;
-                            }
+                            border-left: 4px solid $primary;
                         }
                     }
                     .heading{

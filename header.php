@@ -101,28 +101,27 @@
         <div id="myNav" class="overlay">
              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-                        <div class="nav-manu-weperr  d-none">
-                            <div class="header-right d-flex justify-content-center  align-items-center ">
+                        <div class=" ps-2 nav-manu-weperr  d-none">
+                            <div class="header-right d-flex  align-items-center ">
                                 <div class="search-box-wrapper">
                                     <form action="#">
                                         <input type="text" placeholder="Търси">
                                         <button type="submit"><i class="bi bi-search"></i></button>
                                     </form>
                                 </div>
-                                <div class="love-cose pl-1">
+                                <div class="love-cose ps-1">
                                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/love.svg' ?>" alt="<?php bloginfo('name'); ?>"></a>
                                 </div>
-                                <div class="count pl-1">
+                                <div class="count ps-1">
                                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/cart.svg' ?>" alt="<?php bloginfo('name'); ?>"></a>
                                 </div>
-                                <div class="account pl-1">
+                                <div class="account ps-1">
                                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/вход.svg' ?>" alt="<?php bloginfo('name'); ?>"></a>
                                 </div>
-                                <button class="button pl-3">Стани член</button>
                             </div>
                         </div>
                 <div class="header-nav">
-                    <div class="navbar d-flex justify-content-center text-center">
+                    <div class="navbar">
                         <ul>
                             <li class="dropdwon"><a href="#">Магазин</a> <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Vector-arrow.svg' ?>"  alt="<?php bloginfo('name'); ?>">
                                 <div class="dropdwon-manu">
@@ -138,7 +137,9 @@
                             <li><a href="#"> Ветеринар</a></li>
                             <li><a href="#"> Библиотека</a></li>
                             <li><a href="#"> За нас</a></li>
+                            <li><button class="button ">Стани член</button></li>
                         </ul>
+                        
                     </div>
                 </div>
             </div>

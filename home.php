@@ -257,6 +257,7 @@ get_header(); ?>
                                 <div class="beat-info-head text-start">
                                     <h5>Консултация с ветеринар</h5>
                                     <p>Безплатна консултация с ветеринар по всяко време.</p>
+
                                 </div>
                             </div>
                     </div>

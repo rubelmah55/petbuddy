@@ -75,7 +75,7 @@
 })(jQuery); // End jQuery
 //javascript
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "70%";
 }
 
 function closeNav() {
