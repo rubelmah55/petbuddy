@@ -709,12 +709,14 @@
                 width: 20px; 
                 height: 20px;
                 border-radius: 1000px;
-                font: none;
-                color:rgb(9, 115, 207) ;
-                background-color: rgb(9, 115, 207);
+                color: transparent;
+                background-color: #D3D3D3;
             }
-            .slick-active{
-                background-color: bisque !important;
+            &.slick-active{
+                
+                button{
+                    background-color: $primary;
+                }
             }
         }
     }

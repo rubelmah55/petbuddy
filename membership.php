@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Pet Buddy
+Template Name: Membership Page
 
 */
 get_header(); ?>

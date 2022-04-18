@@ -59,21 +59,22 @@
     // });
 
     //    Sticky Menu
-    // $(window).scroll(function() {
-    //     var Width = $(document).width();
+    $(window).scroll(function() {
+        var Width = $(document).width();
 
-    //     if ($("body").scrollTop() > 100 || $("html").scrollTop() > 100) {
-    //         if (Width > 767) {
-    //             $(".header-wrapper .main-menu-wrapper").addClass("sticky");
-    //         }
-    //     } else {
-    //         $(".header-wrapper .main-menu-wrapper").removeClass("sticky");
-    //     }
-    // });
+        if ($("body").scrollTop() > 100 || $("html").scrollTop() > 100) {
+            if (Width > 767) {
+                $(".header-wrapper").addClass("sticky");
+            }
+        } else {
+            $(".header-wrapper").removeClass("sticky");
+        }
+    });
 
-        
+   
 })(jQuery); // End jQuery
-//javascript
+
+
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
