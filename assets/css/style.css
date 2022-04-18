@@ -15087,30 +15087,35 @@ input:focus, textarea:focus, select:focus {
 }
 
 ::-webkit-input-placeholder {
+  text-transform: lowercase;
   color: #666;
   opacity: 1;
   /* Firefox */
 }
 
 ::-moz-placeholder {
+  text-transform: lowercase;
   color: #666;
   opacity: 1;
   /* Firefox */
 }
 
 :-ms-input-placeholder {
+  text-transform: lowercase;
   color: #666;
   opacity: 1;
   /* Firefox */
 }
 
 ::-ms-input-placeholder {
+  text-transform: lowercase;
   color: #666;
   opacity: 1;
   /* Firefox */
 }
 
 ::placeholder {
+  text-transform: lowercase;
   color: #666;
   opacity: 1;
   /* Firefox */
@@ -16302,7 +16307,7 @@ header.header-wrapper .search-box-wrapper form input {
   padding: 0px 10px;
   font-size: 14px;
   font-weight: 400;
-  color: #61BC47;
+  text-transform: lowercase !important;
 }
 header.header-wrapper .search-box-wrapper form input::-webkit-input-placeholder {
   color: #787878;

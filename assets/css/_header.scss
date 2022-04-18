@@ -97,7 +97,7 @@ header.header-wrapper {
                 padding: 0px 10px;
                 font-size: 14px;
                 font-weight: 400;
-                color: $primary;
+                text-transform: lowercase !important;
 
                 &::placeholder {
                     color: #787878;

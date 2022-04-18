@@ -153,7 +153,7 @@ get_header(); ?>
            </div>
        </div>
        <div class="row align-items-center justify-content-center">
-           <div class="col-lg-4 col-md-4">
+           <div class="col-lg-4 col-md-12">
                 <div class="kakbo">
                     <div class="save-manuy d-flex  align-items-start">
                             <div class="best-save">
@@ -202,12 +202,12 @@ get_header(); ?>
                     
                 </div>
            </div>
-           <div class=" col-12 col-md-4 col-lg-4 ">
-                <div class="img-image-4">
+           <div class=" col-12 col-md-0 col-lg-4 ">
+                <div class="img-image-4 text-center">
                     <img src="<?php echo AIRDESIGNS_DIR_IMG.'/картинка.png' ?>"alt="<?php bloginfo('name'); ?>">
                 </div>
            </div>
-           <div class="col-sm-12 col-md-4 col-lg-4">
+           <div class="col-sm-12 col-md-12 col-lg-4">
            <div class="kakbos">
                     <div class="save-manuy-2 d-flex">
                             <div class="dog-save-img">
