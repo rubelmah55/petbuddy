@@ -57,7 +57,7 @@ function airdesigns_register_styles_and_scripts() {
 
 	wp_enqueue_style( 'slick-css',  AIRDESIGNS_DIR_CSS.'/slick.css' );
 	wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', array(), false, 'all');
-    wp_enqueue_style( 'airdesigns-style',  AIRDESIGNS_DIR_CSS . '/style.css', array(), filemtime( get_template_directory().'/assets/css/style.css' ) );
+    wp_enqueue_style( 'main_style',  AIRDESIGNS_DIR_CSS . '/style.css', array(), time() );
 
 }
 add_action( 'wp_enqueue_scripts', 'airdesigns_register_styles_and_scripts' );

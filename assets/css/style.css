@@ -15199,11 +15199,40 @@ input, textarea, button {
   border: 0px;
 }
 
+@-webkit-keyframes sticky {
+  0% {
+    opacity: 0;
+    margin-top: -120px;
+  }
+  50% {
+    opacity: 0;
+    margin-top: -60px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes sticky {
+  0% {
+    opacity: 0;
+    margin-top: -120px;
+  }
+  50% {
+    opacity: 0;
+    margin-top: -60px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 body {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
@@ -15212,12 +15241,28 @@ body {
 }
 
 @font-face {
-  font-family: "AvertaCY-Black";
-  src: url(../Averta-CY/AvertaCY-Black.otf), url(../Averta-CY/AvertaCY-BlackItalic.otf), url(../Averta-CY/AvertaCY-Bold.otf), url(../Averta-CY/AvertaCY-BoldItalic.otf), url(../Averta-CY/AvertaCY-Extrabold.otf), url(../Averta-CY/AvertaCY-Regular.otf);
+  font-family: "Intro";
+  src: url("../fonts/Intro.eot");
+  src: url("../fonts/Intro.eot?#iefix") format("embedded-opentype"), url("../fonts/Intro.woff2") format("woff2"), url("../fonts/Intro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "INTRO-REGULAR";
-  src: url(../Intro/INTRO-LIGHT-ALT.OTF), url(../Intro/INTRO-REGULAR.OTF), url(../Intro/INTRO-REGULAR-CAPS.OTF), url(../Intro/INTRO-BOLD.OTF), url(../Intro/INTRO-BOLD-ALT.OTF), url(../Intro/INTRO-BOLD-CAPS.OTF);
+  font-family: "Intro";
+  src: url("../fonts/Intro-Bold.eot");
+  src: url("../fonts/Intro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Intro-Bold.woff2") format("woff2"), url("../fonts/Intro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Averta CY";
+  src: url("../fonts/AvertaCY-BoldItalic.eot");
+  src: url("../fonts/AvertaCY-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AvertaCY-BoldItalic.woff2") format("woff2"), url("../fonts/AvertaCY-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 h1, .h1,
 h2,
@@ -15230,7 +15275,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   margin: 0px;
   margin-bottom: 15px;
   font-weight: 500;
@@ -16188,41 +16233,41 @@ a {
   color: #fff;
 }
 
-header .header-top {
+header.header-wrapper .header-top {
   position: relative;
   padding: 0px;
   background-color: #fff;
 }
-header .header-left .navbar ul li {
+header.header-wrapper .header-left .navbar ul li {
   padding: 9px;
 }
-header .header-left .navbar ul .dropdwon {
+header.header-wrapper .header-left .navbar ul .dropdwon {
   position: relative;
 }
-header .header-left .navbar ul .dropdwon .dropdwon-manu {
+header.header-wrapper .header-left .navbar ul .dropdwon .dropdwon-manu {
   z-index: 10;
   display: none;
   position: absolute;
   background-color: #2E3A56;
   padding: 10px;
 }
-header .header-left .navbar ul .dropdwon .dropdwon-manu ul li a {
+header.header-wrapper .header-left .navbar ul .dropdwon .dropdwon-manu ul li a {
   color: #fff;
 }
-header .header-left .navbar ul .dropdwon:hover .dropdwon-manu {
+header.header-wrapper .header-left .navbar ul .dropdwon:hover .dropdwon-manu {
   display: block;
 }
-header .wpml-button-wrapper .select-language form {
+header.header-wrapper .wpml-button-wrapper .select-language form {
   border: 0px;
 }
-header .wpml-button-wrapper .select-language form select {
+header.header-wrapper .wpml-button-wrapper .select-language form select {
   background-color: transparent;
   border: 0px;
 }
-header .header-middle .logo {
+header.header-wrapper .header-middle .logo {
   margin-bottom: 15px;
 }
-header .header-right .button {
+header.header-wrapper .header-right .button {
   font-weight: 700;
   line-height: 18px;
   font-size: 18px;
@@ -16233,11 +16278,11 @@ header .header-right .button {
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
-header .header-right .button:hover {
+header.header-wrapper .header-right .button:hover {
   background-color: #FF4E2A;
   color: #fff;
 }
-header .search-box-wrapper {
+header.header-wrapper .search-box-wrapper {
   max-width: 137px;
   overflow: hidden;
   position: relative;
@@ -16246,10 +16291,10 @@ header .search-box-wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-header .search-box-wrapper form {
+header.header-wrapper .search-box-wrapper form {
   position: relative;
 }
-header .search-box-wrapper form input {
+header.header-wrapper .search-box-wrapper form input {
   height: 38px;
   width: 100%;
   padding: 0px 10px;
@@ -16257,22 +16302,22 @@ header .search-box-wrapper form input {
   font-weight: 400;
   color: #61BC47;
 }
-header .search-box-wrapper form input::-webkit-input-placeholder {
-  color: rgba(97, 188, 71, 0.4);
+header.header-wrapper .search-box-wrapper form input::-webkit-input-placeholder {
+  color: #787878;
 }
-header .search-box-wrapper form input::-moz-placeholder {
-  color: rgba(97, 188, 71, 0.4);
+header.header-wrapper .search-box-wrapper form input::-moz-placeholder {
+  color: #787878;
 }
-header .search-box-wrapper form input:-ms-input-placeholder {
-  color: rgba(97, 188, 71, 0.4);
+header.header-wrapper .search-box-wrapper form input:-ms-input-placeholder {
+  color: #787878;
 }
-header .search-box-wrapper form input::-ms-input-placeholder {
-  color: rgba(97, 188, 71, 0.4);
+header.header-wrapper .search-box-wrapper form input::-ms-input-placeholder {
+  color: #787878;
 }
-header .search-box-wrapper form input::placeholder {
-  color: rgba(97, 188, 71, 0.4);
+header.header-wrapper .search-box-wrapper form input::placeholder {
+  color: #787878;
 }
-header .search-box-wrapper form button {
+header.header-wrapper .search-box-wrapper form button {
   background: transparent;
   position: absolute;
   right: 20px;
@@ -16284,6 +16329,22 @@ header .search-box-wrapper form button {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   font-weight: 500;
+}
+header.header-wrapper.sticky {
+  top: 0 !important;
+  width: 100%;
+  position: fixed !important;
+  background: #fff;
+  -webkit-animation: sticky 0.8s ease-in-out;
+          animation: sticky 0.8s ease-in-out;
+  -webkit-box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
+          box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
+  z-index: 99;
+}
+@media (max-width: 767px) {
+  header.header-wrapper.sticky {
+    position: relative;
+  }
 }
 
 .navmanus {
@@ -16416,11 +16477,11 @@ header .search-box-wrapper form button {
   line-height: 63px;
   text-align: center;
   letter-spacing: 0.15px;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   padding-bottom: 30px;
 }
 .newsletter-subscribe-wrapper .fotter-head .button {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -16446,7 +16507,7 @@ header .search-box-wrapper form button {
   margin-top: 30px;
 }
 .footer-wrapper .single-footer-wid h4, .footer-wrapper .single-footer-wid .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -16460,7 +16521,7 @@ header .search-box-wrapper form button {
   display: block;
 }
 .footer-wrapper .single-footer-wid ul li a {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -16523,7 +16584,7 @@ header .search-box-wrapper form button {
 }
 .hero .head-text h1, .hero .head-text .h1 {
   font-weight: 700;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   line-height: 120%;
   color: #fff;
 }
@@ -16536,7 +16597,7 @@ header .search-box-wrapper form button {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 550px !important;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.15px;
@@ -16567,7 +16628,7 @@ header .search-box-wrapper form button {
   margin-bottom: 90px;
 }
 .hero-product-wrapper .section-head h4, .hero-product-wrapper .section-head .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -16578,7 +16639,7 @@ header .search-box-wrapper form button {
   color: #61BC47 !important;
 }
 .hero-product-wrapper .section-head h2, .hero-product-wrapper .section-head .h2 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -16592,7 +16653,7 @@ header .search-box-wrapper form button {
   margin-top: 30px;
 }
 .hero-product-wrapper .dog-sleep .best-helth .beat-info-head h5, .hero-product-wrapper .dog-sleep .best-helth .beat-info-head .h5 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -16603,7 +16664,7 @@ header .search-box-wrapper form button {
 }
 .hero-product-wrapper .dog-sleep .best-helth .beat-info-head p {
   color: #000;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -16616,7 +16677,7 @@ header .search-box-wrapper form button {
   padding-bottom: 60px;
 }
 .best-features-wrapper .section-head h2, .best-features-wrapper .section-head .h2 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 43px;
@@ -16630,7 +16691,7 @@ header .search-box-wrapper form button {
   margin-top: 30px;
 }
 .best-features-wrapper .best-helth .beat-info-head h5, .best-features-wrapper .best-helth .beat-info-head .h5 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -16641,7 +16702,7 @@ header .search-box-wrapper form button {
 }
 .best-features-wrapper .best-helth .beat-info-head p {
   color: #000;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -16659,7 +16720,7 @@ header .search-box-wrapper form button {
   position: absolute;
   top: 37%;
   left: 24%;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -16674,7 +16735,7 @@ header .search-box-wrapper form button {
   position: absolute;
   top: 37%;
   left: 24%;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -16689,7 +16750,7 @@ header .search-box-wrapper form button {
   position: absolute;
   top: 37%;
   left: 24%;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -16704,7 +16765,7 @@ header .search-box-wrapper form button {
   background-color: #61BC47;
   padding: 15px 100px;
   color: #fff;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -16728,7 +16789,7 @@ header .search-box-wrapper form button {
   margin-bottom: 50px;
 }
 .custom-food-grid-wrapper .custom-hrad .head h2, .custom-food-grid-wrapper .custom-hrad .head .h2 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -16740,7 +16801,7 @@ header .search-box-wrapper form button {
 .custom-food-grid-wrapper .custom-hrad .head h5, .custom-food-grid-wrapper .custom-hrad .head .h5 {
   max-width: 675px;
   margin: 0 auto;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -16762,7 +16823,7 @@ header .search-box-wrapper form button {
   text-align: right;
 }
 .custom-food-grid-wrapper .kakbo .save-manuy .best-save .beat-info-head p {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -16777,7 +16838,7 @@ header .search-box-wrapper form button {
   padding-left: 20px;
 }
 .custom-food-grid-wrapper .kakbo .save-manuy-2 .best-save .beat-info-head h5, .custom-food-grid-wrapper .kakbo .save-manuy-2 .best-save .beat-info-head .h5 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -16788,7 +16849,7 @@ header .search-box-wrapper form button {
   text-align: left;
 }
 .custom-food-grid-wrapper .kakbo .save-manuy-2 .best-save .beat-info-head p {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -16804,7 +16865,7 @@ header .search-box-wrapper form button {
   background-color: #FF4E2A;
   padding: 15px 100px;
   color: #fff;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -16827,7 +16888,7 @@ header .search-box-wrapper form button {
   padding-bottom: 70px;
 }
 .custom-grid-wrapper .section-heading h2, .custom-grid-wrapper .section-heading .h2 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -16840,7 +16901,7 @@ header .search-box-wrapper form button {
   margin: 0 auto;
   width: 474px;
   max-width: 100%;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -16882,7 +16943,7 @@ header .search-box-wrapper form button {
   margin-bottom: 30px;
 }
 .custom-grid-wrapper .dog-sucsess .headline-ill-dog h4, .custom-grid-wrapper .dog-sucsess .headline-ill-dog .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -16895,7 +16956,7 @@ header .search-box-wrapper form button {
   margin-bottom: 30px;
 }
 .custom-grid-wrapper .dog-sucsess .helthy-dog h4, .custom-grid-wrapper .dog-sucsess .helthy-dog .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -16908,7 +16969,7 @@ header .search-box-wrapper form button {
 .custom-grid-wrapper .dog-sucsess .bad-dog p {
   padding-right: 10px;
   padding-left: 30px;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -16923,7 +16984,7 @@ header .search-box-wrapper form button {
   background-color: #61BC47;
   padding: 15px 100px;
   color: #fff;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -16948,7 +17009,7 @@ header .search-box-wrapper form button {
   background-color: #fff;
 }
 .save-time .Convenience h5, .save-time .Convenience .h5, .save-time .money-offer h5, .save-time .money-offer .h5, .save-time .thanks h5, .save-time .thanks .h5 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -16969,7 +17030,7 @@ header .search-box-wrapper form button {
   margin-bottom: 30px;
 }
 .link-company .prodact .head-prodact .title-main h5, .link-company .prodact .head-prodact .title-main .h5 {
-  font-family: "AvertaCY-Black", sans-serif;
+  font-family: "Averta CY";
   font-style: italic;
   font-weight: 700;
   font-size: 24px;
@@ -16982,7 +17043,7 @@ header .search-box-wrapper form button {
   padding-bottom: 30px;
 }
 .link-company .prodact .head-prodact .head-prodact-company h2, .link-company .prodact .head-prodact .head-prodact-company .h2 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -16994,7 +17055,7 @@ header .search-box-wrapper form button {
 .link-company .prodact .head-prodact .head-prodact-company h4, .link-company .prodact .head-prodact .head-prodact-company .h4 {
   max-width: 820px;
   margin: 0 auto;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -17008,7 +17069,7 @@ header .search-box-wrapper form button {
   padding-bottom: 30px;
 }
 .link-company .prodact .head-prodact .title-sub h4, .link-company .prodact .head-prodact .title-sub .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -17028,7 +17089,7 @@ header .search-box-wrapper form button {
   padding-bottom: 30px;
 }
 .dog-food .dog-food-row .dog-food-head .title h4, .dog-food .dog-food-row .dog-food-head .title .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -17045,7 +17106,7 @@ header .search-box-wrapper form button {
 .dog-food .dog-food-row .dog-food-5 p {
   padding-top: 15px;
   color: #095052;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -17064,7 +17125,7 @@ header .search-box-wrapper form button {
   max-width: 100%;
   padding-top: 15px;
   color: #fff !important;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -17082,7 +17143,7 @@ header .search-box-wrapper form button {
   padding-bottom: 30px;
 }
 .cat-food .cat-food-row .cat-food-head .title h4, .cat-food .cat-food-row .cat-food-head .title .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -17098,7 +17159,7 @@ header .search-box-wrapper form button {
 }
 .cat-food .cat-food-row .cat-food-5 p {
   padding-top: 15px;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -17117,7 +17178,7 @@ header .search-box-wrapper form button {
   width: 150px;
   max-width: 100%;
   padding-top: 15px;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -17145,8 +17206,7 @@ header .search-box-wrapper form button {
 }
 .card-weper .dog-card .dog-helth-card .bg-dog .content-card .head-card h4, .card-weper .dog-card .dog-helth-card .bg-dog .content-card .head-card .h4 {
   padding-left: 20px;
-  position: relative;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -17161,7 +17221,7 @@ header .search-box-wrapper form button {
 }
 .card-weper .dog-card .dog-helth-card .bg-dog .content-card .heading h4, .card-weper .dog-card .dog-helth-card .bg-dog .content-card .heading .h4 {
   max-width: 490px;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
@@ -17171,7 +17231,7 @@ header .search-box-wrapper form button {
 .card-weper .dog-card .dog-helth-card .bg-dog .content-card .heading p {
   margin-top: 30px;
   max-width: 390px;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -17202,7 +17262,7 @@ header .search-box-wrapper form button {
   padding-top: 30px;
 }
 .love-dog .dog-lover-1 .info .title-love h5, .love-dog .dog-lover-1 .info .title-love .h5 {
-  font-family: "AvertaCY-Black", sans-serif !important;
+  font-family: "Averta CY" !important;
   font-style: italic !important;
   font-weight: 700;
   font-size: 24px;
@@ -17211,7 +17271,7 @@ header .search-box-wrapper form button {
   color: #61BC47 !important;
 }
 .love-dog .dog-lover-1 .info .head-love h2, .love-dog .dog-lover-1 .info .head-love .h2 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
@@ -17220,7 +17280,7 @@ header .search-box-wrapper form button {
   padding-bottom: 30px;
 }
 .love-dog .dog-lover-1 .info .head-love p {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -17233,7 +17293,7 @@ header .search-box-wrapper form button {
 }
 .love-dog .dog-lover-1 .info .info-love .info-love-4 p {
   padding-left: 20px;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -17258,7 +17318,7 @@ header .search-box-wrapper form button {
   margin-bottom: 10px;
 }
 .pet-buddy-eat .dog-eat .eat-text .title-eat h5, .pet-buddy-eat .dog-eat .eat-text .title-eat .h5 {
-  font-family: "AvertaCY-Black", sans-serif;
+  font-family: "Averta CY";
   font-style: italic;
   font-weight: 700;
   font-size: 24px;
@@ -17267,7 +17327,7 @@ header .search-box-wrapper form button {
   color: #61BC47;
 }
 .pet-buddy-eat .dog-eat .eat-text .head-eat h4, .pet-buddy-eat .dog-eat .eat-text .head-eat .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
@@ -17277,7 +17337,7 @@ header .search-box-wrapper form button {
 .pet-buddy-eat .dog-eat .eat-text .eat-more p {
   padding-top: 30px;
   padding-right: 100px;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -17296,7 +17356,7 @@ header .search-box-wrapper form button {
   margin: 0 auto;
 }
 .slider-worper .slider-dog .text .slider-text-1 h4, .slider-worper .slider-dog .text .slider-text-1 .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -17305,7 +17365,7 @@ header .search-box-wrapper form button {
   color: #095052;
 }
 .slider-worper .slider-dog .text .slider-text-1 p {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -17317,7 +17377,7 @@ header .search-box-wrapper form button {
   margin-top: 30px;
 }
 .slider-worper .slider-dog .text .slider-text-2 h6, .slider-worper .slider-dog .text .slider-text-2 .h6 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -17327,7 +17387,7 @@ header .search-box-wrapper form button {
   margin-bottom: 5px;
 }
 .slider-worper .slider-dog .text .slider-text-2 p {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -17478,7 +17538,7 @@ header .search-box-wrapper form button {
   margin: 0 auto;
 }
 .part-halth-dog .beuty-dogs .beuty-hrad h4, .part-halth-dog .beuty-dogs .beuty-hrad .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -17491,7 +17551,7 @@ header .search-box-wrapper form button {
   margin-top: 30px;
 }
 .part-halth-dog .beuty-dogs .beuty-dog-text h4, .part-halth-dog .beuty-dogs .beuty-dog-text .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -17500,7 +17560,7 @@ header .search-box-wrapper form button {
   color: #095052;
 }
 .part-halth-dog .beuty-dogs .beuty-dog-text p {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -17514,7 +17574,7 @@ header .search-box-wrapper form button {
 .part-halth-dog .beuty-dogs .text p {
   max-width: 420px;
   margin: 0 auto;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -17525,7 +17585,7 @@ header .search-box-wrapper form button {
 }
 
 .coustom-medicin-wrapper .medicin-dog h2, .coustom-medicin-wrapper .medicin-dog .h2 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -17553,7 +17613,7 @@ header .search-box-wrapper form button {
   padding-bottom: 20px;
   max-width: 680px;
   margin: 0 auto;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -17567,7 +17627,7 @@ header .search-box-wrapper form button {
   margin-bottom: 80px;
 }
 .save-time-wepar .dog-helth .save-head-waoeer h4, .save-time-wepar .dog-helth .save-head-waoeer .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -17583,7 +17643,7 @@ header .search-box-wrapper form button {
   position: absolute;
   top: 55%;
   left: 60%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 20px !important;
@@ -17603,7 +17663,7 @@ header .search-box-wrapper form button {
   margin-top: 10px;
 }
 .save-time-wepar .dog-helth .dog-money .save h4, .save-time-wepar .dog-helth .dog-money .save .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -17615,7 +17675,7 @@ header .search-box-wrapper form button {
   margin-bottom: 30px;
 }
 .save-time-wepar .dog-helth .dog-money .save p {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -17625,7 +17685,7 @@ header .search-box-wrapper form button {
 }
 .save-time-wepar .dog-helth .dog-money .save h6, .save-time-wepar .dog-helth .dog-money .save .h6 {
   margin-top: 10px;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -17642,7 +17702,7 @@ header .search-box-wrapper form button {
   padding-bottom: 80px;
 }
 .sefty-good .dog-food-row .dog-food-head .title h4, .sefty-good .dog-food-row .dog-food-head .title .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -17669,7 +17729,7 @@ header .search-box-wrapper form button {
 .sefty-good .dog-food-row .save-helth .info-helth p {
   max-width: 285px;
   margin: 0 auto;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -17693,7 +17753,7 @@ header .search-box-wrapper form button {
   margin-bottom: 50px;
 }
 .card-wepeer .card-head h5, .card-wepeer .card-head .h5 {
-  font-family: "AvertaCY-Black", sans-serif;
+  font-family: "Averta CY";
   font-style: italic;
   font-weight: 700;
   font-size: 24px;
@@ -17703,7 +17763,7 @@ header .search-box-wrapper form button {
   color: #61BC47;
 }
 .card-wepeer .card-head h2, .card-wepeer .card-head .h2 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -17715,7 +17775,7 @@ header .search-box-wrapper form button {
 .card-wepeer .card-head p {
   max-width: 825px;
   margin: 0 auto;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -17751,7 +17811,7 @@ header .search-box-wrapper form button {
   cursor: pointer;
 }
 .card-wepeer .card-2 .card-info .head h5, .card-wepeer .card-2 .card-info .head .h5, .card-wepeer .card .card-info .head h5, .card-wepeer .card .card-info .head .h5 {
-  font-family: "AvertaCY-Black", sans-serif;
+  font-family: "Averta CY";
   font-style: italic;
   font-weight: 700;
   font-size: 24px;
@@ -17762,7 +17822,7 @@ header .search-box-wrapper form button {
   color: #095052;
 }
 .card-wepeer .card-2 .card-info .head h4, .card-wepeer .card-2 .card-info .head .h4, .card-wepeer .card .card-info .head h4, .card-wepeer .card .card-info .head .h4 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
@@ -17772,7 +17832,7 @@ header .search-box-wrapper form button {
   margin-bottom: 30px;
 }
 .card-wepeer .card-2 .card-info .head p, .card-wepeer .card .card-info .head p {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -17787,7 +17847,7 @@ header .search-box-wrapper form button {
   max-width: none !important;
 }
 .card-wepeer .card-2 .card-info .table tr th p, .card-wepeer .card .card-info .table tr th p {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -17827,7 +17887,7 @@ header .search-box-wrapper form button {
   padding-bottom: 80px;
 }
 .myAccroding .accroding-into .heading-accdroing h2, .myAccroding .accroding-into .heading-accdroing .h2 {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -17848,7 +17908,7 @@ header .search-box-wrapper form button {
   background-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -17882,7 +17942,7 @@ header .search-box-wrapper form button {
   padding-right: 0px !important;
 }
 .myAccroding .accroding-into .accordion .accordion-body p {
-  font-family: "INTRO-REGULAR", sans-serif;
+  font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

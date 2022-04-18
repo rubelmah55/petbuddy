@@ -1,4 +1,4 @@
-header {
+header.header-wrapper {
     .header-top {
         position: relative;
         padding:0px;
@@ -100,7 +100,7 @@ header {
                 color: $primary;
 
                 &::placeholder {
-                    color: rgba($primary, 0.4);
+                    color: #787878;
                 }
             }
     
@@ -117,6 +117,21 @@ header {
                 font-weight: 500;
             }
         }
+    }
+
+    &.sticky {
+        top: 0 !important;
+        width: 100%;
+        position: fixed !important;      
+        background: #fff;
+        animation: sticky .8s ease-in-out;
+        box-shadow: 0 13px 35px -12px rgba(35,35,35,.15);
+        z-index:99;
+     
+        @media (max-width: 767px) {
+            position: relative;
+        }
+
     }
 
 }

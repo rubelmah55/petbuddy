@@ -8,10 +8,11 @@
 // Font Family Variable with Value
 // font-family: 'Roboto', sans-serif;
 
-$heading-font: "INTRO-REGULAR", sans-serif;
-$body-font: "INTRO-REGULAR", sans-serif;
-$lebel-font:'AvertaCY-Black',sans-serif;   //head geree font 
-$rubica:'Roboto', sans-serif;
+$heading-font: "Intro";
+$body-font: "Intro";
+$lebel-font:'Averta CY';   //head geree font 
+$rubica:'Roboto';
+
 body {
     font-family: $body-font;
     font-size: 15px;
@@ -21,15 +22,38 @@ body {
     background-color: #fff;
 }
 @font-face {
-    font-family: 'AvertaCY-Black';
-    src: url(../Averta-CY/AvertaCY-Black.otf) ,
-    url(../Averta-CY/AvertaCY-BlackItalic.otf),
-    url(../Averta-CY/AvertaCY-Bold.otf),url(../Averta-CY/AvertaCY-BoldItalic.otf),url(../Averta-CY/AvertaCY-Extrabold.otf),url(../Averta-CY/AvertaCY-Regular.otf);
+    font-family: 'Intro';
+    src: url('../fonts/Intro.eot');
+    src: url('../fonts/Intro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Intro.woff2') format('woff2'),
+        url('../fonts/Intro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
-    font-family: "INTRO-REGULAR";
-    src: url(../Intro/INTRO-LIGHT-ALT.OTF) ,url(../Intro/INTRO-REGULAR.OTF) ,url(../Intro/INTRO-REGULAR-CAPS.OTF),url(../Intro/INTRO-BOLD.OTF),url(../Intro/INTRO-BOLD-ALT.OTF),url(../Intro/INTRO-BOLD-CAPS.OTF);
+    font-family: 'Intro';
+    src: url('../fonts/Intro-Bold.eot');
+    src: url('../fonts/Intro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Intro-Bold.woff2') format('woff2'),
+        url('../fonts/Intro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Averta CY';
+    src: url('../fonts/AvertaCY-BoldItalic.eot');
+    src: url('../fonts/AvertaCY-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvertaCY-BoldItalic.woff2') format('woff2'),
+        url('../fonts/AvertaCY-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
 h1,
 h2,
 h3,
