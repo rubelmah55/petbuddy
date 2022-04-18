@@ -685,6 +685,24 @@
         }
     }
 }
+.slider-worper ul  li {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    display: inline-block;
+    button{
+    width: 20px;
+    height: 20px;
+    color: transparent !important;
+    background: #ccc!important;
+    }
+    &.slick-active{
+      button{
+        background:$primary !important;
+      }
+    }
+
+}
 
 
 //section12
