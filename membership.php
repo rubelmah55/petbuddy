@@ -46,7 +46,7 @@ get_header(); ?>
             </div>
             <div class="row align-items-center justify-content-between flex-row-reverse mt-40">
                 <div class="col-12 col-md-6 col-lg-6 ">
-                    <div class="beuty-dog-image">
+                    <div class="beuty-dog-image text-end">
                         <img src="<?php echo AIRDESIGNS_DIR_IMG.'/petbuddy/food.png' ?>"alt="<?php bloginfo('name'); ?>">
                     </div>
                 </div>
@@ -150,7 +150,7 @@ get_header(); ?>
                 </div>
            </div>
            <div class="col-12 col-md-4 col-lg-4">
-           <div class="kakbo">
+           <div class="kakbos">
                     <div class="save-manuy-2 d-flex">
                             <div class="dog-save-img">
                                 <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/heart-box.svg' ?>"alt="<?php bloginfo('name'); ?>">
