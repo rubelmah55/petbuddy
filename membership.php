@@ -6,26 +6,19 @@ Template Name: Membership Page
 get_header(); ?>
 
  <!-- hero sectio -->
-        <div class="hero d-flex align-items-center" style="background-image: url('<?php echo AIRDESIGNS_DIR_IMG.'/petbuddy/hero-2.png' ?>')">
+        <div class="hero hero-overly d-flex align-items-center" style="background-image: url('<?php echo AIRDESIGNS_DIR_IMG.'/petbuddy/hero-2.png' ?>')">
             <div class="container hero-content">
                 <div class="head-text">
                     <h1>Кажи сбогом на тичането до кварталния зоомагазин</h1>
                 </div>
                 <div class="head-content">
-                    <table class="table">
-                        <tr>
-                            <td><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"> </td>
-                            <td> <span>20% отстъпки </span></td>
-                        </tr>
-                        <tr>
-                            <td><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"> </td>
-                            <td><span>Безплатна доставка</span></td>
-                        </tr>
-                        <tr>
-                            <td><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"> </td>
-                            <td><span>Безплатен ветеринар и напомняния за обезпаразитяване</span></td>
-                        </tr>
-                    </table>
+                    <div class="table">
+                        <ul>
+                            <li><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"> <span>20% отстъпки </span></li>
+                            <li><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"> <span>Безплатна доставка</span></li>
+                            <li><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"> <span>Безплатен ветеринар и напомняния за обезпаразитяване</span></li>
+                        </ul>
+                    </div>
                 </div>
                 <button class="button">Стани член</button>
             </div>

@@ -15300,11 +15300,13 @@ h2, .h2 {
 @media (max-width: 991px) {
   h2, .h2 {
     font-size: 27px !important;
+    line-height: 1.5 !important;
   }
 }
 @media (max-width: 425px) {
   h2, .h2 {
     font-size: 24px !important;
+    line-height: 1.2 !important;
   }
 }
 
@@ -16563,17 +16565,6 @@ header.header-wrapper.sticky {
   padding-top: 120px;
   padding-bottom: 90px;
 }
-.hero::after {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  clear: both;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #131a1795;
-  z-index: 1;
-}
 .hero .hero-content {
   z-index: 5;
 }
@@ -16623,6 +16614,18 @@ header.header-wrapper.sticky {
 .hero .button:hover {
   background-color: #095052;
   color: #61BC47;
+}
+
+.hero-overly::after {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  clear: both;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #131a1795;
+  z-index: 1;
 }
 
 .hero-product-wrapper {
@@ -16817,17 +16820,17 @@ header.header-wrapper.sticky {
   color: #000 !important;
   margin-bottom: 0px !important;
 }
-.custom-food-grid-wrapper .kakbo .save-manuy {
+.custom-food-grid-wrapper .kakbo .save-manuy, .custom-food-grid-wrapper .kakbos .save-manuy {
   margin-top: 40px;
   padding-right: 0px;
 }
-.custom-food-grid-wrapper .kakbo .save-manuy .best-save {
+.custom-food-grid-wrapper .kakbo .save-manuy .best-save, .custom-food-grid-wrapper .kakbos .save-manuy .best-save {
   padding-right: 20px;
 }
-.custom-food-grid-wrapper .kakbo .save-manuy .best-save .beat-info-head h5, .custom-food-grid-wrapper .kakbo .save-manuy .best-save .beat-info-head .h5 {
+.custom-food-grid-wrapper .kakbo .save-manuy .best-save .beat-info-head h5, .custom-food-grid-wrapper .kakbo .save-manuy .best-save .beat-info-head .h5, .custom-food-grid-wrapper .kakbos .save-manuy .best-save .beat-info-head h5, .custom-food-grid-wrapper .kakbos .save-manuy .best-save .beat-info-head .h5 {
   text-align: right;
 }
-.custom-food-grid-wrapper .kakbo .save-manuy .best-save .beat-info-head p {
+.custom-food-grid-wrapper .kakbo .save-manuy .best-save .beat-info-head p, .custom-food-grid-wrapper .kakbos .save-manuy .best-save .beat-info-head p {
   font-family: "Intro";
   font-style: normal;
   font-weight: 400;
@@ -16836,13 +16839,13 @@ header.header-wrapper.sticky {
   letter-spacing: 0.15px;
   color: #000;
 }
-.custom-food-grid-wrapper .kakbo .save-manuy-2 {
+.custom-food-grid-wrapper .kakbo .save-manuy-2, .custom-food-grid-wrapper .kakbos .save-manuy-2 {
   margin-top: 40px;
 }
-.custom-food-grid-wrapper .kakbo .save-manuy-2 .best-save {
+.custom-food-grid-wrapper .kakbo .save-manuy-2 .best-save, .custom-food-grid-wrapper .kakbos .save-manuy-2 .best-save {
   padding-left: 20px;
 }
-.custom-food-grid-wrapper .kakbo .save-manuy-2 .best-save .beat-info-head h5, .custom-food-grid-wrapper .kakbo .save-manuy-2 .best-save .beat-info-head .h5 {
+.custom-food-grid-wrapper .kakbo .save-manuy-2 .best-save .beat-info-head h5, .custom-food-grid-wrapper .kakbo .save-manuy-2 .best-save .beat-info-head .h5, .custom-food-grid-wrapper .kakbos .save-manuy-2 .best-save .beat-info-head h5, .custom-food-grid-wrapper .kakbos .save-manuy-2 .best-save .beat-info-head .h5 {
   font-family: "Intro";
   font-style: normal;
   font-weight: 700;
@@ -16853,7 +16856,7 @@ header.header-wrapper.sticky {
   margin-bottom: 5px;
   text-align: left;
 }
-.custom-food-grid-wrapper .kakbo .save-manuy-2 .best-save .beat-info-head p {
+.custom-food-grid-wrapper .kakbo .save-manuy-2 .best-save .beat-info-head p, .custom-food-grid-wrapper .kakbos .save-manuy-2 .best-save .beat-info-head p {
   font-family: "Intro";
   font-style: normal;
   font-weight: 400;
@@ -17403,6 +17406,7 @@ header.header-wrapper.sticky {
 
 .slider-worper ul {
   width: 100px;
+  margin-top: 30px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17460,8 +17464,13 @@ header.header-wrapper.sticky {
   }
 }
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   .dog-love-img {
-    margin-top: 35px;
+    margin-top: 30px;
   }
 
   .custom-food-grid-wrapper .kakbo .mr-50 {
@@ -17477,7 +17486,7 @@ header.header-wrapper.sticky {
   }
 
   .card-weper .dog-card .dog-helth-card .bg-dog .content-card .heading {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .pet-buddy-eat .dog-eat .eat-dog-image .dog-happy {
@@ -17498,6 +17507,111 @@ header.header-wrapper.sticky {
 
   .custom-grid-wrapper .card-dog {
     padding: 10px !important;
+  }
+
+  .hero-product-wrapper .section-head {
+    margin-bottom: 30px;
+  }
+
+  .hero-product-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .best-features-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .section-head {
+    margin-top: 30px;
+  }
+
+  .custom-food-grid-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #E6EDEE;
+  }
+
+  .custom-food-grid-wrapper .custom-hrad {
+    margin-bottom: 20px;
+  }
+
+  .kakbo {
+    margin-bottom: 30px;
+  }
+
+  .custom-grid-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .custom-grid-wrapper .dog-sucsess {
+    padding-top: 0px !important;
+    margin-bottom: 50px;
+  }
+
+  .save-time .Convenience h5, .save-time .Convenience .h5, .save-time .money-offer h5, .save-time .money-offer .h5, .save-time .thanks h5, .save-time .thanks .h5 {
+    margin-bottom: 0px !important;
+    padding-top: none;
+    margin-left: 30px;
+    margin-bottom: 0px !important;
+  }
+
+  .link-company {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .card-weper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .pet-buddy-eat {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .slider-worper {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .newsletter-subscribe-wrapper .pt-60 {
+    padding-top: 30px !important;
+  }
+
+  .newsletter-subscribe-wrapper .pb-50 {
+    padding-bottom: 30px !important;
+  }
+
+  .footer-bottom-wrapper .copyright-text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .dog-food .dog-food-row .pt p {
+    top: 45%;
+    left: 15%;
+  }
+
+  .cat-food .cat-food-row .pt p {
+    top: 45%;
+    left: 15%;
+  }
+
+  .love-dog .dog-lover-1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .kakbos .ml-50 {
+    margin-left: 0px !important;
+  }
+
+  .custom-food-grid-wrapper .kakbo .save-manuy .best-save, .custom-food-grid-wrapper .kakbos .save-manuy .best-save {
+    padding-left: 20px;
   }
 }
 @media (max-width: 425px) {
@@ -17646,7 +17760,7 @@ header.header-wrapper.sticky {
 }
 .save-time-wepar .dog-helth .dog-money .image a {
   position: absolute;
-  top: 55%;
+  top: 45%;
   left: 60%;
   font-family: "Roboto";
   font-style: normal;
@@ -17808,7 +17922,7 @@ header.header-wrapper.sticky {
   max-width: 100%;
   padding: 40px;
   margin: 10px;
-  height: 520px;
+  height: 550px;
 }
 .card-wepeer .card-2 .card-info, .card-wepeer .card .card-info {
   -webkit-transition: all 0.6s ease-in-out;
@@ -17967,6 +18081,46 @@ header.header-wrapper.sticky {
   background-color: #61BC47;
 }
 
+@media (max-width: 768px) {
+  .save-time-wepar .dog-helth {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .myAccroding, .card-wepeer, .sefty-good .dog-food-row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .myAccroding .accroding-into .heading-accdroing {
+    padding-bottom: 30px;
+  }
+
+  .sefty-good .dog-food-row .save-helth {
+    margin-top: 30px;
+  }
+
+  .custom-food-grid-wrapper .kakbo .save-manuy .best-save .beat-info-head h5, .custom-food-grid-wrapper .kakbo .save-manuy .best-save .beat-info-head .h5 {
+    text-align: left !important;
+  }
+
+  .text-end {
+    text-align: left !important;
+  }
+
+  .kakbo .d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: row-reverse !important;
+            flex-direction: row-reverse !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 @media (max-width: 425px) {
   .save-time-wepar .dog-helth .dog-money .image a {
     top: 42%;

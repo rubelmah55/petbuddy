@@ -86,7 +86,7 @@
             position: relative;
             .image{
                 a{  position: absolute;
-                    top: 55%;
+                    top: 45%;
                     left: 60%;
                     font-family: $rubica;
                     font-style: normal;
@@ -215,7 +215,7 @@
         max-width: 100%;
         padding: 40px;
         margin: 10px;
-        height: 520px;
+        height: 550px;
     }
     .card-2 , .card{
         .card-info{
@@ -358,8 +358,35 @@
 
 
 ///responsive
+@media (max-width:768px ){
+    .save-time-wepar .dog-helth {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .myAccroding , .card-wepeer , .sefty-good .dog-food-row {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .myAccroding .accroding-into .heading-accdroing {
+        padding-bottom: 30px;
+    }
+    .sefty-good .dog-food-row .save-helth {
+        margin-top: 30px;
+    }
+    .custom-food-grid-wrapper .kakbo .save-manuy .best-save .beat-info-head h5, .custom-food-grid-wrapper .kakbo .save-manuy .best-save .beat-info-head .h5 {
+        text-align: left !important;
+    }
+    .text-end {
+        text-align: left !important;
+    }
+    .kakbo .d-flex {
+        display: flex !important;
+        flex-direction: row-reverse !important;
+        align-items: flex-start;
+    }
+}
+@media (max-width:425px ){
 
-@media (max-width:425px){
     .save-time-wepar .dog-helth .dog-money .image a {
         top: 42%;
         left: 50%;

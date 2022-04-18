@@ -208,7 +208,7 @@ get_header(); ?>
                 </div>
            </div>
            <div class="col-sm-12 col-md-4 col-lg-4">
-           <div class="kakbo">
+           <div class="kakbos">
                     <div class="save-manuy-2 d-flex">
                             <div class="dog-save-img">
                                 <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/heart-box.svg' ?>"alt="<?php bloginfo('name'); ?>">
