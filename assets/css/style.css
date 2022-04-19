@@ -16240,41 +16240,43 @@ a {
   color: #fff;
 }
 
-header.header-wrapper .header-top {
+.header-wrapper .header-top {
   position: relative;
   padding: 0px;
   background-color: #fff;
 }
-header.header-wrapper .header-left .navbar ul li {
+.header-wrapper .header-left .navbar ul li {
   padding: 9px;
 }
-header.header-wrapper .header-left .navbar ul .dropdwon {
+.header-wrapper .header-left .navbar ul .dropdwon {
   position: relative;
 }
-header.header-wrapper .header-left .navbar ul .dropdwon .dropdwon-manu {
+.header-wrapper .header-left .navbar ul .dropdwon .dropdwon-manu {
   z-index: 10;
   display: none;
   position: absolute;
   background-color: #2E3A56;
   padding: 10px;
 }
-header.header-wrapper .header-left .navbar ul .dropdwon .dropdwon-manu ul li a {
+.header-wrapper .header-left .navbar ul .dropdwon .dropdwon-manu ul li a {
   color: #fff;
 }
-header.header-wrapper .header-left .navbar ul .dropdwon:hover .dropdwon-manu {
+.header-wrapper .header-left .navbar ul .dropdwon:hover .dropdwon-manu {
   display: block;
 }
-header.header-wrapper .wpml-button-wrapper .select-language form {
+.header-wrapper .wpml-button-wrapper .select-language form {
   border: 0px;
 }
-header.header-wrapper .wpml-button-wrapper .select-language form select {
+.header-wrapper .wpml-button-wrapper .select-language form select {
   background-color: transparent;
   border: 0px;
 }
-header.header-wrapper .header-middle .logo {
-  margin-bottom: 15px;
+.header-wrapper .header-middle .logo img {
+  padding-bottom: 15px;
+  max-width: 165px;
+  height: auto;
 }
-header.header-wrapper .header-right .button {
+.header-wrapper .header-right .button {
   font-weight: 700;
   line-height: 18px;
   font-size: 18px;
@@ -16286,11 +16288,11 @@ header.header-wrapper .header-right .button {
   transition: all 0.6s ease-in-out;
   color: #fff;
 }
-header.header-wrapper .header-right .button:hover {
-  background-color: #FF4E2A;
+.header-wrapper .header-right .button:hover {
+  background-color: #095052;
   color: #095052;
 }
-header.header-wrapper .search-box-wrapper {
+.header-wrapper .search-box-wrapper {
   max-width: 137px;
   overflow: hidden;
   position: relative;
@@ -16299,10 +16301,10 @@ header.header-wrapper .search-box-wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-header.header-wrapper .search-box-wrapper form {
+.header-wrapper .search-box-wrapper form {
   position: relative;
 }
-header.header-wrapper .search-box-wrapper form input {
+.header-wrapper .search-box-wrapper form input {
   height: 38px;
   width: 100%;
   padding: 0px 10px;
@@ -16310,22 +16312,22 @@ header.header-wrapper .search-box-wrapper form input {
   font-weight: 400;
   text-transform: lowercase !important;
 }
-header.header-wrapper .search-box-wrapper form input::-webkit-input-placeholder {
+.header-wrapper .search-box-wrapper form input::-webkit-input-placeholder {
   color: #787878;
 }
-header.header-wrapper .search-box-wrapper form input::-moz-placeholder {
+.header-wrapper .search-box-wrapper form input::-moz-placeholder {
   color: #787878;
 }
-header.header-wrapper .search-box-wrapper form input:-ms-input-placeholder {
+.header-wrapper .search-box-wrapper form input:-ms-input-placeholder {
   color: #787878;
 }
-header.header-wrapper .search-box-wrapper form input::-ms-input-placeholder {
+.header-wrapper .search-box-wrapper form input::-ms-input-placeholder {
   color: #787878;
 }
-header.header-wrapper .search-box-wrapper form input::placeholder {
+.header-wrapper .search-box-wrapper form input::placeholder {
   color: #787878;
 }
-header.header-wrapper .search-box-wrapper form button {
+.header-wrapper .search-box-wrapper form button {
   background: transparent;
   position: absolute;
   right: 10px;
@@ -16338,7 +16340,7 @@ header.header-wrapper .search-box-wrapper form button {
   transition: all 0.4s ease-in-out;
   font-weight: 500;
 }
-header.header-wrapper.sticky {
+.header-wrapper.sticky {
   top: 0 !important;
   width: 100%;
   position: fixed !important;
@@ -16350,7 +16352,7 @@ header.header-wrapper.sticky {
   z-index: 99;
 }
 @media (max-width: 767px) {
-  header.header-wrapper.sticky {
+  .header-wrapper.sticky {
     position: relative;
   }
 }
@@ -16455,15 +16457,11 @@ header.header-wrapper.sticky {
   background-color: #61BC47;
   border-radius: 50px;
   padding: 10px 70px;
-  color: wheat;
+  color: #fff;
 }
 .overlay .navbar .button:hover {
-  background-color: #FF4E2A;
-  color: #095052;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  background-color: #095052;
+  color: #61BC47;
 }
 
 .newsletter-subscribe-wrapper {
@@ -16503,7 +16501,7 @@ header.header-wrapper.sticky {
   transition: all 0.6s ease-in-out;
 }
 .newsletter-subscribe-wrapper .fotter-head .button:hover {
-  background-color: #FF4E2A;
+  background-color: #095052;
   color: #095052;
 }
 
@@ -16513,6 +16511,9 @@ header.header-wrapper.sticky {
 }
 .footer-wrapper .single-footer-wid {
   margin-top: 30px;
+}
+.footer-wrapper .single-footer-wid svg {
+  margin-bottom: 20px;
 }
 .footer-wrapper .single-footer-wid h4, .footer-wrapper .single-footer-wid .h4 {
   font-family: "Intro";
@@ -16686,6 +16687,11 @@ header.header-wrapper.sticky {
   letter-spacing: 0.15px;
 }
 
+.dog-love-img img {
+  max-width: 60px;
+  height: auto;
+}
+
 .best-features-wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -16844,6 +16850,10 @@ header.header-wrapper.sticky {
   line-height: 24px;
   letter-spacing: 0.15px;
   color: #000;
+}
+.custom-food-grid-wrapper .kakbo .dog-save-img img, .custom-food-grid-wrapper .kakbos .dog-save-img img {
+  max-width: 60px;
+  height: auto;
 }
 .custom-food-grid-wrapper .kakbo .save-manuy-2, .custom-food-grid-wrapper .kakbos .save-manuy-2 {
   margin-top: 40px;
@@ -17031,7 +17041,7 @@ header.header-wrapper.sticky {
   letter-spacing: 0.15px;
   color: #095052;
   margin-bottom: 5px;
-  padding-top: 15px;
+  padding-top: 0px;
   margin-left: 15px;
   margin-bottom: 0px !important;
 }
@@ -17255,6 +17265,7 @@ header.header-wrapper.sticky {
 }
 .card-weper .dog-card .dog-helth-card .bg-dog .content-card .lest-sub-buttom {
   margin-top: 40px;
+  margin-bottom: 30px;
 }
 .card-weper .dog-card .dog-helth-card .bg-dog .content-card .lest-sub-buttom a {
   border: 2px solid #095052;
@@ -17655,13 +17666,6 @@ header.header-wrapper.sticky {
 
   .custom-grid-wrapper .lest-sub-buttom a {
     padding: 10px 30px;
-  }
-
-  .save-time .save-money .d-flex {
-    display: block !important;
-    -webkit-box-flex: 0 !important;
-        -ms-flex: none !important;
-            flex: none !important;
   }
 
   .hero .head-text {

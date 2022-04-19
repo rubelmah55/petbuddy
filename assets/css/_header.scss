@@ -1,4 +1,4 @@
-header.header-wrapper {
+.header-wrapper {
     .header-top {
         position: relative;
         padding:0px;
@@ -49,7 +49,11 @@ header.header-wrapper {
     .header-middle { 
 
         .logo { 
-            margin-bottom: 15px;
+            img{
+                padding-bottom: 15px;
+                max-width: 165px;
+                height: auto;
+            }
 
             a { 
             
@@ -226,16 +230,12 @@ header.header-wrapper {
         .button{
             @include button;
             padding: 10px 70px;
-            color: wheat;
+            color:$white;
             &:hover{
                 @include hover-1 ;
-                color:$gray ;
+                color:$primary ;
             }
         }
     }
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
   }
   

@@ -98,6 +98,12 @@
         }
     }
 }
+.dog-love-img {
+    img{
+        max-width: 60px;
+        height: auto;
+    }
+}
 //section01
 //section02
 .best-features-wrapper{
@@ -213,6 +219,13 @@
                         color: $black;
                     }
                 }
+            }
+           
+        }
+        .dog-save-img {
+            img{
+                max-width: 60px;
+                height: auto;
             }
         }
         .save-manuy-2{
@@ -363,7 +376,7 @@
         }
         h5{
             @include typography-7;
-            padding-top: 15px; 
+            padding-top:0px; 
             margin-left: 15px;
             margin-bottom: 0px !important;
         }
@@ -539,6 +552,7 @@
                     }
                     .lest-sub-buttom{
                         margin-top: 40px;
+                        margin-bottom: 30px;
                         a{
                             border: 2px solid #095052;
                             border-radius: 50px;
@@ -907,10 +921,6 @@
     .custom-grid-wrapper .lest-sub-buttom a {
         padding: 10px 30px;
 
-    }
-    .save-time .save-money .d-flex{
-        display: block !important;
-        flex: none !important;
     }
     .hero .head-text {
         margin-top: 70px;

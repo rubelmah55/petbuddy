@@ -137,11 +137,11 @@ a {
     border-radius: 50px;
 }
 @mixin hover {
-    background-color: $primary;
+    background-color:$gray;
 
 }
 @mixin hover-1 {
-    background-color:$orange;
+    background-color:$gray;
     
 }
 @mixin hover-2 {

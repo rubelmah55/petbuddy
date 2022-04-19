@@ -39,15 +39,12 @@
                             <div class="navbar">
                                 <ul class="d-flex">
                                     <li class="dropdwon"><a href="#">Магазин</a> <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Vector-arrow.svg' ?>"  alt="<?php bloginfo('name'); ?>">
-                                        <div class="dropdwon-manu">
-                                            <ul>
-                                                <li><a href="#">Магазин</a></li>
-                                                <li><a href="#">Магазин</a></li>
-                                                <li><a href="#">Магазин</a></li>
-                                                <li><a href="#">Магазин</a></li>
-                                            </ul>
-                                        </div>
-                                
+                                        <ul class="dropdwon-manu">
+                                            <li><a href="#">Магазин</a></li>
+                                            <li><a href="#">Магазин</a></li>
+                                            <li><a href="#">Магазин</a></li>
+                                            <li><a href="#">Магазин</a></li>
+                                        </ul>
                                     </li>
                                     <li><a href="#">Членство</a></li>
                                     <li><a href="#"> Ветеринар</a></li>
