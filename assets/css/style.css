@@ -16284,10 +16284,11 @@ header.header-wrapper .header-right .button {
   padding: 10px 20px;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
+  color: #fff;
 }
 header.header-wrapper .header-right .button:hover {
   background-color: #FF4E2A;
-  color: #fff;
+  color: #095052;
 }
 header.header-wrapper .search-box-wrapper {
   max-width: 137px;
