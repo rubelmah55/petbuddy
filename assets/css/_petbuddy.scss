@@ -267,7 +267,10 @@
                     padding: 13px 70px;
                     color: $white;
                     background-color: $gray;
-
+                    &:hover{
+                        background-color:$primary;
+                        color: $gray;
+                    }
                 }
             }
         }
@@ -340,13 +343,15 @@
             }
         }
         .lest-sub-buttom {
-            
             a{
                 @include button;
                 padding: 13px 70px;
                 color: $white;
                 background-color: $primary;
-
+                &:hover{
+                    background-color:$orange;
+                    color: $gray;
+                }
             }
         }
     }
