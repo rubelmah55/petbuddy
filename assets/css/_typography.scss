@@ -23,10 +23,8 @@ body {
 }
 @font-face {
     font-family: 'Intro';
-    src: url('../fonts/Intro.eot');
-    src: url('../fonts/Intro.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Intro.woff2') format('woff2'),
-        url('../fonts/Intro.woff') format('woff');
+    src: url('../fonts/Intro-Regular.woff2') format('woff2'),
+        url('../fonts/Intro-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -34,9 +32,7 @@ body {
 
 @font-face {
     font-family: 'Intro';
-    src: url('../fonts/Intro-Bold.eot');
-    src: url('../fonts/Intro-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Intro-Bold.woff2') format('woff2'),
+    src: url('../fonts/Intro-Bold.woff2') format('woff2'),
         url('../fonts/Intro-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
@@ -45,12 +41,10 @@ body {
 
 @font-face {
     font-family: 'Averta CY';
-    src: url('../fonts/AvertaCY-BoldItalic.eot');
-    src: url('../fonts/AvertaCY-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/AvertaCY-BoldItalic.woff2') format('woff2'),
-        url('../fonts/AvertaCY-BoldItalic.woff') format('woff');
+    src: url('../fonts/AvertaCY-Bold.woff2') format('woff2'),
+        url('../fonts/AvertaCY-Bold.woff') format('woff');
     font-weight: bold;
-    font-style: italic;
+    font-style: normal;
     font-display: swap;
 }
 

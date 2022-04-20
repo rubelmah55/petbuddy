@@ -3,24 +3,41 @@
 Template Name: Home Page
 
 */
-get_header(); ?>
+get_header(); 
+
+$banner = get_field('banner');
+?>
 
  <!-- hero sectio -->
-        <div class="hero d-flex align-items-center" style="background-image: url('<?php echo AIRDESIGNS_DIR_IMG.'/Hero.png' ?>')">
+        <div class="hero d-flex align-items-center" style="background-image: url('<?php echo $banner['bg']; ?>')">
             <div class="container  hero-content">
                 <div class="head-text">
-                    <h1>Повече време за теб, по-добър живот за тях</h1>
+                    <?php 
+                        if(!empty($banner['title'])):
+                     ?>
+                    <h1><?php echo __($banner['title'], 'airdesigns'); ?></h1>
+                    <?php endif; ?>
                 </div>
                 <div class="head-content">
                     <div class="table">
                         <ul>
-                            <li><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"><span> Платформата, която мисли вместо теб, за да са по-здрави те.</span></li>
-                            <li><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"> <span>Създай профил на домашния ти любимец, остави  грижите на нас.</span></li>
-                            <li><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"> <span> Всeки месец, лесно и удобно за теб, вкусно за тях</span></li>
+                            <?php 
+                                if(!empty($banner['lists'])):
+                                    foreach ($banner['lists'] as $l):
+                             ?>
+                            <li><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/check-mark-3.svg' ?>"alt="<?php bloginfo('name'); ?>"><span> <?php echo __($l['item'], 'airdesigns'); ?></span></li>
+                            <?php 
+                                endforeach; endif;
+                             ?>
                         </ul>
                     </div>
                 </div>
-                <a herf="#" class="button">Стани член</a>
+                <?php 
+                    if(!empty($banner['button'])){
+                        printf(__('<a herf="%s" class="button" target="%s">%s</a>', 'airdesigns'), $banner['button']['url'],$banner['button']['target'], $banner['button']['title'] );    
+                    }
+                ?>
+        
             </div>
         </div>
 <!-- section-01 -->
@@ -28,60 +45,46 @@ get_header(); ?>
         <div class="container">
             <div class="row g-0 ">
                 <div class="section-head text-center ">
-                    <h4>Защо да си направя абонамент за членство в  ПетБъди?</h4>
-                    <h2>Какво получаваш ти като стопанин?</h2>
+                    <?php 
+                        $own = get_field('owner_features');
+                        if(!empty($own['subtitle'])){
+                            printf(__('<h4>%s</h4>', 'airdesigns'), $own['subtitle']);
+                        }
+
+                        if(!empty($own['title'])){
+                            printf(__('<h2>%s</h2>', 'airdesigns'), $own['title']);
+                        }
+                     ?>
                 </div>
                 <div class=" col-12 col-md-6 col-lg-6 pe-2">
-                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image.png' ?>"alt="<?php bloginfo('name'); ?>">
+                    <?php 
+                        if(!empty($own['left_image'])){
+                            printf('<img src="%s" alt="%s">', $own['left_image']['url'], $own['left_image']['atl']);
+                        }
+                     ?>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6 ps-2">
-                   <div class="dog-sleep d-flex align-items-center">
-                       <div class="dog-love-img">
-                       <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/save-time.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                       </div>
-                        <div class="best-helth">
-                            <div class="beat-info-head">
-                                <h5>Пестиш време</h5>
-                                <p>Не ходиш до магазина.  Всеки месец получаваш всичко необходимо за твоето животно автоматично</p>
-                            </div>
-                        </div>
-                   </div>
+                    <?php 
 
+                        if(!empty($own['features'])):
+                            foreach ($own['features'] as $f):
+                     ?>
                    <div class="dog-sleep d-flex align-items-center">
                        <div class="dog-love-img">
-                       <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/outline.svg' ?>"alt="<?php bloginfo('name'); ?>">
+                        <?php 
+                            printf('<img src="%s" alt="%s">', $f['icon']['url'], $f['icon']['alt']);
+                        ?>
                        </div>
                         <div class="best-helth">
                             <div class="beat-info-head">
-                                <h5>Подкрепа</h5>
-                                <p>Съвети и консултации от наши специалисти относно най-правилните продукти за твоя домашен любимец</p>
+                                <?php 
+                                    printf(__('<h5>%s</h5>', 'airdesigns'), $f['title']);
+                                    printf(__('<p>%s</p>', 'airdesigns'), $f['content']);
+                                ?>
                             </div>
                         </div>
                    </div>
-
-                   <div class="dog-sleep d-flex align-items-center">
-                       <div class="dog-love-img">
-                       <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Group.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                       </div>
-                        <div class="best-helth">
-                            <div class="beat-info-head">
-                                <h5>По-добра грижа</h5>
-                                <p>Никога повече не оставяй без храна, медикамент, играчка или лакомство</p>
-                            </div>
-                        </div>
-                   </div>
-
-                   <div class="dog-sleep d-flex align-items-center">
-                       <div class="dog-love-img">
-                          <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/discount.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                       </div>
-                        <div class="best-helth">
-                            <div class="beat-info-head">
-                                <h5>Пестиш пари</h5>
-                                <p>Всички продукти от кошницата  с до 20% отстъпка и безплатна доставка</p>
-                            </div>
-                        </div>
-                   </div>
+                    <?php endforeach; endif; ?>
                 </div>
             </div>
         </div>
@@ -92,52 +95,65 @@ get_header(); ?>
         <div class="container">
             <div class="row flex-row-reverse">
                 <div class="col-12 col-md-6 col-lg-5 ">
-                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Dog-Cat.png' ?>"alt="<?php bloginfo('name'); ?>">
+                    <?php 
+                        $pet_get = get_field('pet_get');
+
+                        printf('<img src="%s" alt="%s">', $pet_get['right_image']['url'], $pet_get['right_image']['alt']);
+                     ?>
                 </div>
                 <div class=" col-12 col-md-6 col-lg-7 ">
                     <div class="section-head">
-                        <h2>Какво получава твоя домашен любимец?</h2>
+                        <?php 
+                            if(!empty($pet_get['title'])){
+                                printf(__('<h2>%s</h2>', 'airdesigns'), $pet_get['title']);
+                            }
+                         ?>
                     </div>
+                    <?php 
+                        if(!empty($pet_get['features'])):
+                            foreach ($pet_get['features'] as $featur):
+                     ?>
                     <div class="dog-sleep d-flex align-items-center">
                         <div class="dog-love-img">
-                         <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/donation-1.svg' ?>"alt="<?php bloginfo('name'); ?>">
+                            <?php 
+                                printf('<img src="%s" alt="%s">', $featur['icon']['url'], $featur['icon']['alt']);
+                             ?>
                         </div>
-                            <div class="best-helth">
-                                <div class="beat-info-head pl-10">
-                                    <h5>Персонализирана месечна кутия</h5>
-                                    <p>Всички продукти са съобразена с неговия хранителен режим,възраст, килограми, начин на живот и вкус</p>
-                                </div>
+                        <div class="best-helth">
+                            <div class="beat-info-head pl-10">
+                                <?php 
+                                    printf(__('<h5>%s</h5>', 'airdesigns'), $featur['title']);
+                                    printf(__('<p>%s</p>', 'airdesigns'), $featur['content']);
+                                ?>
                             </div>
-                    </div>
-                    <div class="dog-sleep d-flex align-items-center">
-                        <div class="dog-love-img">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/meds.svg' ?>"alt="<?php bloginfo('name'); ?>">
                         </div>
-                            <div class="best-helth">
-                                <div class="beat-info-head">
-                                    <h5>Безплатен месечен преглед от онлайн ветеринар</h5>
-                                    <p>Винаги когато възникне проблем,</p>
-                                </div>
-                            </div>
                     </div>
+                    <?php 
+                        endforeach; endif;
+                     ?>
                     <div class="three d-flex  align-items-center justify-content-center">
-                        <div class="one"> 
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Vector-path-1.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                            <p class="text-1">Грижа</p>
+                        <?php 
+                            if(!empty($pet_get['services'])):
+                                foreach ($pet_get['services'] as $service):
+                         ?>
+                        <div class="one">
+                        <?php 
+                            printf('<img src="%s" alt="%s">', $service['shape']['url'], $service['shape']['url']);
+                            printf(__('<p class="text-1">%s</p>', 'airdesigns'), $service['title']);
+                         ?>  
                         </div>
-                        <div class="two">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Vector-path .svg' ?>"alt="<?php bloginfo('name'); ?>">
-                            <p class=" text-1">Здраве</p>
-                        </div>
-                        <div class="thre">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Vector-path-1.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                            <p class=" text-1">Щастие</p>
-                        </div>
+                        <?php 
+                            endforeach; endif;
+                         ?>
                     </div>
                 </div>
 
                 <div class="lest-sub-button text-center">
-                    <a href="#">Стани член</a>
+                    <?php 
+                        if(!empty($pet_get['button'])){
+                            printf(__('<a href="%s" target="%s">%s</a>', 'airdesigns'), $pet_get['button']['url'], $pet_get['button']['target'], $pet_get['button']['title'] );
+                        }
+                     ?>
                 </div>
             </div>
         </div>
@@ -148,58 +164,45 @@ get_header(); ?>
        <div class="container">
        <div class="custom-hrad">
            <div class="head text-center">
-               <h2>Какво се включва в абонамента</h2>
-               <h5>Създавайки профил и абонирайки се за услугите  на Пет Бъди, ние се ангажираме да ти помогнем с грижите.</h5>
+            <?php 
+                $subcription = get_field('subscription_food');
+
+                if(!empty($subcription['title'])){
+                    printf(__('<h2>%s</h2>', 'airdesigns'), $subcription['title']);
+                }
+                if(!empty($subcription['subtitle'])){
+                    printf(__('<h5>%s</h5>', 'airdesigns'), $subcription['subtitle']);
+                }
+             ?>
+               
            </div>
        </div>
        <div class="row align-items-center justify-content-center">
            <div class="col-lg-4 col-md-12">
                 <div class="kakbo">
-                    <div class="save-manuy d-flex  align-items-start">
+                    <?php 
+                        if(!empty($subcription['left_lists'])):
+                            foreach ($subcription['left_lists'] as $i => $l_list):
+                     ?>
+                    <div class="save-manuy d-flex <?php if($i == 0){echo "align-items-start"; }elseif($i == 1 || $i == 2){echo "d-flex mr-50";}?>">
                             <div class="best-save">
                                 <div class="beat-info-head text-end">
-                                    <h5>Изчисляване на месечна дажба</h5>
-                                    <p>Изчисляване на препоръчителна месечна дажба</p>
+                                    <?php 
+                                        printf(__('<h5>%s</h5>', 'airdesigns'), $l_list['title']);
+                                        printf(__('<p>%s</p>', 'airdesigns'), $l_list['content']);
+                                     ?>
+                                    
                                 </div>
                             </div>
                             <div class="dog-save-img">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/food-3.svg' ?>"alt="<?php bloginfo('name'); ?>">
+                                <?php 
+                                    printf('<img src="%s" alt="%s">', $l_list['icon']['url'], $l_list['icon']['alt']);
+                                ?>
                             </div>
                     </div>
-                    <div class="save-manuy d-flex mr-50">
-                            <div class="best-save">
-                                <div class="beat-info-head text-end">
-                                    <h5>Отстъпки до 30%</h5>
-                                    <p>Преференциални отстъпки до 30% на всички продукти  </p>
-                                </div>
-                            </div>
-                            <div class="dog-save-img">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/discount.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                            </div>
-                    </div>
-                    <div class="save-manuy d-flex mr-50">
-                            <div class="best-save">
-                                <div class="beat-info-head text-end">
-                                    <h5>Безплатна доставка</h5>
-                                    <p>Безплатна доставка до врата от наш служител</p>
-                                </div>
-                            </div>
-                            <div class="dog-save-img">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Group.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                            </div>
-                    </div>
-                    <div class="save-manuy d-flex ">
-                            <div class="best-save">
-                                <div class="beat-info-head text-end">
-                                    <h5>Оптимална диета</h5>
-                                    <p>Изготвяне на оптимална диета съобразена с начина му на живот</p>
-                                </div>
-                            </div>
-                            <div class="dog-save-img">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Dry-food-2.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                            </div>
-                    </div>
-                    
+                    <?php 
+                        endforeach; endif;
+                     ?>
                 </div>
            </div>
            <div class=" col-12 col-md-0 col-lg-4 ">
@@ -208,57 +211,38 @@ get_header(); ?>
                 </div>
            </div>
            <div class="col-sm-12 col-md-12 col-lg-4">
-           <div class="kakbos">
-                    <div class="save-manuy-2 d-flex">
+                <div class="kakbos">
+                    <?php 
+                        if(!empty($subcription['right_lists'])):
+                            foreach ($subcription['right_lists'] as $i => $r_list):
+                     ?>
+                    <div class="save-manuy-2 d-flex <?php if($i == 1 || $i == 2){echo "ml-30"; }?>">
                             <div class="dog-save-img">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/heart-box.svg' ?>"alt="<?php bloginfo('name'); ?>">
+                                <?php 
+                                    printf('<img src="%s" alt="%s">', $r_list['icon']['url'],$r_list['icon']['alt'] );
+                                 ?>
                             </div>
                             <div class="best-save">
                                 <div class="beat-info-head text-start">
-                                    <h5>Персонализирана кутия</h5>
-                                    <p>Изготвяне на годишен план за доставка до врата на персонализирана кутия</p>
+                                    <?php 
+                                        printf(__('<h5>%s</h5>', 'airdesigns'), $r_list['title']);
+                                        printf(__('<p>%s</p>', 'airdesigns'), $r_list['content']);
+                                     ?>
                                 </div>
                             </div>
                     </div>
-                    <div class="save-manuy-2 d-flex ml-50">
-                            <div class="dog-save-img">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/health-card.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                            </div>
-                            <div class="best-save">
-                                <div class="beat-info-head text-start">
-                                    <h5>Здравен картон</h5>
-                                    <p>Електронен здравен картон с автоматични напомняния,</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="save-manuy-2 d-flex ml-50">
-                            <div class="dog-save-img">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon//reminder.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                            </div>
-                            <div class="best-save">
-                                <div class="beat-info-head text-start">
-                                    <h5>Напомняния</h5>
-                                    <p>Своевременни напомняния за ваксини и обезпаразитявания</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="save-manuy-2 d-flex">
-                            <div class="dog-save-img">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/vet.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                            </div>
-                            <div class="best-save">
-                                <div class="beat-info-head text-start">
-                                    <h5>Консултация с ветеринар</h5>
-                                    <p>Безплатна консултация с ветеринар по всяко време.</p>
-
-                                </div>
-                            </div>
-                    </div>
+                    <?php 
+                        endforeach; endif;
+                     ?>
                 </div>
            </div>
 
            <div class="lest-sub-buttom text-center">
-                <a href="#">Стани член</a>
+            <?php 
+                if(!empty($subcription['button'])){
+                    printf(__('<a href="%s" target="%s">%s</a>', 'airdesigns'), $subcription['button']['url'], $subcription['button']['target'], $subcription['button']['title'] );
+                }
+             ?>
             </div>
        </div>
        </div>
@@ -269,8 +253,18 @@ get_header(); ?>
     <div class="custom-grid-wrapper">
         <div class="container">
             <div class="section-heading text-center">
-                <h2>Ти избираш</h2>
-                <h4>С ПетБъди може да е много по-лесно и удобно, сравни и реши за себе си.</h4>
+
+                <?php 
+                    $your_choose = get_field('you_choose');
+
+                    if(!empty($your_choose['title'])){
+                        printf(__('<h2>%s</h2>', 'airdesigns'), $your_choose['title']);
+                    }
+                    if(!empty($your_choose['subtitle'])){
+                        printf(__('<h4>%s</h4>', 'airdesigns'), $your_choose['subtitle']);
+                    }
+                 ?>
+                
             </div>
             <div class="card-dog">
                 <div class="dog-sucsess ">
@@ -279,39 +273,33 @@ get_header(); ?>
                             <div class="headline-ill-dog">
                                 <h4>Живот без Пет Бъди</h4>
                             </div>
-                            <div class="bad-dog d-flex">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Sad-face.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                <p>Губиш часове наред в посещения на магазини, редене пред куриерски офиси, чакане пред ветеринарен кабинет</p>
-                            </div>
-                            
                         </div>
                         <div class=" col-md-2 col-lg-2 d-none d-md-block">
-                            <div class="bad-dog">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Arrow.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                            </div>
-                            
                         </div>
                         <div class="col-12 col-md-5 col-lg-5">
                             <div class="helthy-dog">
                                 <h4>Живота с Пет Бъди </h4>
                             </div>
-                            <div class="bad-dog d-flex flex-row-reverse">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/happy-face.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                <p>Губиш часове наред в посещения на магазини, редене пред куриерски офиси, чакане пред ветеринарен кабинет</p>
-                            </div>
-                            
                         </div>
                     </div>
+                    <?php 
+                        $c_list = $your_choose['compare_lists'];
+
+                        if(!empty($c_list['items'])):
+                            foreach ($c_list['items'] as $item):
+                     ?>
                     <div class="row  align-items-center justify-content-center">
-                        <div class="col-12 col-md-5 col-lg-5">
+                        <div class=" col-12 col-md-5 col-lg-5 ">
                             <div class="bad-dog d-flex">
                                 <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Sad-face.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                <p>Губиш часове наред в посещения на магазини, редене пред куриерски офиси, чакане пред ветеринарен кабинет</p>
+                                <?php 
+                                    printf(__('<p>%s</p>', 'airdesigns'), $item['left_content']);
+                                ?>
                             </div>
                             
                         </div>
                         <div class=" col-md-2 col-lg-2 d-none d-md-block">
-                            <div class="bad-dog">
+                            <div class="bad-dog text-center">
                                 <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Arrow.svg' ?>"alt="<?php bloginfo('name'); ?>">
                             </div>
                             
@@ -319,44 +307,42 @@ get_header(); ?>
                         <div class="col-12 col-md-5 col-lg-5">
                             <div class="bad-dog d-flex flex-row-reverse">
                                 <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/happy-face.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                <p>Губиш часове наред в посещения на магазини, редене пред куриерски офиси, чакане пред ветеринарен кабинет</p>
+                                <?php 
+                                    printf(__('<p>%s</p>', 'airdesigns'), $item['right_content']);
+                                ?>
                             </div>
                             
                         </div>
                     </div>
-                    <div class="row  align-items-center justify-content-center">
-                        <div class="col-12 col-md-5 col-lg-5">
-                            <div class="bad-dog d-flex ">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Sad-face.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                <p>Губиш часове наред в посещения на магазини, редене пред куриерски офиси, чакане пред ветеринарен кабинет</p>
-                            </div>
-                            
-                        </div>
-                        <div class=" col-md-2 col-lg-2 d-none d-md-block">
-                            <div class="bad-dog">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Arrow.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                            </div>
-                            
-                        </div>
-                        <div class="col-12 col-md-5 col-lg-5">
-                            <div class="bad-dog d-flex flex-row-reverse">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/happy-face.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                <p>Губиш часове наред в посещения на магазини, редене пред куриерски офиси, чакане пред ветеринарен кабинет</p>
-                            </div>
-                            
-                        </div>
-                    </div>
+                    <?php 
+                        endforeach; endif;
+                     ?>
                 </div>
                 <div class="dog-img-1">
-                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Dog-1.png' ?>"alt="<?php bloginfo('name'); ?>" while="img-fluid">
+                    <?php 
+                        
+
+                        if(!empty($c_list['left_image'])){
+                            printf('<img src="%s" alt="%s" while="img-fluid">', $c_list['left_image']['url'], $c_list['left_image']['alt']);
+                        }
+                    ?>
+                    
                 </div>
                 <div class="dog-img-2">
-                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Dog-2.png' ?>"alt="<?php bloginfo('name'); ?>" while="img-fluid">
+                    <?php 
+                        if(!empty($c_list['right_image'])){
+                            printf('<img src="%s" alt="%s" while="img-fluid">', $c_list['right_image']['url'], $c_list['right_image']['alt']);
+                        }
+                    ?>
                 </div>
             </div>
 
             <div class="lest-sub-buttom text-center ">
-                <a href="#">Направи промяната сега</a>
+                <?php 
+                    if(!empty($your_choose['buttton'])){
+                        printf(__('<a href="%s" target="%s">%s</a>', 'airdesigns'), $your_choose['buttton']['url'], $your_choose['buttton']['target'], $your_choose['buttton']['title']);
+                    }
+                ?>
             </div>
 
         </div>
@@ -367,24 +353,20 @@ get_header(); ?>
         <div class="save-money">
             <div class="container">
                 <div class="row">
+                    <?php 
+                        $save_time = get_field('save_time_&_money');
+                        if(!empty($save_time)):
+                            foreach ($save_time as $ti):
+                     ?>
                     <div class=" col-12 col-md-4 col-lg-4 ">
                         <div class="Convenience d-flex align-items-center justify-content-center">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Group-1.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                            <h5>Удобство</h5>
+                            <?php 
+                                printf('<img src="%s" alt="%s">', $ti['icon']['url'], $ti['icon']['alt']);
+                                printf(__('<h5>%s</h5>', 'airdesigns'), $ti['title']);
+                            ?>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-4 ">
-                        <div class="money-offer d-flex align-items-center justify-content-center">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Group-2.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                            <h5>Пести време и пари</h5>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-4 ">
-                        <div class="thanks d-flex align-items-center justify-content-center">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/thank.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                            <h5>Мисли вместо теб </h5>
-                        </div>
-                    </div>
+                    <?php endforeach; endif; ?>
                 </div>
             </div>
         </div>
@@ -396,20 +378,41 @@ get_header(); ?>
             <div class="container">
                 <div class="head-prodact text-center">
                     <div class="title-main">
-                        <h5>Разгледай нашите продукти</h5>
+                        <?php 
+                            $brands = get_field('brands');
+                            if(!empty($brands['subtitle'])){
+                                printf(__('<h5>%s</h5>', 'airdesigns'), $brands['subtitle']);
+                            }
+                        ?>
                     </div>
                     <div class="head-prodact-company">
-                        <h2>Над 1000 продукта от премиум брандове</h2>
-                        <h4>Нашите консултанти са подбрали с грижа всеки продукт, който ще намерите при нас и ще ви насочат кое е най-доброто точно за вашето животно.</h4>
+                        <?php 
+                            if(!empty($brands['title'])){
+                                printf(__('<h2>%s</h2>', 'airdesigns'), $brands['title']);
+                            } 
+                            if(!empty($brands['content'])){
+                                printf(__('<h4>%s</h4>', 'airdesigns'), $brands['content']);
+                            }
+                        ?>
+                        
+                        
                     </div>
                     <div class="title-sub">
-                        <h4>Нашите марки у партньори</h4>
+                        <?php 
+                            if(!empty($brands['brand_title'])){
+                                printf(__('<h4>%s</h4>', 'airdesigns'), $brands['brand_title']);
+                            }
+                        ?>
                     </div>
                 </div>
 
                 <div class="row">
                 <div class="  col-12 col-md-12 col-lg-12 ">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo AIRDESIGNS_DIR_IMG.'/Company-logo.png' ?>" alt="<?php bloginfo('name'); ?>"></a>
+                    <?php 
+                        if(!empty($brands['image'])){
+                            printf('<img src="%s" alt="%s">', $brands['image']['url'], $brands['image']['alt']);
+                        }
+                    ?>
                 </div>
             </div>
             </div>
@@ -422,34 +425,36 @@ get_header(); ?>
             <div class="container">
                 <div class="dog-food-head text-center">
                     <div class="image-head">
-                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Vector.svg' ?>" alt="<?php bloginfo('name'); ?>">
+                        <?php 
+                            $dog_shop = get_field('dog_shop');
+
+                            if(!empty($dog_shop['image'])){
+                                printf('<img src="%s" alt="%s">', $dog_shop['image']['url'], $dog_shop['image']['alt']);
+                            }
+                        ?>
+                        
                     </div>
                    <div class="title">
-                        <h4>Популярни категории в нашия магазин за куче</h4>
+                        <?php 
+
+                            if(!empty($dog_shop['title'])){
+                                printf(__('<h4>%s</h4>', 'airdesigns'), $dog_shop['title']);
+                            }
+                        ?>
                    </div>
                 </div>
                <div class="row">
                 <div class=" d-flex justify-content-between flex-wrap">
-                        <div class="dog-food-5 text-center">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-3.png' ?>" alt="<?php bloginfo('name'); ?>">
-                            <p>Суха храна </p>
+                        <?php 
+                            if(!empty($dog_shop['items'])):
+                                foreach ($dog_shop['items'] as $i => $item):
+                         ?>
+                        <div class="dog-food-5 text-center <?php if($i == 4){echo "pt"; } ?>">
+
+                            <a href="<?php echo $item['url']; ?>"><img src="<?php echo $item['image']['url']; ?>" alt="<?php echo $item['image']['alt']; ?>"></a>
+                            <p><a href="<?php echo $item['url']; ?>"><?php echo __($item['title'], 'airdesigns'); ?></a></p>
                         </div>
-                        <div class="dog-food-5 text-center">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-2.png' ?>" alt="<?php bloginfo('name'); ?>">
-                            <p>Снаксове и награди </p>
-                        </div>
-                        <div class="dog-food-5 text-center">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-1.png' ?>" alt="<?php bloginfo('name'); ?>">
-                            <p>Задраве и грижа </p>
-                        </div>
-                        <div class="dog-food-5 text-center">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-10.png' ?>" alt="<?php bloginfo('name'); ?>">
-                            <p>Играчки </p>
-                        </div>
-                        <div class="dog-food-5 text-center pt">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/vector-1.png' ?>" alt="<?php bloginfo('name'); ?>">
-                            <p>Пазгледай всички продукти за куче</p>
-                        </div>
+                        <?php endforeach; endif; ?>
                     </div>
                </div>
             </div>
@@ -462,34 +467,36 @@ get_header(); ?>
             <div class="container">
                 <div class="cat-food-head text-center">
                     <div class="image-head">
-                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Vector-1.svg' ?>" alt="<?php bloginfo('name'); ?>">
+                        <?php 
+                            $cat_shop = get_field('cat_shop');
+
+                            if(!empty($cat_shop['image'])){
+                                printf('<img src="%s" alt="%s">', $cat_shop['image']['url'], $cat_shop['image']['alt']);
+                            }
+                        ?>
                     </div>
                    <div class="title">
-                        <h4>Популярни категории в нашия магазин за коте</h4>
+                        <?php 
+
+                            if(!empty($cat_shop['title'])){
+                                printf(__('<h4>%s</h4>', 'airdesigns'), $cat_shop['title']);
+                            }
+                        ?>
                    </div>
                 </div>
                <div class="row">
                 <div class=" d-flex flex-wrap">
-                        <div class="cat-food-5 text-center">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-9.png' ?>" alt="<?php bloginfo('name'); ?>">
-                            <p>Суха храна</p>
+                        <?php 
+                            if(!empty($cat_shop['items'])):
+                                foreach ($cat_shop['items'] as $i => $item):
+                         ?>
+                        <div class="cat-food-5 text-center <?php if($i == 4){echo "pt"; } ?>">
+
+                            <a href="<?php echo $item['url']; ?>"><img src="<?php echo $item['image']['url']; ?>" alt="<?php echo $item['image']['alt']; ?>"></a>
+                            <p><a href="<?php echo $item['url']; ?>"><?php echo __($item['title'], 'airdesigns'); ?></a></p>
                         </div>
-                        <div class="cat-food-5 text-center">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-8.png' ?>" alt="<?php bloginfo('name'); ?>">
-                            <p>Снаксове и награди </p>
-                        </div>
-                        <div class="cat-food-5 text-center">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-7.png' ?>" alt="<?php bloginfo('name'); ?>">
-                            <p>Задраве и грижа </p>
-                        </div>
-                        <div class="cat-food-5 text-center">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-6.png' ?>" alt="<?php bloginfo('name'); ?>">
-                            <p>Играчки </p>
-                        </div>
-                        <div class="cat-food-5 text-center pt">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Vector.png' ?>" alt="<?php bloginfo('name'); ?>">
-                            <p>Пазгледай всички продукти за куче</p>
-                        </div>
+                        <?php endforeach; endif; ?>
+
                     </div>
                </div>
             </div>
@@ -502,19 +509,41 @@ get_header(); ?>
             <div class="container">
             <div class="row">
                 <div class="dog-helth-card">
-                    <div class="bg-dog" style="background-image: url('<?php echo AIRDESIGNS_DIR_IMG.'/background-4.png' ?>');background-repeat: no-repeat;background-position: left top;">
+                    <?php 
+                        $vet = get_field('online_veterinary');
+                     ?>
+                    <div class="bg-dog" style="background-image: url('<?php echo $vet['image']; ?>');background-repeat: no-repeat;background-position: left top;">
                         <div class="content-card">
                                 <div class="head-card d-flex align-items-center">
-                                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Group-4.svg' ?>" alt="<?php bloginfo('name'); ?>">
-                                    <h4>онлайн ветеринар</h4>
+                                    <?php 
+                                        if(!empty($vet['logo'])){
+                                            printf('<img src="%s" alt="%s">', $vet['logo']['url'], $vet['logo']['alt']);
+                                        }
+
+                                        if(!empty($vet['top_title'])){
+                                            printf(__('<h4>%s</h4>', 'airdesigns'), $vet['top_title']);
+                                        }
+                                     ?>
+                                    
                                 </div>
                                 <div class="heading">
-                                    <h4>Консултирай се с нашия ветеринар онлайн</h4>
-                                    <p>До три безплатни месечни консултации за потребители с месечен абонамент</p>
+                                    <?php 
+                                        if(!empty($vet['title'])){
+                                            printf(__('<h4>%s</h4>', 'airdesigns'), $vet['title']);
+                                        }
+                                        if(!empty($vet['content'])){
+                                            printf(__('<p>%s</p>', 'airdesigns'), $vet['content']);
+                                        }
+                                    ?>
                                 </div>
 
                                 <div class="lest-sub-buttom">
-                                    <a href="#">Научи повече</a>
+                                    <?php 
+                                        if(!empty($vet['button'])){
+                                            printf(__('<a href="%s" target="%s">%s</a>', 'airdesigns'), $vet['button']['url'], $vet['button']['target'], $vet['button']['title']);
+                                        }
+                                    ?>
+                                    
                                 </div>
                         </div>
                     </div>
@@ -531,35 +560,50 @@ get_header(); ?>
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6 col-lg-6 ">
                         <div class="love-img ">
-                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Doglove.png' ?>" alt="<?php bloginfo('name'); ?>">
+                            <?php 
+                                $mission = get_field('our_mission');
+
+                                if(!empty($mission['left_image'])){
+                                    printf('<img src="%s" alt="%s">', $mission['left_image']['url'], $mission['left_image']['alt']);
+                                }
+                             ?>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6 ">
                         <div class="info">
                             <div class="title-love">
-                                <h5>Нашата мисия</h5>
+                                <?php 
+                                    if(!empty($mission['subtitle'])){
+                                        printf(__('<h5>%s</h5>', 'airdesigns'), $mission['subtitle']);
+                                    }
+                                ?>
+                                
                             </div>
                             <div class="head-love">
-                                <h2>Правилното отглеждане еотговорно отглеждане</h2>
-                                <p>Вярваме, че грижата за нашите любимци върви ръка за ръка с каузата да им осигурим по-добър живот. Затова ние стартираме проекта и с мисъл да направим промяна.</p>
+                                <?php 
+                                    if(!empty($mission['title'])){
+                                        printf(__('<h2>%s</h2>', 'airdesigns'), $mission['title']);
+                                    } 
+                                    if(!empty($mission['content'])){
+                                        printf(__('<p>%s</p>', 'airdesigns'), $mission['content']);
+                                    }
+                                ?>
                             </div>
                             <div class="info-love">
+                                <?php 
+                                    if(!empty($mission['items'])):
+                                        foreach ($mission['items'] as $item):
+                                 ?>
                                 <div class="info-love-4 d-flex">
-                                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/food-3.svg' ?>" alt="<?php bloginfo('name'); ?>">
-                                    <p>Край на купуването на насипна храна, престояла на отворено пространство.</p>
+                                    <?php 
+                                        printf('<img src="%s" alt="%s">', $item['icon']['url'], $item['icon']['alt']);
+
+                                        printf(__('<p>%s</p>', 'airdesigns'), $item['content']);
+                                     ?>
                                 </div>
-                                <div class="info-love-4 d-flex">
-                                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/wet-food.svg' ?>" alt="<?php bloginfo('name'); ?>">
-                                    <p>Повишаване качеството на живот на домашните любимци чрез по-добра грижа, храна и внимание.</p>
-                                </div>
-                                <div class="info-love-4 d-flex">
-                                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/cat-2.svg' ?>" alt="<?php bloginfo('name'); ?>">
-                                    <p>Образоване на собствениците чрез научно доказана информация за породата на домашния любимец.</p>
-                                </div>
-                                <div class="info-love-4 d-flex">
-                                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/pet.svg' ?>" alt="<?php bloginfo('name'); ?>">
-                                    <p>Прекратяване незаконната търговия с домашни любимци без здравна и родословна история.</p>
-                                </div>
+                                <?php 
+                                    endforeach; endif;
+                                 ?>
                             </div>
                         </div>
                     </div>
@@ -575,9 +619,19 @@ get_header(); ?>
                 <div class="row align-items-center flex-row-reverse">
                     <div class=" col-12 col-md-6 col-lg-6 ">
                         <div class="eat-dog-image">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Dogeit.png' ?>" alt="<?php bloginfo('name'); ?>">
+                            <?php 
+                                $our_cause = get_field('our_cause');
+
+                                if(!empty($our_cause['big_image'])){
+                                    printf('<img src="%s" alt="%s">', $our_cause['big_image']['url'], $our_cause['big_image']['alt']);
+                                }
+                             ?>
                             <div class="dog-happy">
-                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/happyDog.png' ?>" alt="<?php bloginfo('name'); ?>">
+                                <?php 
+                                    if(!empty($our_cause['small_image'])){
+                                        printf('<img src="%s" alt="%s">', $our_cause['small_image']['url'], $our_cause['small_image']['alt']);
+                                    }
+                                 ?>
                             </div>
                         </div>
                     </div>
@@ -585,15 +639,26 @@ get_header(); ?>
                     <div class="col-12 col-md-6 col-lg-6">
                         <div class="eat-text">
                             <div class="title-eat">
-                                <h5>#wearebetbuddy </h5>
+                                <?php 
+                                    if(!empty($our_cause['subtitle'])){
+                                        printf(__('<h5>%s</h5>', 'airdesigns'), $our_cause['subtitle']);
+                                    }
+                                 ?>
+                                
                             </div>
                             <div class="head-eat">
-                                <h4>Pet Buddy е нашата кауза</h4>
+                                <?php 
+                                    if(!empty($our_cause['title'])){
+                                        printf(__('<h4>%s</h4>', 'airdesigns'), $our_cause['title']);
+                                    }
+                                 ?>
                             </div>
                             <div class="eat-more">
-                                <p>Ние сме екип от собственици на домашни любимци, които дълго години са сблъсквали с редица проблеми свързани с отглеждането на най-добрите ни приятели. </p>
-
-                                <p>Така се роди и идеята да създадем платформа, която да обедини целия свят на домашния ни любимец на едно място като пести време и пари на нас собствениците, а на тях гарантира един по-добър начин на живот.</p>
+                                <?php 
+                                    if(!empty($our_cause['content'])){
+                                        echo __($our_cause['content'], 'airdesigns');
+                                    }
+                                 ?>
                             </div>
                         </div>
                     </div>
@@ -609,59 +674,41 @@ get_header(); ?>
             <div class="row align-items-center">
                 <div class="col-12 col-md-5 col-lg-5 text-left">
                     <div class="image">
-                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/ревюта.png' ?>" alt="<?php bloginfo('name'); ?>">
+                        <?php 
+                            $testimonials = get_field('testimonials');
+
+                            if(!empty($testimonials['image'])){
+                                printf('<img src="%s" alt="%s">', $testimonials['image']['url'], $testimonials['image']['alt']);
+                            }
+                         ?>
                     </div>
                 </div>
                 <div class="col-12 col-md-7 col-lg-7 text-left">
                     <div class="slider-dog ">
+                        <?php 
+                            if(!empty($testimonials['reviews'])):
+                                foreach ($testimonials['reviews'] as $review):
+                         ?>
                         <div class="slider item single-item d-flex align-items-center justify-content-between ">
-                        
                             <div class="text">
                                 <div class="title-image">
-                                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/“.svg' ?>" alt="<?php bloginfo('name'); ?>">
+                                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/“.svg' ?>" alt="">
                                 </div>
                                 <div class="slider-text-1">
-                                    <h4>Два пъти бау-бау от нас :)</h4>
-                                    <p>"Всичко, което  дойде в месечната кутия на Бъки, беше точно това коеото очаквах."</p>
+                                    <?php 
+                                        printf(__('<h4>%s</h4>', 'airdesigns'), $review['title']);
+                                        printf(__('<p>%s</p>', 'airdesigns'), $review['content']);
+                                     ?>
                                 </div>
                                 <div class="slider-text-2">
-                                    <h6>Милена</h6>
-                                    <p>Собственик на Голдън ретривър 2г.</p>
+                                    <?php 
+                                        printf(__('<h6>%s</h6>', 'airdesigns'), $review['name']);
+                                        printf(__('<p>%s</p>', 'airdesigns'), $review['designation']);
+                                    ?>
                                 </div>
                             </div>
                         </div>
-                        <div class="slider item single-item d-flex align-items-center justify-content-between ">
-                        
-                            <div class="text">
-                                <div class="title-image">
-                                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/“.svg' ?>" alt="<?php bloginfo('name'); ?>">
-                                </div>
-                                <div class="slider-text-1">
-                                    <h4>Два пъти бау-бау от нас :)</h4>
-                                    <p>"Всичко, което  дойде в месечната кутия на Бъки, беше точно това коеото очаквах."</p>
-                                </div>
-                                <div class="slider-text-2">
-                                    <h6>Милена</h6>
-                                    <p>Собственик на Голдън ретривър 2г.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider item single-item d-flex align-items-center justify-content-between ">
-                        
-                            <div class="text">
-                                <div class="title-image">
-                                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/“.svg' ?>" alt="<?php bloginfo('name'); ?>">
-                                </div>
-                                <div class="slider-text-1">
-                                    <h4>Два пъти бау-бау от нас :)</h4>
-                                    <p>"Всичко, което  дойде в месечната кутия на Бъки, беше точно това коеото очаквах."</p>
-                                </div>
-                                <div class="slider-text-2">
-                                    <h6>Милена</h6>
-                                    <p>Собственик на Голдън ретривър 2г.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach; endif; ?>
                     </div>
                 </div>
             </div>

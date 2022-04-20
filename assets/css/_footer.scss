@@ -20,7 +20,7 @@
             font-style: normal;
             font-weight: 700;
             font-size: 17px;
-            padding: 10px 50px;
+            padding: 12px 40px;
             line-height: 26px;
             text-align: center;
             letter-spacing: 0.46px;
@@ -29,7 +29,8 @@
             transition: all 0.6s ease-in-out;
             &:hover{
                 @include hover-1;
-                color:  $gray;
+                color: $white;
+                background-color: #FF4E2A;
             }
         }
     }

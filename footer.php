@@ -16,8 +16,17 @@
                 <div class="row">
                     <div class=" col-12 col-md-12 col-lg-12">
                         <div class="fotter-head pt-60 pb-50 text-center">
-                            <h2>Стани член. Ние ще се погрижим за всичко останало</h2>
-                            <button class="button"> Създай месечен абонамент</button>
+                            <?php 
+                                $footer = get_field('footer', 'options');
+
+                                if(!empty($footer['become_a_member']['title'])){
+                                    printf(__('<h2>%s</h2>', 'airdesigns'), $footer['become_a_member']['title']);
+                                }
+
+                                if(!empty($footer['become_a_member']['button'])){
+                                    printf('<a class="button" href="%s" target="%s">%s</a>', $footer['become_a_member']['button']['url'], $footer['become_a_member']['button']['target'], $footer['become_a_member']['button']['title']);
+                                }
+                             ?>
                         </div>
                     </div>
                 </div>
@@ -70,50 +79,16 @@
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-xl-2 ">
-                            <div class="single-footer-wid">
-                                <h4>Пет Бъди</h4>
-                                <ul>
-                                    <li><a href="#">Членство</a></li>
-                                    <li><a href="#"> Ползи</a></li>
-                                    <li><a href="#"> Как работи?</a></li>
-                                    <li><a href="#">Каузи</a></li>
-                                    <li><a href="#">Контакти</a></li>
-                                    <li><a href="#">За нас</a></li>
-                                </ul>
-                            </div>
+                            <?php dynamic_sidebar( 'footer-1' ); ?>
                         </div>
                         <div class="col-12 col-sm-6 col-xl-2 special-footer">
-                            <div class="single-footer-wid">
-                                <h4>Полезно</h4>
-                                <ul>
-                                    <li><a href="#">FAQs</a></li>
-                                    <li><a href="#">Начини на плащане</a></li>
-                                    <li><a href="#">Контрол на абонамент</a></li>
-                                </ul>
-                            </div>
+                            <?php dynamic_sidebar( 'footer-2' ); ?>
                         </div>
                         <div class=" col-sm-6 col-xl-2">
-                            <div class="single-footer-wid">
-                                <h4>За клиенти</h4>
-                                <ul>
-                                    <li><a href="#">Профил</a></li>
-                                    <li><a href="#">Онлайн ветеринар</a></li>
-                                    <li><a href="#">Медицински картон</a></li>
-                                    <li><a href="#">Асортимент</a></li>
-                                    <li><a href="#">Библиотека</a></li>
-                                </ul>
-                            </div>
+                            <?php dynamic_sidebar( 'footer-3' ); ?>
                         </div>
                         <div class=" col-sm-6 col-xl-3">
-                            <div class="single-footer-wid">
-                                <h4>Общи</h4>
-                                <ul>
-                                    <li><a href="#">Общи условия</a></li>
-                                    <li><a href="#">Политика за поверителност</a></li>
-                                    <li><a href="#">Бисквитки</a></li>
-                                    <li><a href="#">Рекламации</a></li>
-                                </ul>
-                            </div>
+                            <?php dynamic_sidebar( 'footer-4' ); ?>
                         </div>
                     </div>
                 </div>
@@ -127,15 +102,17 @@
                         </div>
                          <div class=" col-12 col-md-4 col-xl-4">
                             <div class="copyright-text">
-                                <p>Copyright 2022 <span>PetBuddy®</span></p>
+                                <?php 
+                                    printf(__('<p>%s</p>', 'airdesigns'), $footer['copyright']);
+                                 ?>
                             </div>
                         </div>
                         <div class=" col-12 col-md-4 col-xl-4">
                         <div class="social-links">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter"></i></a>
-                    </div>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                        </div>
                         </div>
                     </div>
                 </div>
