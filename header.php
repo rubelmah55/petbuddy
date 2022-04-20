@@ -37,20 +37,18 @@
                     <div class=" col-lg-5 col-md-5 order-lg-1">
                         <div class="header-left">
                             <div class="navbar">
-                                <ul class="d-flex">
-                                    <li class="dropdwon"><a href="#">Магазин</a> <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/Vector-arrow.svg' ?>"  alt="<?php bloginfo('name'); ?>">
-                                        <ul class="dropdwon-manu">
-                                            <li><a href="#">Магазин</a></li>
-                                            <li><a href="#">Магазин</a></li>
-                                            <li><a href="#">Магазин</a></li>
-                                            <li><a href="#">Магазин</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Членство</a></li>
-                                    <li><a href="#"> Ветеринар</a></li>
-                                    <li><a href="#"> Библиотека</a></li>
-                                    <li><a href="#"> За нас</a></li>
-                                </ul>
+                                <?php   
+                                    wp_nav_menu( array(
+                                        'menu'               => 'Primary Header',
+                                        'theme_location'     => 'primary',
+                                        'depth'              => 2,
+                                        'menu_id'            => '',
+                                        'container'          => false,
+                                        'menu_class'         => 'd-flex',
+                                        'fallback_cb'        => 'wp_bootstrap_navwalker::fallback',
+                                        'walker'             => new wp_bootstrap_navwalker(),
+                                    ));
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -72,7 +70,15 @@
                             <div class="account pl-1">
                                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/вход.svg' ?>" alt="<?php bloginfo('name'); ?>"></a>
                             </div>
-                            <button class="button pl-3">Стани член</button>
+                            <?php 
+                                $header = get_field('header', 'options');
+
+                                if(!empty($header['button'])){
+                                    ?>
+                                    <a href="<?php echo $header['button']['url']; ?>" class="button pl-3" target="<?php echo $header['button']['target']; ?>"><?php echo __($header['button']['title'], 'airdesigns'); ?></a>
+                                    <?php
+                                }
+                             ?>
                             <div class="wpml-button-wrapper pl-2">
                                 <div class="select-language">
                                     <form>

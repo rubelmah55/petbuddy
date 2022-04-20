@@ -11,6 +11,76 @@
             ul{
                 li{
                     padding: 9px;
+
+                    a{
+                        color: #000000;
+
+                        &:hover{
+                            color: #61BC47;
+                        }
+
+                        i{
+                            color: #61BC47;
+                        }
+                    }
+
+                    &:hover {
+                        > a {
+                            color: #61BC47;
+                        }
+
+                        > ul {
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translateY(0);
+
+                             li:hover {
+                                a {
+                                    color: $secondary;
+                                }
+
+                                ul {
+                                    a:hover {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    > ul {
+                        position: absolute;
+                        top: 100%;
+                        width: 200px;
+                        background-color: $primary;
+                        left: 0;
+                        z-index: 9999;
+                        box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
+                        visibility: hidden;
+                        opacity: 0;
+                        transform: translateY(40px);
+                        transition: all .5s ease-in-out;
+                        padding: 10px 0px;
+                        
+                        li {
+                            display: block;
+                            a { 
+                                display: block;                              
+                                color: $white;
+                                padding: 0px 15px;
+                                line-height: 1.5;
+                                
+                                &:hover { 
+                                    color: $secondary;
+                                }
+                            }
+                        }
+
+                        ul {
+                            left: 100%;
+                            top: 0;
+                        }
+                    }
                 }
                 .dropdwon{
                     position: relative;
@@ -82,7 +152,11 @@
             color: $white;
             &:hover{
                 @include hover-1;
+<<<<<<< HEAD
                color:$primary;
+=======
+               color: $white;
+>>>>>>> a891dc0194f09e18b54042c5e99e49d7e1b4fae9
             }
         }
     }

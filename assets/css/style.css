@@ -15277,12 +15277,28 @@ body {
 
 @font-face {
   font-family: "Intro";
-  src: url("../fonts/Intro.eot");
-  src: url("../fonts/Intro.eot?#iefix") format("embedded-opentype"), url("../fonts/Intro.woff2") format("woff2"), url("../fonts/Intro.woff") format("woff");
+  src: url("../fonts/Intro-Regular.woff2") format("woff2"), url("../fonts/Intro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+<<<<<<< HEAD
+=======
+@font-face {
+  font-family: "Intro";
+  src: url("../fonts/Intro-Bold.woff2") format("woff2"), url("../fonts/Intro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Averta CY";
+  src: url("../fonts/AvertaCY-Bold.woff2") format("woff2"), url("../fonts/AvertaCY-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+>>>>>>> a891dc0194f09e18b54042c5e99e49d7e1b4fae9
 h1, .h1,
 h2,
 .h2,
@@ -16262,6 +16278,63 @@ a {
 .header-wrapper .header-left .navbar ul li {
   padding: 9px;
 }
+.header-wrapper .header-left .navbar ul li a {
+  color: #000000;
+}
+.header-wrapper .header-left .navbar ul li a:hover {
+  color: #61BC47;
+}
+.header-wrapper .header-left .navbar ul li a i {
+  color: #61BC47;
+}
+.header-wrapper .header-left .navbar ul li:hover > a {
+  color: #61BC47;
+}
+.header-wrapper .header-left .navbar ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.header-wrapper .header-left .navbar ul li:hover > ul li:hover a {
+  color: #F8F4EF;
+}
+.header-wrapper .header-left .navbar ul li:hover > ul li:hover ul a:hover {
+  color: #fff;
+}
+.header-wrapper .header-left .navbar ul li > ul {
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  background-color: #61BC47;
+  left: 0;
+  z-index: 9999;
+  -webkit-box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
+          box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  padding: 10px 0px;
+}
+.header-wrapper .header-left .navbar ul li > ul li {
+  display: block;
+}
+.header-wrapper .header-left .navbar ul li > ul li a {
+  display: block;
+  color: #fff;
+  padding: 0px 15px;
+  line-height: 1.5;
+}
+.header-wrapper .header-left .navbar ul li > ul li a:hover {
+  color: #F8F4EF;
+}
+.header-wrapper .header-left .navbar ul li > ul ul {
+  left: 100%;
+  top: 0;
+}
 .header-wrapper .header-left .navbar ul .dropdwon {
   position: relative;
 }
@@ -16304,7 +16377,11 @@ a {
 }
 .header-wrapper .header-right .button:hover {
   background-color: #095052;
+<<<<<<< HEAD
   color: #61BC47;
+=======
+  color: #fff;
+>>>>>>> a891dc0194f09e18b54042c5e99e49d7e1b4fae9
 }
 .header-wrapper .search-box-wrapper {
   max-width: 137px;
@@ -16505,7 +16582,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  padding: 10px 50px;
+  padding: 12px 40px;
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.46px;
@@ -16516,8 +16593,13 @@ a {
 }
 .newsletter-subscribe-wrapper .fotter-head .button:hover {
   background-color: #095052;
+<<<<<<< HEAD
   background-color: #FF4E2A;
   color: #095052;
+=======
+  color: #fff;
+  background-color: #FF4E2A;
+>>>>>>> a891dc0194f09e18b54042c5e99e49d7e1b4fae9
 }
 
 .footer-wrapper {
@@ -17143,7 +17225,9 @@ a {
   max-width: 190px;
 }
 .dog-food .dog-food-row .dog-food-5 p {
-  padding-top: 15px;
+  padding-top: 20px;
+}
+.dog-food .dog-food-row .dog-food-5 p a {
   color: #095052;
   font-family: "Intro";
   font-style: normal;
@@ -17158,11 +17242,13 @@ a {
 .dog-food .dog-food-row .pt p {
   z-index: 1;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 10%;
   width: 150px;
   max-width: 100%;
   padding-top: 15px;
+}
+.dog-food .dog-food-row .pt p a {
   color: #fff !important;
   font-family: "Intro";
   font-style: normal;
@@ -17197,7 +17283,9 @@ a {
   margin: 0 auto;
 }
 .cat-food .cat-food-row .cat-food-5 p {
-  padding-top: 15px;
+  padding-top: 20px;
+}
+.cat-food .cat-food-row .cat-food-5 p a {
   font-family: "Intro";
   font-style: normal;
   font-weight: 700;
@@ -17217,6 +17305,8 @@ a {
   width: 150px;
   max-width: 100%;
   padding-top: 15px;
+}
+.cat-food .cat-food-row .pt p a {
   font-family: "Intro";
   font-style: normal;
   font-weight: 700;
@@ -17250,8 +17340,8 @@ a {
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
-  padding-top: 10px;
   margin-left: 20px;
+  margin-bottom: 0px;
   color: #095052;
   border-left: 4px solid #61BC47;
 }
@@ -17288,6 +17378,7 @@ a {
   padding: 13px 50px;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
+  color: #095052;
 }
 .card-weper .dog-card .dog-helth-card .bg-dog .content-card .lest-sub-buttom a:hover {
   background-color: #095052;
@@ -17742,6 +17833,20 @@ a {
   text-align: center;
   letter-spacing: 0.15px;
   color: #095052;
+}
+.part-halth-dog .beuty-dogs .flex-row-reverse .beuty-dog-image {
+  text-align: right;
+}
+
+.custom-food-grid-wrapper.membership {
+  background-color: #F1E9DF80;
+  padding: 80px 0;
+}
+.custom-food-grid-wrapper.membership .coustom-medicin-wrapper {
+  margin-bottom: 50px;
+}
+.custom-food-grid-wrapper.membership .img-image-4 {
+  text-align: center;
 }
 
 .coustom-medicin-wrapper .medicin-dog h2, .coustom-medicin-wrapper .medicin-dog .h2 {
