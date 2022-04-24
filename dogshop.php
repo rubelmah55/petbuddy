@@ -58,7 +58,7 @@ get_header();
                                     <div class="d-flex justify-content-between align-items-center dropdwon ">
                                             <p> Toys</p>
                                             <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                            <div class="categoty-menu p-3">
+                                            <div class="categoty-menu-hover p-3">
                                                 <div class="row">
                                                     <div class="col-12 col-md-6 col-xxl-4">
                                                         <div class="food-food-list">
@@ -100,7 +100,7 @@ get_header();
                                         <div class="d-flex justify-content-between align-items-center dropdwon">
                                             <p> Toys</p>
                                             <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                            <div class="categoty-menu p-3">
+                                            <div class="categoty-menu-hover p-3">
                                                 <div class="row">
                                                     <div class="col-12 col-md-6 col-xxl-4">
                                                         <div class="food-food-list">
@@ -142,7 +142,7 @@ get_header();
                                         <div class="d-flex justify-content-between align-items-center dropdwon ">
                                             <p> Toys</p>
                                             <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                            <div class="categoty-menu p-3">
+                                            <div class="categoty-menu-hover p-3">
                                                 <div class="row">
                                                     <div class="col-12 col-md-6 col-xxl-4">
                                                         <div class="food-food-list">
@@ -184,7 +184,7 @@ get_header();
                                         <div class="d-flex justify-content-between align-items-center dropdwon ">
                                             <p> Toys</p>
                                             <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                            <div class="categoty-menu p-3">
+                                            <div class="categoty-menu-hover p-3">
                                                 <div class="row">
                                                     <div class="col-12 col-md-6 col-xxl-4">
                                                         <div class="food-food-list">
@@ -226,7 +226,7 @@ get_header();
                                         <div class="d-flex justify-content-between align-items-center dropdwon ">
                                             <p> Toys</p>
                                             <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                            <div class="categoty-menu p-3">
+                                            <div class="categoty-menu-hover p-3">
                                                 <div class="row">
                                                     <div class="col-12 col-md-6 col-xxl-4">
                                                         <div class="food-food-list">
@@ -268,7 +268,7 @@ get_header();
                                         <div class="d-flex justify-content-between align-items-center dropdwon ">
                                             <p> Toys</p>
                                             <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                            <div class="categoty-menu p-3">
+                                            <div class="categoty-menu-hover p-3">
                                                 <div class="row">
                                                     <div class="col-12 col-md-6 col-xxl-4">
                                                         <div class="food-food-list">
@@ -310,7 +310,7 @@ get_header();
                                         <div class="d-flex justify-content-between align-items-center dropdwon ">
                                             <p> Toys</p>
                                             <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                            <div class="categoty-menu p-3">
+                                            <div class="categoty-menu-hover p-3">
                                                 <div class="row">
                                                     <div class="col-12 col-md-6 col-xxl-4">
                                                         <div class="food-food-list">
@@ -352,7 +352,7 @@ get_header();
                                         <div class="d-flex justify-content-between align-items-center dropdwon ">
                                             <p> Toys</p>
                                             <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                            <div class="categoty-menu p-3">
+                                            <div class="categoty-menu-hover p-3">
                                                 <div class="row">
                                                     <div class="col-12 col-md-6 col-xxl-4">
                                                         <div class="food-food-list">

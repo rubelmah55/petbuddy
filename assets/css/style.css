@@ -18329,10 +18329,6 @@ a {
   padding-top: 60px;
   position: relative;
 }
-.Category .Dog-food-Category .category-manu .category-manu-weperr {
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
 .Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon {
   margin-top: 15px;
   padding-bottom: 20px;
@@ -18351,31 +18347,28 @@ a {
   padding-left: 20px;
   color: #61BC47;
 }
-.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu {
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu-hover {
   display: none;
   z-index: 9999;
   position: absolute;
-  left: 29%;
-  right: 20%;
+  left: 110%;
   width: 850px;
   min-height: 315px;
   background-color: #fff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 30px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 30px;
   border-radius: 5px;
-  -webkit-transition: all 0.3s ease-in-out !important;
-  transition: all 0.3s ease-in-out !important;
 }
-.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu .Polygon {
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu-hover .Polygon {
   position: absolute;
   top: 45%;
   left: -27px;
 }
-.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu .food-food-list ul li {
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu-hover .food-food-list ul li {
   margin-top: 15px !important;
   padding-bottom: 0px !important;
 }
-.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu .food-food-list ul li a {
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu-hover .food-food-list ul li a {
   font-family: "Intro";
   font-style: normal;
   font-weight: 400;
@@ -18384,26 +18377,27 @@ a {
   letter-spacing: 0.15px;
   color: #000;
 }
-.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu .image-megamenu img {
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu-hover .image-megamenu img {
   max-width: 170px;
 }
 @media (max-width: 1144px) {
-  .Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu {
+  .Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu-hover {
     width: 650px;
   }
 }
 @media (max-width: 865px) {
-  .Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu {
+  .Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu-hover {
     width: 530px;
   }
 }
-.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon:hover .categoty-menu {
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon:hover .categoty-menu-hover {
   display: block !important;
 }
 .Category .Dog-food-Category .category-manu .mobile-nav {
   display: none;
 }
 .Category .Dog-food-Category .category-manu .mobile-nav ul li {
+  cursor: pointer;
   margin-top: 15px;
   padding-bottom: 20px;
   cursor: pointer;
@@ -18425,16 +18419,13 @@ a {
   display: none;
   z-index: 9999;
   position: absolute;
-  left: 29%;
-  right: 20%;
+  left: 110%;
   width: 850px;
   min-height: 315px;
   background-color: #fff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 30px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 30px;
   border-radius: 5px;
-  -webkit-transition: all 0.3s ease-in-out !important;
-  transition: all 0.3s ease-in-out !important;
 }
 .Category .Dog-food-Category .category-manu .mobile-nav ul li .categoty-menu .Polygon {
   position: absolute;
@@ -18465,6 +18456,14 @@ a {
 @media (max-width: 865px) {
   .Category .Dog-food-Category .category-manu .mobile-nav ul li .categoty-menu {
     width: 530px;
+  }
+}
+@media (max-width: 720px) {
+  .Category .Dog-food-Category .category-manu .mobile-nav {
+    display: block !important;
+  }
+  .Category .Dog-food-Category .category-manu .category-manu-weperr {
+    display: none !important;
   }
 }
 .Category .Dog-food-Category .Dog-food .border {
@@ -18519,16 +18518,13 @@ a {
   display: none;
   z-index: 9999;
   position: absolute;
-  left: 29%;
-  right: 20%;
+  left: 110%;
   width: 850px;
   min-height: 315px;
   background-color: #fff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 30px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 30px;
   border-radius: 5px;
-  -webkit-transition: all 0.3s ease-in-out !important;
-  transition: all 0.3s ease-in-out !important;
 }
 .Category .Dog-food-Category .food-info .Polygon {
   position: absolute;
