@@ -18397,6 +18397,76 @@ a {
     width: 530px;
   }
 }
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon:hover .categoty-menu {
+  display: block !important;
+}
+.Category .Dog-food-Category .category-manu .mobile-nav {
+  display: none;
+}
+.Category .Dog-food-Category .category-manu .mobile-nav ul li {
+  margin-top: 15px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #000;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.Category .Dog-food-Category .category-manu .mobile-nav ul li:hover {
+  padding-left: 20px;
+  color: #61BC47;
+}
+.Category .Dog-food-Category .category-manu .mobile-nav ul li .categoty-menu {
+  display: none;
+  z-index: 9999;
+  position: absolute;
+  left: 29%;
+  right: 20%;
+  width: 850px;
+  min-height: 315px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 30px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 30px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.Category .Dog-food-Category .category-manu .mobile-nav ul li .categoty-menu .Polygon {
+  position: absolute;
+  top: 45%;
+  left: -27px;
+}
+.Category .Dog-food-Category .category-manu .mobile-nav ul li .categoty-menu .food-food-list ul li {
+  margin-top: 15px !important;
+  padding-bottom: 0px !important;
+}
+.Category .Dog-food-Category .category-manu .mobile-nav ul li .categoty-menu .food-food-list ul li a {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #000;
+}
+.Category .Dog-food-Category .category-manu .mobile-nav ul li .categoty-menu .image-megamenu img {
+  max-width: 170px;
+}
+@media (max-width: 1144px) {
+  .Category .Dog-food-Category .category-manu .mobile-nav ul li .categoty-menu {
+    width: 650px;
+  }
+}
+@media (max-width: 865px) {
+  .Category .Dog-food-Category .category-manu .mobile-nav ul li .categoty-menu {
+    width: 530px;
+  }
+}
 .Category .Dog-food-Category .Dog-food .border {
   margin-bottom: 50px;
   border: 2px solid #E6EDEE;

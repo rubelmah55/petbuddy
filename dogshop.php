@@ -52,451 +52,462 @@ get_header();
                 <div class="row">
                     <div class="col-12 col-md-3 col-lg-3 col-xxl-3">
                         <div class="category-manu p-2 ">
-                                        <div class="category-manu-weperr">
-                                            <div class="d-flex justify-content-between align-items-center dropdwon ">
-                                                <p> Toys</p>
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                                <div class="categoty-menu p-3">
-                                                    <div class="row">
-                                                        <div class="col-12 col-md-6 col-xxl-4">
-                                                            <div class="food-food-list">
-                                                                <ul>
-                                                                    <li><a href="#">Dry Food </a></li>
-                                                                    <li><a href="#">Wet Food</a></li>
-                                                                    <li><a href="#">Veterinary Diets</a></li>
-                                                                    <li><a href="#"> Premium Food</a></li>
-                                                                    <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                                </ul>
-                                                            </div>
+                            <div class="category-manu-weperr">
+                                <ul>
+                                    <li>
+                                    <div class="d-flex justify-content-between align-items-center dropdwon ">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
+                                            <div class="categoty-menu p-3">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="col-12 col-md-6  col-xxl-4">
-                                                            <div class="food-food-list">
-                                                                <ul>
-                                                                    <li><a href="#">Dry Food </a></li>
-                                                                    <li><a href="#">Wet Food</a></li>
-                                                                    <li><a href="#">Veterinary Diets</a></li>
-                                                                    <li><a href="#"> Premium Food</a></li>
-                                                                    <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                                </ul>
-                                                            </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6  col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="col-12 col-md-12 col-xxl-4">
-                                                            <div class="image-megamenu text-center d-flex flex-d flex-column justify-content-center">
-                                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-10.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/бранодве-1.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                                            </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-12 col-xxl-4">
+                                                        <div class="image-megamenu text-center d-flex flex-d flex-column justify-content-center">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-10.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/бранодве-1.png' ?>"alt="<?php bloginfo('name'); ?>">
                                                         </div>
-                                                        <div class="Polygon">
-                                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                                        </div>
+                                                    </div>
+                                                    <div class="Polygon">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="nav">
-                                                <ul>
-                                                    <li><a href="#">red</a></li>
-                                                    <li><a href="#">red</a></li>
-                                                    <li><a href="#">red</a></li>
-                                                    <li><a href="#">red</a></li>
-                                                </ul>
-                                            </div>
                                         </div>
-                                        <hr>
-                                        <div class="category-manu-weperr">
-                                            <div class="d-flex justify-content-between align-items-center dropdwon">
-                                                <p> Toys</p>
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                                <div class="categoty-menu p-3">
-                                                    <div class="row">
-                                                        <div class="col-12 col-md-6 col-xxl-4">
-                                                            <div class="food-food-list">
-                                                                <ul>
-                                                                    <li><a href="#">Dry Food </a></li>
-                                                                    <li><a href="#">Wet Food</a></li>
-                                                                    <li><a href="#">Veterinary Diets</a></li>
-                                                                    <li><a href="#"> Premium Food</a></li>
-                                                                    <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                                </ul>
-                                                            </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="d-flex justify-content-between align-items-center dropdwon">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
+                                            <div class="categoty-menu p-3">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="col-12 col-md-6  col-xxl-4">
-                                                            <div class="food-food-list">
-                                                                <ul>
-                                                                    <li><a href="#">Dry Food </a></li>
-                                                                    <li><a href="#">Wet Food</a></li>
-                                                                    <li><a href="#">Veterinary Diets</a></li>
-                                                                    <li><a href="#"> Premium Food</a></li>
-                                                                    <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                                </ul>
-                                                            </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6  col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="col-12 col-md-12 col-xxl-4">
-                                                            <div class="image-megamenu text-center d-flex flex-d flex-column justify-content-center">
-                                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-10.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/бранодве-1.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                                            </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-12 col-xxl-4">
+                                                        <div class="image-megamenu text-center d-flex flex-d flex-column justify-content-center">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-10.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/бранодве-1.png' ?>"alt="<?php bloginfo('name'); ?>">
                                                         </div>
-                                                        <div class="Polygon">
-                                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                                        </div>
+                                                    </div>
+                                                    <div class="Polygon">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="nav">
-                                                <ul>
-                                                    <li><a href="#">red</a></li>
-                                                    <li><a href="#">red</a></li>
-                                                    <li><a href="#">red</a></li>
-                                                    <li><a href="#">red</a></li>
-                                                </ul>
-                                            </div>
                                         </div>
-                                        <!-- <div class="category-manu-weperr">
-                                            <div class="d-flex justify-content-between align-items-center dropdwon">
-                                                <p> Toys</p>
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                                <div class="categoty-menu p-3">
-                                                    <div class="row">
-                                                        <div class="col-12 col-md-6 col-xxl-4">
-                                                            <div class="food-food-list">
-                                                                <ul>
-                                                                    <li><a href="#">Dry Food </a></li>
-                                                                    <li><a href="#">Wet Food</a></li>
-                                                                    <li><a href="#">Veterinary Diets</a></li>
-                                                                    <li><a href="#"> Premium Food</a></li>
-                                                                    <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                                </ul>
-                                                            </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="d-flex justify-content-between align-items-center dropdwon ">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
+                                            <div class="categoty-menu p-3">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="col-12 col-md-6  col-xxl-4">
-                                                            <div class="food-food-list">
-                                                                <ul>
-                                                                    <li><a href="#">Dry Food </a></li>
-                                                                    <li><a href="#">Wet Food</a></li>
-                                                                    <li><a href="#">Veterinary Diets</a></li>
-                                                                    <li><a href="#"> Premium Food</a></li>
-                                                                    <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                                </ul>
-                                                            </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6  col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="col-12 col-md-12 col-xxl-4">
-                                                            <div class="image-megamenu text-center d-flex flex-d flex-column justify-content-center">
-                                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-10.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/бранодве-1.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                                            </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-12 col-xxl-4">
+                                                        <div class="image-megamenu text-center d-flex flex-d flex-column justify-content-center">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-10.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/бранодве-1.png' ?>"alt="<?php bloginfo('name'); ?>">
                                                         </div>
-                                                        <div class="Polygon">
-                                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                                        </div>
+                                                    </div>
+                                                    <div class="Polygon">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="nav">
-                                                <ul>
-                                                    <li><a href="#">red</a></li>
-                                                    <li><a href="#">red</a></li>
-                                                    <li><a href="#">red</a></li>
-                                                    <li><a href="#">red</a></li>
-                                                </ul>
-                                            </div>
-                                        </div> -->
-                            <!-- <ul>
-                                <li>
-                                   <div class="d-flex justify-content-between align-items-center dropdwon">
-                                        <p> Toys</p>
-                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                        <div class="categoty-menu p-3">
-                                            <div class="row">
-                                                <div class="col-12 col-md-6 col-xxl-4">
-                                                    <div class="food-food-list">
-                                                        <ul>
-                                                            <li><a href="#">Dry Food </a></li>
-                                                            <li><a href="#">Wet Food</a></li>
-                                                            <li><a href="#">Veterinary Diets</a></li>
-                                                            <li><a href="#"> Premium Food</a></li>
-                                                            <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                        </ul>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="d-flex justify-content-between align-items-center dropdwon ">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
+                                            <div class="categoty-menu p-3">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6  col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-12 col-xxl-4">
+                                                        <div class="image-megamenu text-center d-flex flex-d flex-column justify-content-center">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-10.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/бранодве-1.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="Polygon">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-6  col-xxl-4">
-                                                    <div class="food-food-list">
-                                                        <ul>
-                                                            <li><a href="#">Dry Food </a></li>
-                                                            <li><a href="#">Wet Food</a></li>
-                                                            <li><a href="#">Veterinary Diets</a></li>
-                                                            <li><a href="#"> Premium Food</a></li>
-                                                            <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                        </ul>
+                                            </div>
+                                         </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="d-flex justify-content-between align-items-center dropdwon ">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
+                                            <div class="categoty-menu p-3">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6  col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-12 col-xxl-4">
+                                                        <div class="image-megamenu text-center d-flex flex-d flex-column justify-content-center">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-10.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/бранодве-1.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="Polygon">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-12 col-xxl-4">
-                                                    <div class="image-megamenu text-center d-flex flex-d flex-column justify-content-center">
-                                                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-10.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/бранодве-1.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="d-flex justify-content-between align-items-center dropdwon ">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
+                                            <div class="categoty-menu p-3">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6  col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-12 col-xxl-4">
+                                                        <div class="image-megamenu text-center d-flex flex-d flex-column justify-content-center">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-10.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/бранодве-1.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="Polygon">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
                                                     </div>
                                                 </div>
-                                                <div class="Polygon">
-                                                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="d-flex justify-content-between align-items-center dropdwon ">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
+                                            <div class="categoty-menu p-3">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6  col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-12 col-xxl-4">
+                                                        <div class="image-megamenu text-center d-flex flex-d flex-column justify-content-center">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-10.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/бранодве-1.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="Polygon">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                   </div>
-                                   <div class="drop-d d-none">
-                                       <ul>
-                                           <li><a href="#">1</a></li>
-                                           <li><a href="#">1</a></li>
-                                           <li><a href="#">1</a></li>
-                                       </ul>
-                                   </div> 
-                                </li>
-                                <hr>
-                                <li class="d-flex justify-content-between align-items-center dropdwon accordion">
-                                    <p> Toys</p>
-                                     <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                    <div class="categoty-menu p-3">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="food-food-list">
-                                                    <ul>
-                                                        <li><a href="#">Dry Food </a></li>
-                                                        <li><a href="#">Wet Food</a></li>
-                                                        <li><a href="#">Veterinary Diets</a></li>
-                                                        <li><a href="#"> Premium Food</a></li>
-                                                        <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                    </ul>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="d-flex justify-content-between align-items-center dropdwon ">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
+                                            <div class="categoty-menu p-3">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6  col-xxl-4">
+                                                        <div class="food-food-list">
+                                                            <ul>
+                                                                <li><a href="#">Dry Food </a></li>
+                                                                <li><a href="#">Wet Food</a></li>
+                                                                <li><a href="#">Veterinary Diets</a></li>
+                                                                <li><a href="#"> Premium Food</a></li>
+                                                                <li><a href="#">Fresh & Prepared Meals</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-12 col-xxl-4">
+                                                        <div class="image-megamenu text-center d-flex flex-d flex-column justify-content-center">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/Image-10.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/бранодве-1.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="Polygon">
+                                                        <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="food-food-list">
-                                                    <ul>
-                                                        <li><a href="#">Dry Food </a></li>
-                                                        <li><a href="#">Wet Food</a></li>
-                                                        <li><a href="#">Veterinary Diets</a></li>
-                                                        <li><a href="#"> Premium Food</a></li>
-                                                        <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="image-megamenu">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/head-vector.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/head-vector.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                                </div>
-                                            </div>
-                                            <div class="Polygon">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                            </div>
+                                         </div>
+                                    </li>
+                                    <hr>
+                                </ul> 
+                            </div> 
+                            <div class="mobile-nav">
+                                <ul>
+                                    <li>
+                                        <div class="dropdwon-0 d-flex justify-content-between align-items-center">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
                                         </div>
-                                    </div>
-                                </li>
-                                <hr>
-                                <li class="d-flex justify-content-between align-items-center dropdwon">
-                                    <p> Toys</p>
-                                     <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                    <div class="categoty-menu p-3">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="food-food-list">
-                                                    <ul>
-                                                        <li><a href="#">Dry Food </a></li>
-                                                        <li><a href="#">Wet Food</a></li>
-                                                        <li><a href="#">Veterinary Diets</a></li>
-                                                        <li><a href="#"> Premium Food</a></li>
-                                                        <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="food-food-list">
-                                                    <ul>
-                                                        <li><a href="#">Dry Food </a></li>
-                                                        <li><a href="#">Wet Food</a></li>
-                                                        <li><a href="#">Veterinary Diets</a></li>
-                                                        <li><a href="#"> Premium Food</a></li>
-                                                        <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="image-megamenu">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/head-vector.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/head-vector.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                                </div>
-                                            </div>
-                                            <div class="Polygon">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                            </div>
+                                        <div class="nav-0">
+                                            <ul>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                            </ul>
                                         </div>
-                                    
-                                    
-                                    </div>
-
-                                </li>
-                                <hr>
-                                <li class="d-flex justify-content-between align-items-center dropdwon">
-                                    <p> Toys</p>
-                                     <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                    <div class="categoty-menu p-3">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="food-food-list">
-                                                    <ul>
-                                                        <li><a href="#">Dry Food </a></li>
-                                                        <li><a href="#">Wet Food</a></li>
-                                                        <li><a href="#">Veterinary Diets</a></li>
-                                                        <li><a href="#"> Premium Food</a></li>
-                                                        <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="food-food-list">
-                                                    <ul>
-                                                        <li><a href="#">Dry Food </a></li>
-                                                        <li><a href="#">Wet Food</a></li>
-                                                        <li><a href="#">Veterinary Diets</a></li>
-                                                        <li><a href="#"> Premium Food</a></li>
-                                                        <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-xxl-4 d-sm-none ">
-                                                <div class="image-megamenu">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/head-vector.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/head-vector.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                                </div>
-                                            </div>
-                                            <div class="Polygon">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                            </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="dropdwon-6 d-flex justify-content-between align-items-center">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
                                         </div>
-                                    </div>
-
-                                </li>
-                                <hr>
-                                <li class="d-flex justify-content-between align-items-center dropdwon">
-                                    <p> Toys</p>
-                                     <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                    <div class="categoty-menu p-3">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="food-food-list">
-                                                    <ul>
-                                                        <li><a href="#">Dry Food </a></li>
-                                                        <li><a href="#">Wet Food</a></li>
-                                                        <li><a href="#">Veterinary Diets</a></li>
-                                                        <li><a href="#"> Premium Food</a></li>
-                                                        <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="food-food-list">
-                                                    <ul>
-                                                        <li><a href="#">Dry Food </a></li>
-                                                        <li><a href="#">Wet Food</a></li>
-                                                        <li><a href="#">Veterinary Diets</a></li>
-                                                        <li><a href="#"> Premium Food</a></li>
-                                                        <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="image-megamenu">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/head-vector.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/head-vector.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                                </div>
-                                            </div>
-                                            <div class="Polygon">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                            </div>
+                                        <div class="nav-6">
+                                            <ul>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                            </ul>
                                         </div>
-                                    </div>
-
-                                </li>
-                                <hr>
-                                <li class="d-flex justify-content-between align-items-center dropdwon">
-                                    <p> Toys</p>
-                                     <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                    <div class="categoty-menu p-3">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="food-food-list">
-                                                    <ul>
-                                                        <li><a href="#">Dry Food </a></li>
-                                                        <li><a href="#">Wet Food</a></li>
-                                                        <li><a href="#">Veterinary Diets</a></li>
-                                                        <li><a href="#"> Premium Food</a></li>
-                                                        <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="food-food-list">
-                                                    <ul>
-                                                        <li><a href="#">Dry Food </a></li>
-                                                        <li><a href="#">Wet Food</a></li>
-                                                        <li><a href="#">Veterinary Diets</a></li>
-                                                        <li><a href="#"> Premium Food</a></li>
-                                                        <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="image-megamenu">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/head-vector.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/head-vector.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                                </div>
-                                            </div>
-                                            <div class="Polygon">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                            </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="dropdwon-1 d-flex justify-content-between align-items-center">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
                                         </div>
-                                    </div>
-
-                                </li>
-                                <hr>
-                                <li class="d-flex justify-content-between align-items-center dropdwon">
-                                    <p> Toys</p>
-                                     <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
-                                    <div class="categoty-menu p-3">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="food-food-list">
-                                                    <ul>
-                                                        <li><a href="#">Dry Food </a></li>
-                                                        <li><a href="#">Wet Food</a></li>
-                                                        <li><a href="#">Veterinary Diets</a></li>
-                                                        <li><a href="#"> Premium Food</a></li>
-                                                        <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="food-food-list">
-                                                    <ul>
-                                                        <li><a href="#">Dry Food </a></li>
-                                                        <li><a href="#">Wet Food</a></li>
-                                                        <li><a href="#">Veterinary Diets</a></li>
-                                                        <li><a href="#"> Premium Food</a></li>
-                                                        <li><a href="#">Fresh & Prepared Meals</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-xxl-4">
-                                                <div class="image-megamenu text-center">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/head-vector.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/head-vector.svg' ?>"alt="<?php bloginfo('name'); ?>">
-                                                </div>
-                                            </div>
-                                            <div class="Polygon">
-                                                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/Polygon.png' ?>"alt="<?php bloginfo('name'); ?>">
-                                            </div>
+                                        <div class="nav-1">
+                                            <ul>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                            </ul>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul> -->
-                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="dropdwon-2 d-flex justify-content-between align-items-center">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
+                                        </div>
+                                        <div class="nav-2">
+                                            <ul>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="dropdwon-3 d-flex justify-content-between align-items-center">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
+                                        </div>
+                                        <div class="nav-3">
+                                            <ul>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="dropdwon-4 d-flex justify-content-between align-items-center">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
+                                        </div>
+                                        <div class="nav-4">
+                                            <ul>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="dropdwon-5 d-flex justify-content-between align-items-center">
+                                            <p> Toys</p>
+                                            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/dogShop/icon/arrow-left-1.svg' ?>">
+                                        </div>
+                                        <div class="nav-5">
+                                            <ul>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                                <li><a href="#">0</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
                     </div>
                     
                     <div class="col-12 col-md-9 col-lg-9 col-xxl-9">

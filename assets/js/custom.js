@@ -112,13 +112,33 @@
       ]
     });
   //link
-    $(".category-manu-weperr").click(function(){
-      $(".nav").toggle();
-    });
-  
-      $(".Най-новите").click(function(){
-        $(".dropdwon-seclet").slideToggle("slow");
-      });
+        $(".dropdwon-0").click(function(){
+          $(".nav-0").toggle("slow");
+        });
+        $(".dropdwon-1").click(function () {
+          $(".nav-1").toggle("slow");
+        })
+        $(".dropdwon-2").click(function () {
+          $(".nav-2").toggle("slow");
+        })
+        $(".dropdwon-3").click(function () {
+          $(".nav-3").toggle("slow");
+        })
+        $(".dropdwon-4").click(function () {
+          $(".nav-4").toggle("slow");
+        })
+        $(".dropdwon-5").click(function () {
+          $(".nav-5").toggle("slow");
+        })
+        $(".dropdwon-6").click(function () {
+          $(".nav-6").toggle("slow");
+        })
+        $(".dropdwon-7").click(function () {
+          $(".nav-7").toggle("slow");
+        })
+        $(".Най-новите").click(function(){
+          $(".dropdwon-seclet").slideToggle("slow");
+        });
   
     //    Sticky Menu
     $(window).scroll(function() {

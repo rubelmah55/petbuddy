@@ -80,17 +80,32 @@
                     .categoty-menu{
                         @include Food-info;
                      }
-                    // &:hover{
-                    //     .categoty-menu{
-                    //         display: block !important;
-                    //     }
-                    // }
+                    &:hover{
+                        .categoty-menu{
+                            display: block !important;
+                        }
+                    }
                 }
-                // &:hover{
-                //     .nav{
-                //         display: block !important;
-                //     }
-                // }
+            }
+            .mobile-nav{
+                display: none;
+                ul{
+                    li{
+                        margin-top: 15px;
+                        padding-bottom: 20px;
+                        cursor: pointer;
+                        @include typofraphy-1;
+                        color:$black;
+                        transition: all 0.3s ease-in-out !important;
+                        &:hover{
+                            padding-left: 20px;
+                            color: $primary;
+                        }
+                        .categoty-menu{
+                            @include Food-info;
+                         }
+                    }
+                }
             }
         }
         .Dog-food {
