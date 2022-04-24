@@ -22,8 +22,8 @@
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 5000,
-      prevArrow: '<div class="slick-pvsev"></div>',
-      nextArrow:  '<div class="slick-nextt"></div>',
+      prevArrow: '<div class="slick-prev"></div>',
+      nextArrow:  '<div class="slick-next"></div>',
       responsive: [
         {
           breakpoint: 1024,
@@ -70,14 +70,19 @@
       prevArrow: '<div class="slick-browseProw"></div>',
       nextArrow:  '<div class="slick-browseNext"></div>',
     });
-    $('#toggle').click( function() {
-      if ($(this).html() == ''){
-         $('.header-offer').slick('slickPause')
-         $(this).html('') 
-      } else {
-        $('.header-offer').slick('slickPlay')  
-        $(this).html('<i class="bi bi-play-circle"></i>') 
-      }  
+
+    $('#toggle .play').hide();
+
+    $('#toggle .pause').click( function() {      
+      $('.header-offer').slick('slickPause');
+      $(this).hide();
+      $('#toggle .play').show();
+    });
+
+    $('#toggle .play').click( function() {      
+      $('.header-offer').slick('slickPlay');
+      $(this).hide();
+      $('#toggle .pause').show();
     });
   
     $('.slider-food-2').slick({
@@ -239,8 +244,3 @@ function closeNav() {
 //     }
 //   });
 // }
-const dropdwon = document.getElementsByClassName('dropdwon');
-const x = document.getElementsByClassName("nav");
-dropdwon.addEventListener('click', () => {
-  x.classList.add('hide');
-})

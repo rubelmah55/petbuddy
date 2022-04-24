@@ -15234,38 +15234,6 @@ input, textarea, button {
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
-@font-face {
-  font-family: "Averta CY";
-  src: url("AvertaCY-RegularItalic.eot");
-  src: url("AvertaCY-RegularItalic.eot?#iefix") format("embedded-opentype"), url("AvertaCY-RegularItalic.woff2") format("woff2"), url("AvertaCY-RegularItalic.woff") format("woff"), url("AvertaCY-RegularItalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Averta CY";
-  src: url("AvertaCY-Regular.eot");
-  src: url("AvertaCY-Regular.eot?#iefix") format("embedded-opentype"), url("AvertaCY-Regular.woff2") format("woff2"), url("AvertaCY-Regular.woff") format("woff"), url("AvertaCY-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Intro";
-  src: url("Intro-Regular.eot");
-  src: url("Intro-Regular.eot?#iefix") format("embedded-opentype"), url("Intro-Regular.woff2") format("woff2"), url("Intro-Regular.woff") format("woff"), url("Intro-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Intro";
-  src: url("Intro-Bold.eot");
-  src: url("Intro-Bold.eot?#iefix") format("embedded-opentype"), url("Intro-Bold.woff2") format("woff2"), url("Intro-Bold.woff") format("woff"), url("Intro-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
 body {
   font-family: "Intro";
   font-size: 15px;
@@ -15280,6 +15248,22 @@ body {
   src: url("../fonts/Intro-Regular.woff2") format("woff2"), url("../fonts/Intro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Intro";
+  src: url("../fonts/Intro-Bold.eot");
+  src: url("../fonts/Intro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Intro-Bold.woff2") format("woff2"), url("../fonts/Intro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Averta CY";
+  src: url("../fonts/AvertaCY-BoldItalic.eot");
+  src: url("../fonts/AvertaCY-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AvertaCY-BoldItalic.woff2") format("woff2"), url("../fonts/AvertaCY-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
   font-display: swap;
 }
 h1, .h1,
@@ -18693,12 +18677,18 @@ a {
   letter-spacing: 0.15px;
   color: #095052;
 }
+.browse-head-wepeer .browse-wepeer .buttons {
+  position: relative;
+}
 .browse-head-wepeer .browse-wepeer button {
   z-index: 70;
   position: absolute;
-  right: 7%;
-  top: 35%;
+  right: 50px;
   background-color: transparent;
+  bottom: 0;
+}
+.browse-head-wepeer .browse-wepeer button img.play {
+  max-width: 20px;
 }
 
 .browse-wepeer-link .dog-wepeer .dog-text .head {

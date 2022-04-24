@@ -27,6 +27,8 @@ get_header();
                         </div>
                         <div class="buttons">
                             <button id='toggle'>
+                                <img class="pause" src="<?php echo get_template_directory_uri(); ?>/assets/img/dogShop-2/icon/play.svg" alt="">
+                                <img class="play" src="<?php echo get_template_directory_uri(); ?>/assets/img/dogShop-2/icon/pause.png" alt="">
                             </button>
                         </div>
                     </div>

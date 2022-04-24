@@ -21,12 +21,20 @@
                 }
             }
         }
+
+        .buttons {
+            position: relative;
+        }
         button{
             z-index: 70;
             position: absolute;
-            right: 7%;
-            top: 35%;
+            right: 50px;
             background-color: transparent;
+            bottom: 0;
+
+            img.play {
+                max-width: 20px;
+            }
         }
     }
 }
