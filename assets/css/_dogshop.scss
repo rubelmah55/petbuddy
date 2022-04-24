@@ -1,0 +1,235 @@
+// Dog Shop start
+//section-01
+.dog-head-wepeer{
+    .dog-wepeer{
+       
+        background-color: $gray-light;
+        overflow: hidden;
+        // padding-top: $Hight-35;
+        // padding-bottom: $Hight-40;
+        .dog-text{
+            .head{
+                margin-bottom: 20px;
+                a{
+                    @include DogShop;
+                    color: $black;
+                    padding-right: 10px;
+                    span{
+                        @include DogShop;
+                        color: $gray;
+                        padding-left: 10px;
+                    }
+                }
+                
+            }
+        }
+        .laft-middle-text{
+            h5{
+                @include typography-9;
+                color: $black;
+                margin-bottom: 0px;
+            }
+            p{
+                @include typofraphy-1 ;
+                color: $gray;
+            }
+        }
+        .dog-image{
+            position: relative;
+            .image-weprre{
+                position: relative;
+                z-index: 2;
+            }
+            .vector-weperre-1{
+                position: absolute;
+                top:30%;
+                right: 55%;
+                z-index: 1;
+    
+            }
+            .vector-weperre-2{
+                position: absolute;
+                top:0%;
+                right: 43%;
+                z-index: 1;
+            }
+        }
+        
+    }
+}
+//section-01
+//section-02
+.Category{
+    padding-top: 60px;
+    position: relative;
+    .Dog-food-Category{
+        .category-manu{
+            .category-manu-weperr{
+                transition: all 0.3s ease-in;
+                .dropdwon{
+                    margin-top: 15px;
+                    padding-bottom: 20px;
+                    cursor: pointer;
+                    @include typofraphy-1;
+                    color:$black;
+                    transition: all 0.3s ease-in-out !important;
+                    &:hover{
+                        padding-left: 20px;
+                        color: $primary;
+                    }
+                    .categoty-menu{
+                        @include Food-info;
+                     }
+                    // &:hover{
+                    //     .categoty-menu{
+                    //         display: block !important;
+                    //     }
+                    // }
+                }
+                // &:hover{
+                //     .nav{
+                //         display: block !important;
+                //     }
+                // }
+            }
+        }
+        .Dog-food {
+            .border{
+                margin-bottom: 50px;
+                border: 2px solid #E6EDEE;
+                border-radius: 10px;
+            }
+            .sub-nane{
+                h4{
+                    margin-bottom: 0px;
+                    @include typography-6 ;
+                    text-align: left ;
+                }
+            }
+            .sub-link{
+                a{
+                    span{
+                        @include typofraphy-1;
+                        color: $gray;
+                    }
+                    img{
+                        padding-right:20px;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &:Hover img{
+                        padding-left: 20px;
+                    }
+                }
+            }
+            .food{
+                .image-food{
+                    img{
+                        max-width: 180px;
+                        max-height: 170px;
+                    }
+                }
+                .food-name{
+                    h5{
+                        margin-top: 20px;
+                        @include typofraphy-2;
+                        color: $gray;
+                    }
+                }
+            }
+        }
+        .food-info{
+            @include Food-info;
+         }
+    }
+}
+.nav{
+    display: none;
+}
+
+//slider
+.slick-pvsev.slick-arrow {
+    background-image: url(../img/dogShop/icon/arrow-right.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    right: -45%;
+    border: 1px solid $gray;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        &::after{
+            position: absolute;
+            clear: both;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: $gray-light;
+            z-index: -1;
+            border-radius: 50%;
+        }
+        border: none;
+    }
+    @media (max-width: 769px) {
+        right: -38%;
+    }
+    @media (max-width: 425px) {
+        right: -35%;
+    }
+}
+.slick-nextt.slick-arrow {
+    background-image: url(../img/dogShop/icon/arrow-left-1.svg);
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $gray;
+    position: absolute;
+    top: -100%;
+    cursor: pointer;
+    left: 50%;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        &::after{
+            position: absolute;
+            clear: both;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: $gray-light;
+            z-index: -1;
+            border-radius: 50%;
+        }
+        border: none;
+    }
+    @media (max-width: 769px) {
+        left: 48%;
+    }
+    @media (max-width: 425px) {
+        left: 50%;
+    }
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    padding:-1px;
+    line-height: 1;
+    opacity:1;
+    color:$gray;
+}
+//section-02
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+  .hide{
+      display: block;
+  }

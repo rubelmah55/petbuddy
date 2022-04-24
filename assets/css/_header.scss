@@ -54,7 +54,7 @@
                         width: 200px;
                         background-color: $primary;
                         left: 0;
-                        z-index: 9999;
+                        z-index:9;
                         box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
                         visibility: hidden;
                         opacity: 0;
@@ -152,11 +152,7 @@
             color: $white;
             &:hover{
                 @include hover-1;
-<<<<<<< HEAD
                color:$primary;
-=======
-               color: $white;
->>>>>>> a891dc0194f09e18b54042c5e99e49d7e1b4fae9
             }
         }
     }

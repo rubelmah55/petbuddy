@@ -15282,23 +15282,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-<<<<<<< HEAD
-=======
-@font-face {
-  font-family: "Intro";
-  src: url("../fonts/Intro-Bold.woff2") format("woff2"), url("../fonts/Intro-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Averta CY";
-  src: url("../fonts/AvertaCY-Bold.woff2") format("woff2"), url("../fonts/AvertaCY-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
->>>>>>> a891dc0194f09e18b54042c5e99e49d7e1b4fae9
 h1, .h1,
 h2,
 .h2,
@@ -15316,7 +15299,6 @@ h6,
   font-weight: 500;
   color: #095052;
   line-height: 117%;
-  text-transform: uppercase;
 }
 
 h1, .h1 {
@@ -16308,7 +16290,7 @@ a {
   width: 200px;
   background-color: #61BC47;
   left: 0;
-  z-index: 9999;
+  z-index: 9;
   -webkit-box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
           box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
   visibility: hidden;
@@ -16377,11 +16359,7 @@ a {
 }
 .header-wrapper .header-right .button:hover {
   background-color: #095052;
-<<<<<<< HEAD
   color: #61BC47;
-=======
-  color: #fff;
->>>>>>> a891dc0194f09e18b54042c5e99e49d7e1b4fae9
 }
 .header-wrapper .search-box-wrapper {
   max-width: 137px;
@@ -16593,13 +16571,8 @@ a {
 }
 .newsletter-subscribe-wrapper .fotter-head .button:hover {
   background-color: #095052;
-<<<<<<< HEAD
   background-color: #FF4E2A;
   color: #095052;
-=======
-  color: #fff;
-  background-color: #FF4E2A;
->>>>>>> a891dc0194f09e18b54042c5e99e49d7e1b4fae9
 }
 
 .footer-wrapper {
@@ -18283,6 +18256,820 @@ a {
 
   .myAccroding .accroding-into .lest-sub-buttom a {
     padding: 10px 20px;
+  }
+}
+.dog-head-wepeer .dog-wepeer {
+  background-color: #E6EDEE;
+  overflow: hidden;
+}
+.dog-head-wepeer .dog-wepeer .dog-text .head {
+  margin-bottom: 20px;
+}
+.dog-head-wepeer .dog-wepeer .dog-text .head a {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #000;
+  padding-right: 10px;
+}
+.dog-head-wepeer .dog-wepeer .dog-text .head a span {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #095052;
+  padding-left: 10px;
+}
+.dog-head-wepeer .dog-wepeer .laft-middle-text h5, .dog-head-wepeer .dog-wepeer .laft-middle-text .h5 {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 42px;
+  letter-spacing: 0.15px;
+  color: #095052;
+  color: #000;
+  margin-bottom: 0px;
+}
+.dog-head-wepeer .dog-wepeer .laft-middle-text p {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #095052;
+}
+.dog-head-wepeer .dog-wepeer .dog-image {
+  position: relative;
+}
+.dog-head-wepeer .dog-wepeer .dog-image .image-weprre {
+  position: relative;
+  z-index: 2;
+}
+.dog-head-wepeer .dog-wepeer .dog-image .vector-weperre-1 {
+  position: absolute;
+  top: 30%;
+  right: 55%;
+  z-index: 1;
+}
+.dog-head-wepeer .dog-wepeer .dog-image .vector-weperre-2 {
+  position: absolute;
+  top: 0%;
+  right: 43%;
+  z-index: 1;
+}
+
+.Category {
+  padding-top: 60px;
+  position: relative;
+}
+.Category .Dog-food-Category .category-manu .category-manu-weperr {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon {
+  margin-top: 15px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #000;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon:hover {
+  padding-left: 20px;
+  color: #61BC47;
+}
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu {
+  display: none;
+  z-index: 9999;
+  position: absolute;
+  left: 29%;
+  right: 20%;
+  width: 850px;
+  min-height: 315px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 30px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 30px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu .Polygon {
+  position: absolute;
+  top: 45%;
+  left: -27px;
+}
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu .food-food-list ul li {
+  margin-top: 15px !important;
+  padding-bottom: 0px !important;
+}
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu .food-food-list ul li a {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #000;
+}
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu .image-megamenu img {
+  max-width: 170px;
+}
+@media (max-width: 1144px) {
+  .Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu {
+    width: 650px;
+  }
+}
+@media (max-width: 865px) {
+  .Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu {
+    width: 530px;
+  }
+}
+.Category .Dog-food-Category .Dog-food .border {
+  margin-bottom: 50px;
+  border: 2px solid #E6EDEE;
+  border-radius: 10px;
+}
+.Category .Dog-food-Category .Dog-food .sub-nane h4, .Category .Dog-food-Category .Dog-food .sub-nane .h4 {
+  margin-bottom: 0px;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #000;
+  text-align: left;
+}
+.Category .Dog-food-Category .Dog-food .sub-link a span {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #095052;
+}
+.Category .Dog-food-Category .Dog-food .sub-link a img {
+  padding-right: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.Category .Dog-food-Category .Dog-food .sub-link a:Hover img {
+  padding-left: 20px;
+}
+.Category .Dog-food-Category .Dog-food .food .image-food img {
+  max-width: 180px;
+  max-height: 170px;
+}
+.Category .Dog-food-Category .Dog-food .food .food-name h5, .Category .Dog-food-Category .Dog-food .food .food-name .h5 {
+  margin-top: 20px;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  color: #095052;
+}
+.Category .Dog-food-Category .food-info {
+  display: none;
+  z-index: 9999;
+  position: absolute;
+  left: 29%;
+  right: 20%;
+  width: 850px;
+  min-height: 315px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 30px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 30px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.Category .Dog-food-Category .food-info .Polygon {
+  position: absolute;
+  top: 45%;
+  left: -27px;
+}
+.Category .Dog-food-Category .food-info .food-food-list ul li {
+  margin-top: 15px !important;
+  padding-bottom: 0px !important;
+}
+.Category .Dog-food-Category .food-info .food-food-list ul li a {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #000;
+}
+.Category .Dog-food-Category .food-info .image-megamenu img {
+  max-width: 170px;
+}
+@media (max-width: 1144px) {
+  .Category .Dog-food-Category .food-info {
+    width: 650px;
+  }
+}
+@media (max-width: 865px) {
+  .Category .Dog-food-Category .food-info {
+    width: 530px;
+  }
+}
+
+.nav {
+  display: none;
+}
+
+.slick-pvsev.slick-arrow {
+  background-image: url(../img/dogShop/icon/arrow-right.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  top: -30px;
+  right: -45%;
+  border: 1px solid #095052;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.slick-pvsev.slick-arrow:hover {
+  border: none;
+}
+.slick-pvsev.slick-arrow:hover::after {
+  position: absolute;
+  clear: both;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #E6EDEE;
+  z-index: -1;
+  border-radius: 50%;
+}
+@media (max-width: 769px) {
+  .slick-pvsev.slick-arrow {
+    right: -38%;
+  }
+}
+@media (max-width: 425px) {
+  .slick-pvsev.slick-arrow {
+    right: -35%;
+  }
+}
+
+.slick-nextt.slick-arrow {
+  background-image: url(../img/dogShop/icon/arrow-left-1.svg);
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #095052;
+  position: absolute;
+  top: -100%;
+  cursor: pointer;
+  left: 50%;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.slick-nextt.slick-arrow:hover {
+  border: none;
+}
+.slick-nextt.slick-arrow:hover::after {
+  position: absolute;
+  clear: both;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #E6EDEE;
+  z-index: -1;
+  border-radius: 50%;
+}
+@media (max-width: 769px) {
+  .slick-nextt.slick-arrow {
+    left: 48%;
+  }
+}
+@media (max-width: 425px) {
+  .slick-nextt.slick-arrow {
+    left: 50%;
+  }
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  padding: -1px;
+  line-height: 1;
+  opacity: 1;
+  color: #095052;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.hide {
+  display: block;
+}
+
+.browse-head-wepeer {
+  overflow: hidden;
+  position: relative;
+}
+.browse-head-wepeer .browse-wepeer {
+  background-color: #61BC47;
+}
+.browse-head-wepeer .browse-wepeer .header-offer .item h6, .browse-head-wepeer .browse-wepeer .header-offer .item .h6 {
+  margin-bottom: 0px;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #000;
+}
+.browse-head-wepeer .browse-wepeer .header-offer .item p {
+  margin-left: 25px;
+  padding-bottom: 0px;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #095052;
+}
+
+.browse-wepeer-link .dog-wepeer .dog-text .head {
+  margin-bottom: 20px;
+}
+.browse-wepeer-link .dog-wepeer .dog-text .head a {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.browse-wepeer-link .dog-wepeer .dog-text .head a span {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #095052;
+  padding-left: 10px;
+}
+
+.Category-2 {
+  padding-top: 40px;
+}
+.Category-2 .Dog-food-Category .category-manu .accroding-manu .category-manu-weperr .dropdwon p {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.Category-2 .Dog-food-Category .category-manu .accroding-manu .category-manu-weperr .drop-d ul li {
+  padding-bottom: 10px;
+}
+.Category-2 .Dog-food-Category .category-manu .accroding-manu .category-manu-weperr .drop-d ul li a {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.46px;
+  color: #095052;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.Category-2 .Dog-food-Category .category-manu .accroding-manu .category-manu-weperr .drop-d ul li a:hover {
+  color: #61BC47;
+}
+.Category-2 .Dog-food-Category .Advance-food .border {
+  margin-bottom: 50px;
+  border: 2px solid #E6EDEE;
+  border-radius: 10px;
+}
+.Category-2 .Dog-food-Category .Advance-food .slider-food-2 .item .food .image-food img {
+  max-width: 115px;
+  max-height: 110px;
+}
+.Category-2 .Dog-food-Category .Advance-food .slider-food-2 .item .food .food-name h5, .Category-2 .Dog-food-Category .Advance-food .slider-food-2 .item .food .food-name .h5 {
+  margin-top: 20px;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  color: #095052;
+}
+.Category-2 .Dog-food-Category .prodact-selected-wepeer {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.Category-2 .Dog-food-Category .prodact-selected-wepeer .prodact-selected .selected h5, .Category-2 .Dog-food-Category .prodact-selected-wepeer .prodact-selected .selected .h5 {
+  margin-bottom: 0px;
+}
+.Category-2 .Dog-food-Category .prodact-selected-wepeer .prodact-selected .selected ul li {
+  padding: 7px 15px;
+  margin: 10px;
+  background-color: #E6EDEE;
+  border-radius: 5px;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #040404;
+}
+.Category-2 .Dog-food-Category .prodact-selected-wepeer .prodact-selected .selected ul li a {
+  text-decoration: underline;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #040404;
+}
+.Category-2 .Dog-food-Category .prodact-selected-wepeer .prodact-selected .selected ul li span {
+  padding-left: 10px;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .nav-cetagory ul {
+  width: 170px;
+  border: 1px solid #61BC47;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .nav-cetagory ul li {
+  position: relative;
+  padding: 10px;
+  color: #787878;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .nav-cetagory ul li .dropdwon-seclet {
+  position: absolute;
+  z-index: 5;
+  top: 95%;
+  left: -1px;
+  background-color: #fff;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .nav-cetagory ul li .dropdwon-seclet ul {
+  border: 1px solid #61BC47;
+  border-top: none;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .nav-cetagory ul li .dropdwon-seclet ul li {
+  padding: 10px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .nav-cetagory ul li .dropdwon-seclet ul li:hover {
+  background-color: #EFF8ED;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .nav-cetagory ul li .arrow {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .nav-cetagory ul li .arrow img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .nav-cetagory h6, .Category-2 .Dog-food-Category .Dog-food-selected .nav-cetagory .h6 {
+  margin-bottom: 0px;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #000;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .nav-cetagory select {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #61BC47;
+  outline: none;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .nav-cetagory select option {
+  outline: none;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #787878;
+  background: #FFFFFF;
+  border: 1px solid #61BC47;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .food-item .vetenari {
+  position: relative;
+  width: 210px;
+  padding: 7px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .food-item .vetenari .food .food-name h5, .Category-2 .Dog-food-Category .Dog-food-selected .food-item .vetenari .food .food-name .h5 {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  line-height: 21px;
+  color: #000;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .food-item .vetenari .food .food-name p {
+  color: #4D4D4D;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .food-item .vetenari .food .price h6, .Category-2 .Dog-food-Category .Dog-food-selected .food-item .vetenari .food .price .h6 {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  color: #BC2848;
+  margin-bottom: 0px;
+  padding-right: 10px;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .food-item .vetenari .food .price p {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #000;
+  padding-top: 3px;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .food-item .vetenari .food .added {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .food-item .vetenari .food .hot-price {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .food-item .vetenari .food .hot-price p {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  color: #fff;
+  padding: 3px 7px;
+  background-color: #BC2848;
+  border-radius: 5px;
+  margin-bottom: 0px;
+}
+.Category-2 .Dog-food-Category .Dog-food-selected .food-item .vetenari:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.098) 0px 0px 10px;
+          box-shadow: rgba(0, 0, 0, 0.098) 0px 0px 10px;
+  border-radius: 10px;
+}
+.Category-2 .Dog-food-Category .next-item .prev a {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #000;
+  padding: 7px 15px;
+  border-radius: 20px;
+  background-color: #E6EDEE;
+}
+.Category-2 .Dog-food-Category .next-item .page ul li {
+  margin: 0px 10px;
+}
+.Category-2 .Dog-food-Category .next-item .page ul li a {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #000;
+  padding: 5px 10px;
+  background-color: transparent;
+}
+.Category-2 .Dog-food-Category .next-item .page .active {
+  border: 1px solid #61BC47;
+  border-radius: 50%;
+}
+.Category-2 .Dog-food-Category .next-item .page .active a {
+  color: #61BC47 !important;
+}
+.Category-2 .Dog-food-Category .next-item .next a {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #000;
+  padding: 7px 15px;
+  border-radius: 20px;
+  background-color: #E6EDEE;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.Category-2 .Dog-food-Category .next-item .next a:hover {
+  background-color: #E6EDEE;
+}
+.Category-2 .Dog-food-Category .page-number p {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.5px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.drop-d {
+  max-width: 250px;
+  height: 150px;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+}
+
+.drop-d::-webkit-scrollbar {
+  width: 10px;
+}
+
+.drop-d::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.drop-d::-webkit-scrollbar-thumb {
+  background: #61BC47;
+  border-radius: 10px;
+}
+
+.slick-browseProw.slick-arrow {
+  background-image: url(../img/dogShop-2/icon/Vector.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0%;
+  top: 0px;
+  cursor: pointer;
+}
+
+.slick-browseNext.slick-arrow {
+  background-image: url(../img/dogShop-2/icon/Vector-1.svg);
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0%;
+  cursor: pointer;
+  right: 0%;
+}
+
+.slick-pvsev-2.slick-arrow {
+  background-image: url(../img/dogShop/icon/arrow-right.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  top: -70px;
+  right: -90%;
+  border: 1px solid #095052;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.slick-pvsev-2.slick-arrow:hover {
+  border: none;
+}
+.slick-pvsev-2.slick-arrow:hover::after {
+  position: absolute;
+  clear: both;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #E6EDEE;
+  z-index: -1;
+  border-radius: 50%;
+}
+@media (max-width: 769px) {
+  .slick-pvsev-2.slick-arrow {
+    right: -85%;
+  }
+}
+@media (max-width: 425px) {
+  .slick-pvsev-2.slick-arrow {
+    right: -80%;
+  }
+}
+
+.slick-nextt-2.slick-arrow {
+  background-image: url(../img/dogShop/icon/arrow-left-1.svg);
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #095052;
+  position: absolute;
+  top: -118%;
+  cursor: pointer;
+  left: 97%;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.slick-nextt-2.slick-arrow:hover {
+  border: none;
+}
+.slick-nextt-2.slick-arrow:hover::after {
+  position: absolute;
+  clear: both;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #E6EDEE;
+  z-index: -1;
+  border-radius: 50%;
+}
+@media (max-width: 769px) {
+  .slick-nextt-2.slick-arrow {
+    left: 95%;
+  }
+}
+@media (max-width: 425px) {
+  .slick-nextt-2.slick-arrow {
+    left: 95%;
   }
 }
 /*# sourceMappingURL=style.css.map */
