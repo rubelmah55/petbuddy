@@ -63,11 +63,21 @@
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 2000,
       pauseOnDotsHover: true,
-      // pauseOnFocus:true,
+      pauseOnHover: true,
+      touchThreshold:5,
       prevArrow: '<div class="slick-browseProw"></div>',
       nextArrow:  '<div class="slick-browseNext"></div>',
+    });
+    $('#toggle').click( function() {
+      if ($(this).html() == ''){
+         $('.header-offer').slick('slickPause')
+         $(this).html('') 
+      } else {
+        $('.header-offer').slick('slickPlay')  
+        $(this).html('<i class="bi bi-play-circle"></i>') 
+      }  
     });
   
     $('.slider-food-2').slick({
@@ -151,7 +161,9 @@
       } else {
           $(".header-wrapper").removeClass("sticky");
       }
-  });
+    });
+  
+  
     // $(document).ready(function(){
 
     //     //Custom JS

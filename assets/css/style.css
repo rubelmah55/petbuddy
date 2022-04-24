@@ -18340,14 +18340,20 @@ a {
   line-height: 24px;
   letter-spacing: 0.15px;
   color: #000;
-  -webkit-transition: all 0.3s ease-in-out !important;
-  transition: all 0.3s ease-in-out !important;
+  -webkit-transition: all 0.66s ease-in-out !important;
+  transition: all 0.66s ease-in-out !important;
 }
 .Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon:hover {
   padding-left: 20px;
   color: #61BC47;
 }
+.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon:hover .categoty-menu-hover {
+  display: block;
+  opacity: 1;
+}
 .Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu-hover {
+  -webkit-transition: all 0.66s ease-in-out !important;
+  transition: all 0.66s ease-in-out !important;
   display: none;
   z-index: 9999;
   position: absolute;
@@ -18389,9 +18395,6 @@ a {
   .Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon .categoty-menu-hover {
     width: 530px;
   }
-}
-.Category .Dog-food-Category .category-manu .category-manu-weperr .dropdwon:hover .categoty-menu-hover {
-  display: block !important;
 }
 .Category .Dog-food-Category .category-manu .mobile-nav {
   display: none;
@@ -18689,6 +18692,13 @@ a {
   line-height: 24px;
   letter-spacing: 0.15px;
   color: #095052;
+}
+.browse-head-wepeer .browse-wepeer button {
+  z-index: 70;
+  position: absolute;
+  right: 7%;
+  top: 35%;
+  background-color: transparent;
 }
 
 .browse-wepeer-link .dog-wepeer .dog-text .head {

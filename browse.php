@@ -25,6 +25,10 @@ get_header();
                                 <p>Become member</p>
                             </div>
                         </div>
+                        <div class="buttons">
+                            <button id='toggle'>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -496,6 +500,7 @@ get_header();
                 </div>
             </div>
         </div>
+        <i class="bi bi-facebook"></i>
     </div>
 <!-- section-03 -->
 <!-- section-04 -->
