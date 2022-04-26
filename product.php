@@ -108,8 +108,8 @@ get_header();
 
                         <div class="liquid-l">
                             <div class="prodact-price  d-flex align-items-center">
-                                <input type="radio" name="radio" id="radio">
-                                <label for="radio"  class="pric d-flex align-items-center justify-content-between">
+                                <input type="radio" name="select" id="select_0" class="select">
+                                <label for="select_0"  class="pric d-flex align-items-center justify-content-between">
                                     <div class="fast-p d-flex align-items-center ">
                                         <h5>15 кг.</h5>
                                         <p>(4.99 лв. / кг.)</p>
@@ -123,8 +123,8 @@ get_header();
                         
                         <div class="liquid-l">
                             <div class="prodact-price  d-flex align-items-center">
-                                <input type="radio" name="radio" id="radio-1">
-                                <label for="radio-1"  class="pric d-flex align-items-center justify-content-between">
+                                <input type="radio" name="select" id="select_00" class="select">
+                                <label for="select_00"  class="pric d-flex align-items-center justify-content-between">
                                     <div class="fast-p d-flex align-items-center ">
                                         <h5>15 кг.</h5>
                                         <p>(4.99 лв. / кг.)</p>
@@ -138,8 +138,8 @@ get_header();
 
                         <div class="liquid-l">
                             <div class="prodact-price  d-flex align-items-center">
-                                <input type="radio" name="radio" id="radio-2">
-                                <label for="radio-2"  class="pric d-flex align-items-center justify-content-between">
+                                <input type="radio" name="select" id="select_000" class="select">
+                                <label for="select_000"  class="pric d-flex align-items-center justify-content-between">
                                     <div class="fast-p d-flex align-items-center ">
                                         <h5>15 кг.</h5>
                                         <p>(4.99 лв. / кг.)</p>

@@ -19235,12 +19235,12 @@ a {
   border-radius: 5px;
   margin: 5px 0px;
 }
-.product-info-head .product-price-weperr .liquid-l .prodact-price [type=radio]:checked,
-.product-info-head .product-price-weperr .liquid-l .prodact-price [type=radio]:not(:checked) {
+.product-info-head .product-price-weperr .liquid-l .prodact-price .select:checked,
+.product-info-head .product-price-weperr .liquid-l .prodact-price .select:not(:checked) {
   position: absolute;
 }
-.product-info-head .product-price-weperr .liquid-l .prodact-price [type=radio]:checked + label,
-.product-info-head .product-price-weperr .liquid-l .prodact-price [type=radio]:not(:checked) + label {
+.product-info-head .product-price-weperr .liquid-l .prodact-price .select:checked + label,
+.product-info-head .product-price-weperr .liquid-l .prodact-price .select:not(:checked) + label {
   position: relative;
   padding-left: 28px;
   cursor: pointer;
@@ -19248,8 +19248,8 @@ a {
   display: inline-block;
   color: #666;
 }
-.product-info-head .product-price-weperr .liquid-l .prodact-price [type=radio]:checked + label:before,
-.product-info-head .product-price-weperr .liquid-l .prodact-price [type=radio]:not(:checked) + label:before {
+.product-info-head .product-price-weperr .liquid-l .prodact-price .select:checked + label:before,
+.product-info-head .product-price-weperr .liquid-l .prodact-price .select:not(:checked) + label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -19260,8 +19260,8 @@ a {
   border-radius: 100%;
   background: #fff;
 }
-.product-info-head .product-price-weperr .liquid-l .prodact-price [type=radio]:checked + label:after,
-.product-info-head .product-price-weperr .liquid-l .prodact-price [type=radio]:not(:checked) + label:after {
+.product-info-head .product-price-weperr .liquid-l .prodact-price .select:checked + label:after,
+.product-info-head .product-price-weperr .liquid-l .prodact-price .select:not(:checked) + label:after {
   content: "";
   width: 10px;
   height: 10px;
@@ -19273,12 +19273,12 @@ a {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-.product-info-head .product-price-weperr .liquid-l .prodact-price [type=radio]:not(:checked) + label:after {
+.product-info-head .product-price-weperr .liquid-l .prodact-price .select:not(:checked) + label:after {
   opacity: 0;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
-.product-info-head .product-price-weperr .liquid-l .prodact-price [type=radio]:checked + label:after {
+.product-info-head .product-price-weperr .liquid-l .prodact-price .select:checked + label:after {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
