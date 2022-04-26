@@ -46,11 +46,12 @@ function airdesigns_register_styles_and_scripts() {
 	wp_enqueue_script( 'jquary-min-js', AIRDESIGNS_DIR_JS.'/jquary.min.js', array('jquery'), time(), true ); 
 	wp_enqueue_script( 'slick-js', AIRDESIGNS_DIR_JS.'/slick.js', array('jquery'), time(), true ); 
 	wp_enqueue_script('bootstrap-js', AIRDESIGNS_DIR_JS.'/bootstrap.min.js', array(), time(), true);
-	
+	wp_enqueue_script('xzoom.min-js', AIRDESIGNS_DIR_JS.'/xzoom.min.js', array(), time(), true);
     wp_enqueue_script( 'luckybansko-js', AIRDESIGNS_DIR_JS.'/custom.js', array('jquery'), filemtime( get_template_directory().'/assets/js/custom.js' ), true );
 
 
 	wp_enqueue_style( 'slick-css',  AIRDESIGNS_DIR_CSS.'/slick.css' );
+	wp_enqueue_style( 'xzoom-css',  AIRDESIGNS_DIR_CSS.'/xzoom.css' );
 	wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', array(), false, 'all');
     wp_enqueue_style( 'main_style',  AIRDESIGNS_DIR_CSS . '/style.css', array(), time() );
 

@@ -155,6 +155,11 @@
           $(".dropdwon-seclet").slideToggle("slow");
         });
   
+  
+    //more btns
+    $(".arrow-more").click(function(){
+      $(".more").slideToggle("slow");
+    });
     //    Sticky Menu
     $(window).scroll(function() {
       var Width = $(document).width();
@@ -168,7 +173,8 @@
       }
     });
   
-  
+  /* calling script */
+      $(".xzoom, .xzoom-gallery").xzoom({tint: '#333', Xoffset: 15});
     // $(document).ready(function(){
 
     //     //Custom JS
@@ -230,17 +236,19 @@ function closeNav() {
 
 
 
-// var acc = document.getElementsByClassName("accordion");
-// var i;
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
 
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var panel = this.nextElementSibling;
-//     if (panel.style.display === "block") {
-//       panel.style.display = "none";
-//     } else {
-//       panel.style.display = "block";
-//     }
-//   });
-// }
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+    })
+    tabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+})

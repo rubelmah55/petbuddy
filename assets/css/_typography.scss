@@ -314,3 +314,23 @@ a {
     //    display: none;
     // }
 }
+@mixin product-info {
+    font-family: $body-font;  //16 in bold
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.5px;
+    color:$black;
+    margin-bottom: 0px;
+}
+@mixin product-info-1{
+    font-family: $body-font;  //15 n
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -0.5px;
+    color:$black;
+
+}
