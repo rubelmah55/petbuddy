@@ -1,0 +1,173 @@
+//section-1
+.nutrition-wepper{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    .header{
+        h4{
+            @include typography-5;
+            font-weight: 700;
+            color: $black;
+            margin-bottom: 20px;
+        }
+        p{
+            @include typofraphy-2;
+            font-weight: 400;
+            color: $blue;
+            max-width: 823px;
+            margin: 0 auto;
+        }
+    }
+}
+//section-2
+.prodact-Nutrition-wepeer{
+    background-color: #0950521a;
+    padding: 50px 0px;
+    .product{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        .product-item{
+            padding-top: 20px;
+            margin: 5px;
+            width: 193px;
+            h4{
+                font-family: $body-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 29px;
+                text-align: center;
+                letter-spacing: -0.5px;
+                color:$black;
+            }
+            .product-info {
+                position: relative;
+                border: 1px solid #B5CBCB;
+                padding: 10px;
+                background-color: $white;
+                border-radius: 5px;
+                width: 193px;
+                min-height: 361px;
+                .item-img {
+
+                }
+                .item-title{
+                    margin-top: 15px;
+                    h5{
+                        @include product-info-1;
+                    }
+                }
+                .item-info{
+                    margin-top: 15px;
+                    margin-bottom: 20px;
+                    p{
+                        @include typography-11;
+                        color: #095052;
+                    }
+                }
+                .item-info-2{
+                    p{
+                        @include typography-11;
+                        color: #095052;
+                        text-align: left;
+                        span{
+                            @include typography-11;
+                            font-weight: 700;
+                            color: $black;
+                        }
+                    }
+                }
+                .btns{
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                    a{
+                        @include product-info-1;
+                        padding: 10px 15px;
+                        border: 1px solid #B5CBCB;
+                        border-radius: 10px;
+                        transition: all 0.4s ease-in;
+                        &:hover{
+                            background-color:$primary;
+                            color: $white;
+                        }
+                    } 
+                }
+                .deleted{
+                    position: absolute;
+                    top: 5px;
+                    right: 12px;
+                }
+            }
+        }
+    }
+    .single-product-wepeer{
+        margin-top: 30px;
+        padding: 20px;
+        background-color: $white;
+        border-radius: 10px;
+        border: 1px solid #B5CBCB;
+        .product-single{
+            .sin-product-img{
+                h5{
+                    margin-left: 20px;
+                    font-family: $body-font;
+                    font-style: normal;
+                    margin-bottom: 0px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height:26px;
+                    letter-spacing: -0.5px;
+                    color: $black;
+                }
+            }
+            .price-cetagory{
+               .price{
+                h6 , p{
+                    width: 200px;
+                    @include product-info;
+                    font-weight: 400;
+                    color: #095052;
+                    span{
+                        font-family: $body-font;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height:26px;
+                        letter-spacing: -0.5px;
+                        color: $black;
+                    }
+                    .price-sty{
+                        font-size: 15px;
+                    }
+                    .price{
+                        color: $primary;
+                        font-size: 15px;
+                    }
+                }
+               }
+               @media (max-width:720px) {
+                padding-top: 20px;
+            }
+            }
+            .btn-single{
+                
+                a{
+                    @include button;
+                    background-color:$gray;
+                    transition: all 0.4s ease-in-out;
+                    padding: 15px 50px;
+                    color: $white;
+                    &:hover{
+                       background-color: $orange;
+                       color: $gray;
+                    } 
+                }
+                @media (max-width:720px) {
+                    padding-top: 50px;
+                }
+            }
+        }
+    }
+}
+//section-03

@@ -19700,4 +19700,383 @@ a {
 .tabs-wepper .tab-btns .tab-content .arrow-more {
   cursor: pointer;
 }
+
+.head-wrapper .head-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
+}
+.head-wrapper .head-top .logo-head img {
+  width: 100%;
+}
+.head-wrapper .head-top .menu-wepeer .progressbar {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.head-wrapper .head-top .menu-wepeer .progressbar a {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.head-wrapper .head-top .menu-wepeer .progressbar__step {
+  display: table-cell;
+  position: relative;
+  text-align: center;
+}
+.head-wrapper .head-top .menu-wepeer .progressbar__step::before {
+  content: attr(data-step);
+  display: block;
+  position: relative;
+  left: calc(50% - 10px*1.5);
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #61BC47;
+  z-index: 200;
+  top: 5px;
+  margin-bottom: 20px;
+  border: 2px solid #d3d3d3;
+}
+.head-wrapper .head-top .menu-wepeer .progressbar__step::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(10px*1.5 + 3px);
+  left: 50%;
+  margin-left: 15px;
+  width: 100%;
+  height: 5px;
+  background-color: #d3d3d3;
+  z-index: 100;
+}
+.head-wrapper .head-top .menu-wepeer .progressbar__step:last-child::after {
+  display: none;
+}
+.head-wrapper .head-top .menu-wepeer .progressbar__step.is-done::after {
+  border: none;
+  background-color: #40c889;
+}
+.head-wrapper .head-top .menu-wepeer .progressbar__step.is-done::before {
+  border: none;
+}
+.head-wrapper .head-top .btns-head-2 a {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.5px;
+  color: #000;
+  padding: 10px 30px;
+  border: 1px solid #B5CBCB;
+  border-radius: 10px;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+.head-wrapper .head-top .btns-head-2 a:hover {
+  background-color: #61BC47;
+  color: #fff;
+}
+@media (max-width: 1000px) {
+  .head-wrapper .head-top .btns-head-2 {
+    display: none;
+  }
+}
+.preloder-wepeer {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.preloder-wepeer .lode {
+  border: 7px solid #61BC47;
+  border-radius: 50%;
+  border-top: 7px solid #ffffff;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto;
+  -webkit-animation: preloader 4s linear infinite;
+          animation: preloader 4s linear infinite;
+}
+.preloder-wepeer .preloder-footer {
+  margin-top: 70px;
+}
+.preloder-wepeer .preloder-footer h5, .preloder-wepeer .preloder-footer .h5 {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  color: #000;
+  max-width: 737px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  line-height: 24px;
+}
+.preloder-wepeer .preloder-footer p {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  color: #095052;
+  max-width: 737px;
+  margin: 0 auto;
+  line-height: 24px;
+}
+
+@-webkit-keyframes preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.nutrition-wepper {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.nutrition-wepper .header h4, .nutrition-wepper .header .h4 {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+.nutrition-wepper .header p {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  color: #095052;
+  max-width: 823px;
+  margin: 0 auto;
+}
+
+.prodact-Nutrition-wepeer {
+  background-color: #0950521a;
+  padding: 50px 0px;
+}
+.prodact-Nutrition-wepeer .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.prodact-Nutrition-wepeer .product .product-item {
+  padding-top: 20px;
+  margin: 5px;
+  width: 193px;
+}
+.prodact-Nutrition-wepeer .product .product-item h4, .prodact-Nutrition-wepeer .product .product-item .h4 {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #000;
+}
+.prodact-Nutrition-wepeer .product .product-item .product-info {
+  position: relative;
+  border: 1px solid #B5CBCB;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 193px;
+  min-height: 361px;
+}
+.prodact-Nutrition-wepeer .product .product-item .product-info .item-title {
+  margin-top: 15px;
+}
+.prodact-Nutrition-wepeer .product .product-item .product-info .item-title h5, .prodact-Nutrition-wepeer .product .product-item .product-info .item-title .h5 {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.5px;
+  color: #000;
+}
+.prodact-Nutrition-wepeer .product .product-item .product-info .item-info {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.prodact-Nutrition-wepeer .product .product-item .product-info .item-info p {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #095052;
+}
+.prodact-Nutrition-wepeer .product .product-item .product-info .item-info-2 p {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #095052;
+  text-align: left;
+}
+.prodact-Nutrition-wepeer .product .product-item .product-info .item-info-2 p span {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  color: #000;
+}
+.prodact-Nutrition-wepeer .product .product-item .product-info .btns {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.prodact-Nutrition-wepeer .product .product-item .product-info .btns a {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.5px;
+  color: #000;
+  padding: 10px 15px;
+  border: 1px solid #B5CBCB;
+  border-radius: 10px;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+.prodact-Nutrition-wepeer .product .product-item .product-info .btns a:hover {
+  background-color: #61BC47;
+  color: #fff;
+}
+.prodact-Nutrition-wepeer .product .product-item .product-info .deleted {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+}
+.prodact-Nutrition-wepeer .single-product-wepeer {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #B5CBCB;
+}
+.prodact-Nutrition-wepeer .single-product-wepeer .product-single .sin-product-img h5, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .sin-product-img .h5 {
+  margin-left: 20px;
+  font-family: "Intro";
+  font-style: normal;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  color: #000;
+}
+.prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price h6, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price .h6, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price p {
+  width: 200px;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.5px;
+  color: #000;
+  margin-bottom: 0px;
+  font-weight: 400;
+  color: #095052;
+}
+.prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price h6 span, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price .h6 span, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price p span {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  color: #000;
+}
+.prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price h6 .price-sty, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price .h6 .price-sty, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price p .price-sty {
+  font-size: 15px;
+}
+.prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price h6 .price, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price .h6 .price, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price p .price {
+  color: #61BC47;
+  font-size: 15px;
+}
+@media (max-width: 720px) {
+  .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory {
+    padding-top: 20px;
+  }
+}
+.prodact-Nutrition-wepeer .single-product-wepeer .product-single .btn-single a {
+  font-weight: 700;
+  line-height: 18px;
+  font-size: 18px;
+  padding: 0px 30px;
+  background-color: #61BC47;
+  border-radius: 50px;
+  background-color: #095052;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  padding: 15px 50px;
+  color: #fff;
+}
+.prodact-Nutrition-wepeer .single-product-wepeer .product-single .btn-single a:hover {
+  background-color: #FF4E2A;
+  color: #095052;
+}
+@media (max-width: 720px) {
+  .prodact-Nutrition-wepeer .single-product-wepeer .product-single .btn-single {
+    padding-top: 50px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

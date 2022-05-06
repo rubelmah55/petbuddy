@@ -1,0 +1,133 @@
+//header
+.head-wrapper{
+    .head-top{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        .logo-head{
+            img{
+                width: 100%;
+            }
+        }
+        .menu-wepeer{
+            $base-gap: 10px;
+            $color-green: #40c889;
+            $color-gray-light: #d3d3d3;
+            .progressbar {
+                display: table;
+                table-layout: fixed;
+                width: 100%;
+                a{
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+                &__step {
+                  display: table-cell;
+                  position: relative;
+                  text-align: center;
+                }
+                &__step::before {
+                  content: attr(data-step);
+                  display: block;
+                  position: relative;
+                  left: calc(50% - #{$base-gap}*1.5);
+                  width: $base-gap*3;
+                  height: $base-gap*3;
+                  line-height: $base-gap*3;
+                  border-radius: 50%;
+                  color: $white;
+                  background-color: $primary;
+                  z-index: 200;
+                  top: 5px;
+                  margin-bottom:20px ;
+                  border: 2px solid #d3d3d3;
+                }
+                &__step::after {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  top: calc(#{$base-gap}*1.5 + 3px);
+                  left: 50%;
+                  margin-left: $base-gap*1.5;
+                  width: 100%;
+                  height: 5px;
+                  background-color: $color-gray-light;
+                  z-index: 100;
+                  
+                }
+                &__step:last-child::after {
+                  display: none;
+                }
+                &__step.is-done::after {
+                    border: none;
+                    background-color: $color-green;
+                }
+                &__step.is-done::before{
+                     border: none;
+                }
+              }
+        }
+        .btns-head-2{
+            a{
+                @include product-info-1;
+                padding: 10px 30px;
+                border: 1px solid #B5CBCB;
+                border-radius: 10px;
+                transition: all 0.4s ease-in;
+                &:hover{
+                    background-color:$primary;
+                    color: $white;
+                }
+            } 
+            @media (max-width:1000px) {
+                display: none;
+            }
+        }
+        .overlay{
+            .header-nav{
+                
+            }
+        }
+    }
+}
+//head
+.preloder-wepeer{
+    margin-top: $Hight-70;
+    margin-bottom: $Hight-70;
+    .lode{
+        border: 7px solid #61BC47;
+        border-radius: 50%;
+        border-top: 7px solid #ffffff;
+        width: 84px;
+        height: 84px;
+        margin: 0 auto;
+        animation: preloader 4s linear infinite;
+    }
+    .preloder-footer{
+        margin-top: $Hight-70;
+        h5{
+            @include typofraphy-2;
+            color: $black;
+            max-width: 737px;
+            margin: 0 auto;
+            margin-bottom: 25px;
+            line-height: 24px;
+        }
+        p{
+            @include typofraphy-2;
+            font-weight: 400;
+            color: $gray;
+            max-width: 737px;
+            margin: 0 auto;
+            line-height: 24px;
+        }
+    }
+}
+@keyframes preloader {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

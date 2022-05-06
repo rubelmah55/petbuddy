@@ -234,7 +234,13 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
+function openNav() {
+  document.getElementById("navmenu").style.width = "70%";
+}
 
+function closeNav() {
+  document.getElementById("navmenu").style.width = "0%";
+}
 
 const tabs = document.querySelectorAll('[data-tab-target]')
 const tabContents = document.querySelectorAll('[data-tab-content]')
@@ -252,3 +258,5 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
+
+
