@@ -16190,10 +16190,9 @@ a {
 
 .theme-btn {
   color: #fff;
-  padding: 18px 40px;
+  padding: 10px 40px;
   font-size: 15px;
   font-weight: 500;
-  color: #fff;
   background-color: #61BC47;
   border: 1px solid #61BC47;
   -webkit-transition: all 0.3s ease-in-out;

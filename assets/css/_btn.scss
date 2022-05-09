@@ -14,10 +14,9 @@
 .theme-btn {
     color: $white;
     @extend .btnd;    
-    padding: 18px 40px;
+    padding: 10px 40px;
     font-size: 15px;
     font-weight: 500;
-    color: $white;
     background-color: $primary;
     border: 1px solid $primary;
     transition: all .3s ease-in-out;
