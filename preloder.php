@@ -62,61 +62,9 @@ get_header();
                 </div>
             </div>
              <!-- navmanu -->
-             <div class=" navmanus text-end d-none">
-                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/navbar.svg' ?>" alt="<?php bloginfo('name'); ?>" onclick="openNav()">
-                </div>
-                <div id="navmenu" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <div class="overlay-content">
-                            <div class="header-nav">
-                                <div class="menu-wepeer">
-                                    <div class='line-container'>
-                                        <div class='progress-line'>
-                                            <div class='progress'>
-                                            
-                                            </div>
-                                            <div class='status'>
-                                                <div class="status-dots">
-                                                    <div class='dot completed'>
-
-                                                    </div>
-                                                    <div class="text-center">
-                                                        <a href="#">ddpsadsfasgfS</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class='status'>
-                                            <div class='dot completed'>
-
-                                            </div>
-                                            </div>
-                                            <div class='status'>
-                                            <div class='dot current'>
-                                            3
-                                            </div>
-                                            </div>
-                                            <div class='status'>
-                                            <div class='dot'>
-                                            4
-                                            </div>
-                                            </div>
-                                        </div>
-                                    
-                                    </div>
-                                    <ul class="d-flex flex-wrap">
-                                        <li><a href="#">Профил</a></li>
-                                        <li><a href="#">Любимец</a></li>
-                                        <li><a href="#">Месечна кутия</a></li>
-                                        <li><a href="#">Доставка и начин на плащане</a></li>
-                                    </ul>
-                                </div>
-                                <div class="btns-head-2">
-                                    <a href="#">Откажи</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+             <div class="navmanus text-end d-none">
+                <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/navbar.svg' ?>" alt="<?php bloginfo('name'); ?>" onclick="openNav()">
+            </div>
         </div>
     </header>
 <!-- header-2 -->
@@ -137,16 +85,3 @@ get_header();
 <?php 
     get_footer();
 ?>
-    <!-- navmanu -->
-        <div class=" navmanus text-end d-none">
-            <img src="<?php echo AIRDESIGNS_DIR_IMG.'/icon/navbar.svg' ?>" alt="<?php bloginfo('name'); ?>" onclick="openNav()">
-        </div>
-        <div id="myNav" class="overlay">
-             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <div class="header-nav">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>

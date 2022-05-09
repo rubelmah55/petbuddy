@@ -19889,11 +19889,11 @@ a {
   margin: 0 auto;
 }
 
-.prodact-Nutrition-wepeer {
+.prodact-nutrition-wepeer {
   background-color: #0950521a;
   padding: 50px 0px;
 }
-.prodact-Nutrition-wepeer .product {
+.prodact-nutrition-wepeer .product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19906,12 +19906,12 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.prodact-Nutrition-wepeer .product .product-item {
+.prodact-nutrition-wepeer .product .product-item {
   padding-top: 20px;
   margin: 5px;
   width: 193px;
 }
-.prodact-Nutrition-wepeer .product .product-item h4, .prodact-Nutrition-wepeer .product .product-item .h4 {
+.prodact-nutrition-wepeer .product .product-item h4, .prodact-nutrition-wepeer .product .product-item .h4 {
   font-family: "Intro";
   font-style: normal;
   font-weight: 400;
@@ -19921,7 +19921,7 @@ a {
   letter-spacing: -0.5px;
   color: #000;
 }
-.prodact-Nutrition-wepeer .product .product-item .product-info {
+.prodact-nutrition-wepeer .product .product-item .product-info {
   position: relative;
   border: 1px solid #B5CBCB;
   padding: 10px;
@@ -19930,10 +19930,10 @@ a {
   width: 193px;
   min-height: 361px;
 }
-.prodact-Nutrition-wepeer .product .product-item .product-info .item-title {
+.prodact-nutrition-wepeer .product .product-item .product-info .item-title {
   margin-top: 15px;
 }
-.prodact-Nutrition-wepeer .product .product-item .product-info .item-title h5, .prodact-Nutrition-wepeer .product .product-item .product-info .item-title .h5 {
+.prodact-nutrition-wepeer .product .product-item .product-info .item-title h5, .prodact-nutrition-wepeer .product .product-item .product-info .item-title .h5 {
   font-family: "Intro";
   font-style: normal;
   font-weight: 400;
@@ -19942,11 +19942,11 @@ a {
   letter-spacing: -0.5px;
   color: #000;
 }
-.prodact-Nutrition-wepeer .product .product-item .product-info .item-info {
+.prodact-nutrition-wepeer .product .product-item .product-info .item-info {
   margin-top: 15px;
   margin-bottom: 20px;
 }
-.prodact-Nutrition-wepeer .product .product-item .product-info .item-info p {
+.prodact-nutrition-wepeer .product .product-item .product-info .item-info p {
   font-family: "Intro";
   font-style: normal;
   font-weight: 400;
@@ -19956,7 +19956,7 @@ a {
   letter-spacing: -0.5px;
   color: #095052;
 }
-.prodact-Nutrition-wepeer .product .product-item .product-info .item-info-2 p {
+.prodact-nutrition-wepeer .product .product-item .product-info .item-info-2 p {
   font-family: "Intro";
   font-style: normal;
   font-weight: 400;
@@ -19967,7 +19967,7 @@ a {
   color: #095052;
   text-align: left;
 }
-.prodact-Nutrition-wepeer .product .product-item .product-info .item-info-2 p span {
+.prodact-nutrition-wepeer .product .product-item .product-info .item-info-2 p span {
   font-family: "Intro";
   font-style: normal;
   font-weight: 400;
@@ -19978,11 +19978,11 @@ a {
   font-weight: 700;
   color: #000;
 }
-.prodact-Nutrition-wepeer .product .product-item .product-info .btns {
+.prodact-nutrition-wepeer .product .product-item .product-info .btns {
   margin-top: 30px;
   margin-bottom: 15px;
 }
-.prodact-Nutrition-wepeer .product .product-item .product-info .btns a {
+.prodact-nutrition-wepeer .product .product-item .product-info .btns a {
   font-family: "Intro";
   font-style: normal;
   font-weight: 400;
@@ -19996,23 +19996,23 @@ a {
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
 }
-.prodact-Nutrition-wepeer .product .product-item .product-info .btns a:hover {
+.prodact-nutrition-wepeer .product .product-item .product-info .btns a:hover {
   background-color: #61BC47;
   color: #fff;
 }
-.prodact-Nutrition-wepeer .product .product-item .product-info .deleted {
+.prodact-nutrition-wepeer .product .product-item .product-info .deleted {
   position: absolute;
   top: 5px;
   right: 12px;
 }
-.prodact-Nutrition-wepeer .single-product-wepeer {
+.prodact-nutrition-wepeer .single-product-wepeer {
   margin-top: 30px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid #B5CBCB;
 }
-.prodact-Nutrition-wepeer .single-product-wepeer .product-single .sin-product-img h5, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .sin-product-img .h5 {
+.prodact-nutrition-wepeer .single-product-wepeer .product-single .sin-product-img h5, .prodact-nutrition-wepeer .single-product-wepeer .product-single .sin-product-img .h5 {
   margin-left: 20px;
   font-family: "Intro";
   font-style: normal;
@@ -20023,7 +20023,7 @@ a {
   letter-spacing: -0.5px;
   color: #000;
 }
-.prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price h6, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price .h6, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price p {
+.prodact-nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price h6, .prodact-nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price .h6, .prodact-nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price p {
   width: 200px;
   font-family: "Intro";
   font-style: normal;
@@ -20036,7 +20036,7 @@ a {
   font-weight: 400;
   color: #095052;
 }
-.prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price h6 span, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price .h6 span, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price p span {
+.prodact-nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price h6 span, .prodact-nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price .h6 span, .prodact-nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price p span {
   font-family: "Intro";
   font-style: normal;
   font-weight: 400;
@@ -20045,19 +20045,19 @@ a {
   letter-spacing: -0.5px;
   color: #000;
 }
-.prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price h6 .price-sty, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price .h6 .price-sty, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price p .price-sty {
+.prodact-nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price h6 .price-sty, .prodact-nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price .h6 .price-sty, .prodact-nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price p .price-sty {
   font-size: 15px;
 }
-.prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price h6 .price, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price .h6 .price, .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price p .price {
+.prodact-nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price h6 .price, .prodact-nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price .h6 .price, .prodact-nutrition-wepeer .single-product-wepeer .product-single .price-cetagory .price p .price {
   color: #61BC47;
   font-size: 15px;
 }
 @media (max-width: 720px) {
-  .prodact-Nutrition-wepeer .single-product-wepeer .product-single .price-cetagory {
+  .prodact-nutrition-wepeer .single-product-wepeer .product-single .price-cetagory {
     padding-top: 20px;
   }
 }
-.prodact-Nutrition-wepeer .single-product-wepeer .product-single .btn-single a {
+.prodact-nutrition-wepeer .single-product-wepeer .product-single .btn-single a {
   font-weight: 700;
   line-height: 18px;
   font-size: 18px;
@@ -20070,12 +20070,12 @@ a {
   padding: 15px 50px;
   color: #fff;
 }
-.prodact-Nutrition-wepeer .single-product-wepeer .product-single .btn-single a:hover {
+.prodact-nutrition-wepeer .single-product-wepeer .product-single .btn-single a:hover {
   background-color: #FF4E2A;
   color: #095052;
 }
 @media (max-width: 720px) {
-  .prodact-Nutrition-wepeer .single-product-wepeer .product-single .btn-single {
+  .prodact-nutrition-wepeer .single-product-wepeer .product-single .btn-single {
     padding-top: 50px;
   }
 }

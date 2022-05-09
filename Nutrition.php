@@ -1,27 +1,25 @@
 <?php
 /*
-Template Name: Nutrition Plan
+Template Name: nutrition Plan
 
 */
 get_header(); 
 ?>
 
 
-<!-- Nutrition Plan -->
+<!-- nutrition Plan -->
 <!-- section-1 -->
     <div class="nutrition-wepper">
         <div class="container">
-            <div class="row">
-               <div class="header text-center">
+            <div class="header text-center">
                <h4>Хранителен план за Старк</h4>
-                <p>Според зададените от теб хранителни и двигателни навици количеството храна необходомо за отглеждането на Старк за един месец е:</p>
-               </div>
+               <p>Според зададените от теб хранителни и двигателни навици количеството храна необходомо за отглеждането на Старк за един месец е:</p>
             </div>
         </div>
     </div>
 <!-- section-1 -->
 <!-- section-2 -->
-    <div class="prodact-Nutrition-wepeer">
+    <div class="prodact-nutrition-wepeer">
         <div class="container">
             <div class="row">
                 <div class="product">
@@ -210,4 +208,4 @@ get_header();
         </div>
     </div>
 <!-- section-2 -->
-<!-- Nutrition Plan -->
+<!-- nutrition Plan -->
