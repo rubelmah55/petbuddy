@@ -47,7 +47,7 @@ get_header();
                 </div>
                 <div class="col col-md-8 col-xxl-8">
                     <div class="menu-wepeer text-center d-none d-sm-none d-md-block">
-                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/plan/progress.png' ?>" alt="<?php bloginfo('name'); ?>">
+                    <img src="<?php echo AIRDESIGNS_DIR_IMG.'/plan/progress.svg' ?>" alt="<?php bloginfo('name'); ?>">
                         <!-- preloder  -->
                         <!-- <div class="progressbar">
                             <div class="progressbar__step is-done" is-done data-step='✓'><a href="#">Профил</a></div>
@@ -58,9 +58,9 @@ get_header();
                     </div>
                 </div>
                 <div class="col col-md-1 col-xxl-1">
-                    <div class="btns-head-2">
+                    <!-- <div class="btns-head-2">
                         <a href="#">Откажи</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
