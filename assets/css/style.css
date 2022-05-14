@@ -19768,7 +19768,7 @@ a {
 }
 .head-wrapper .head-top .menu-wepeer .progressbar__step.is-done::after {
   border: none;
-  background-color: #40c889;
+  background-color: #61BC47;
 }
 .head-wrapper .head-top .menu-wepeer .progressbar__step.is-done::before {
   border: none;
@@ -19791,11 +19791,7 @@ a {
   background-color: #61BC47;
   color: #fff;
 }
-@media (max-width: 1000px) {
-  .head-wrapper .head-top .btns-head-2 {
-    display: none;
-  }
-}
+
 .preloder-wepeer {
   margin-top: 70px;
   margin-bottom: 70px;

@@ -14,7 +14,6 @@
         }
         .menu-wepeer{
             $base-gap: 10px;
-            $color-green: #40c889;
             $color-gray-light: #d3d3d3;
             .progressbar {
                 display: table;
@@ -34,9 +33,9 @@
                   display: block;
                   position: relative;
                   left: calc(50% - #{$base-gap}*1.5);
-                  width: $base-gap*3;
-                  height: $base-gap*3;
-                  line-height: $base-gap*3;
+                  width:$Hight-30;
+                  height: $Hight-30;
+                  line-height: $Hight-30;
                   border-radius: 50%;
                   color: $white;
                   background-color: $primary;
@@ -54,7 +53,7 @@
                   margin-left: $base-gap*1.5;
                   width: 100%;
                   height: 5px;
-                  background-color: $color-gray-light;
+                  background-color: #d3d3d3;
                   z-index: 100;
                   
                 }
@@ -63,7 +62,7 @@
                 }
                 &__step.is-done::after {
                     border: none;
-                    background-color: $color-green;
+                    background-color: $primary;
                 }
                 &__step.is-done::before{
                      border: none;
@@ -82,14 +81,6 @@
                     color: $white;
                 }
             } 
-            @media (max-width:1000px) {
-                display: none;
-            }
-        }
-        .overlay{
-            .header-nav{
-                
-            }
         }
     }
 }
